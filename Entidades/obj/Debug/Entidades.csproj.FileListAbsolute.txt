@@ -1,0 +1,5 @@
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Entidades\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Entidades\obj\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Entidades\obj\Debug\Entidades.pdb
