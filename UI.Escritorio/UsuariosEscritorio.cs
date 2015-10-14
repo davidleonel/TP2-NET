@@ -48,36 +48,54 @@ namespace UI.Escritorio
 
 
         // FALTA PASO 24
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        //private void toolStripButton1_Click(object sender, EventArgs e)
+        //{
+        //    UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
+        //    usrEsc.ShowDialog();
+       //   this.Listar();    
+       // }
+
+       /* private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
+
+            int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
+            UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Modificacion);
+
+
+            usrEsc.ShowDialog();
+            this.Listar();
+        }
+        */
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvUsuarios.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
+                UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Baja);
+                usrEsc.ShowDialog();
+                this.Listar();
+            }
+
+        }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
         {
             UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
             usrEsc.ShowDialog();
-            this.Listar();
- 
-           
-        }
-
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-
-
-            int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
-            UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Modificacion);
-
-
-            usrEsc.ShowDialog();
             this.Listar();
         }
 
-        private void tsbEliminar_Click(object sender, EventArgs e)
+        private void tsbEditar_Click(object sender, EventArgs e)
         {
-            int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
-            UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Modificacion);
 
-
-            usrEsc.ShowDialog();
-            this.Listar();
-
+             if ( dgvUsuarios.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
+                UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Modificacion);
+                usrEsc.ShowDialog();
+                this.Listar();
+            }
         }
     }
 }

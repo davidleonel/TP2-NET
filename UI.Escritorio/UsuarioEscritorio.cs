@@ -28,14 +28,21 @@ namespace UI.Escritorio
             InitializeComponent();
         }
 
-        public UsuarioEscritorio(ModoForm modo) : this()         {
-            Modo = modo;           }
-        public UsuarioEscritorio(int ID, ModoForm modo):this()        {            Modo = modo;
+        public UsuarioEscritorio(ModoForm modo) : this() 
+        {
+            Modo = modo;   
+
+        }
+
+        public UsuarioEscritorio(int ID, ModoForm modo):this()
+        {
+            Modo = modo;
             UsuarioNegocio usr  = new UsuarioNegocio();
             UsuarioActual = usr.GetOne(ID);
             MapearDeDatos();
 
-        }
+        }
+
 
         public virtual void MapearDeDatos() 
         {
@@ -62,7 +69,8 @@ namespace UI.Escritorio
                     this.btnAceptar.Text = "Aceptar";
                     break;
 
-            }        
+            }        
+
         }
         public virtual void MapearADatos() 
         {
