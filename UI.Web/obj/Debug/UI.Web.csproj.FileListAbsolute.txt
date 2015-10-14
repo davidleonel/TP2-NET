@@ -49,3 +49,9 @@ C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Microsoft.Owin.Security.OAuth.
 C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\obj\Debug\UI.Web.csprojResolveAssemblyReference.cache
 C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\obj\Debug\UI.Web.dll
 C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\obj\Debug\UI.Web.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Data.Database.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Entidades.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Negocios.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Web\bin\Data.Database.pdb
