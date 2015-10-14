@@ -109,5 +109,32 @@ namespace UI.Web
                 this.LoadForm(this.SelectedID);
             }
         }
+
+        private void LoadEntity(Usuario usuario)
+        {
+            usuario.Nombre = this.nombreTextBox.Text;
+            usuario.Apellido = this.apellidoTextBox.Text;
+            usuario.Email = this.emailTextBox.Text;
+            usuario.NombreUsuario = this.nombreUsuarioTextBox.Text;
+            usuario.Clave = this.claveTextBox.Text;
+            usuario.Habilitado = this.habilitadoCheckBox.Checked;
+        }
+
+        private void SaveEntity(Usuario usuario)
+        {
+            this.LogicUsuario.Save(usuario);
+        }
+
+        protected void aceptarLinkButton_Click(object sender, EventArgs e)
+        {
+            this.Entity = new Usuario();
+            this.Entity.Id = this.SelectedID;
+            this.Entity.Estado = Entidad.Estados.Modificado;
+             this.LoadEntity(this.Entity);
+            this.SaveEntity(this.Entity);
+            this.LoadGrid();
+
+            this.formPanel.Visible = false;
+        }
     }
 }
