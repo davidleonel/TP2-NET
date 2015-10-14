@@ -143,6 +143,14 @@ namespace UI.Web
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();
                     break;
+
+                case FormModes.Alta:
+                    this.Entity = new Usuario();
+                   this.LoadEntity(this.Entity);
+                    this.SaveEntity(this.Entity);
+                    this.LoadGrid();
+                    break;
+
                 default:
                     break;
             }
@@ -178,5 +186,23 @@ namespace UI.Web
         {
             this.LogicUsuario.Delete(id);
         }
+
+        protected void nuevoLinkButton_Click(object sender, EventArgs e)
+        {
+            this.formPanel.Visible = true;
+            this.FormMode = FormModes.Alta;
+            this.ClearForm();
+            this.EnableForm(true);
+        }
+
+        private void ClearForm()
+        {
+            this.nombreTextBox.Text = string.Empty;
+            this.apellidoTextBox.Text = string.Empty;
+            this.emailTextBox.Text = string.Empty;
+            this.habilitadoCheckBox.Checked = false;
+            this.nombreUsuarioTextBox.Text = string.Empty;
+        }
+
     }
 }
