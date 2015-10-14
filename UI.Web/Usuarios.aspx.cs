@@ -204,5 +204,10 @@ namespace UI.Web
             this.nombreUsuarioTextBox.Text = string.Empty;
         }
 
+        /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
+        {
+            this.LoadGrid();
+        }*/ //preguntar si este evento es así
+
     }
 }
