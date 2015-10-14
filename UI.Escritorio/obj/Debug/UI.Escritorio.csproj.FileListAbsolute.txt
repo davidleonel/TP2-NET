@@ -73,3 +73,6 @@ C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Acad
 C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
 C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
 C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
