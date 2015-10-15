@@ -2,11 +2,11 @@
 
 
     <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
-    <form id="form1" runat="server">
+    
     <div>
     
     </div>
-    </form>
+ 
     </asp:Content>
 
 

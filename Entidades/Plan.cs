@@ -8,18 +8,25 @@ namespace Entidades
 {
     public class Plan:Entidad
     {
+
+        #region Miembros
         private string _DescripcionPlan;
+        private int _IdEspecialidad;
+        #endregion
+
+        #region Propiedades
         public string DescripcionPlan
         {
             get { return _DescripcionPlan; }
             set { _DescripcionPlan = value; }
         }
 
-        private int _IdEspecialidad;
+        
         public int IdEspecialidad
         {
             get { return _IdEspecialidad; }
             set { _IdEspecialidad = value; }
         }
+        #endregion
     }
 }

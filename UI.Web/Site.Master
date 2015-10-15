@@ -10,6 +10,8 @@
         <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
     <div>
         <asp:ContentPlaceHolder ID="bodyContentPlaceHolder" runat="server">
+            <!-- home -->
+            <!-- usuarios -->
         </asp:ContentPlaceHolder>
     </div>
     </form>

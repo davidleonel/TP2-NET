@@ -8,24 +8,35 @@ namespace Entidades
 {
     public class Entidad
     {
+        #region Constructores
         public Entidad()
         {
             this._Estado = Estados.Nuevo;
         }
-        
+        #endregion
+
+        #region Miembros
         private int _Id;
+        private Estados _Estado;
+        #endregion
+
+        #region Propiedades
+
         public int Id 
         {
             get {return _Id;}
             set {_Id = value;}
         }
 
-        private Estados _Estado;
+        
         public Estados Estado
         {
             get { return _Estado; }
             set { _Estado = value; }
         }
+        #endregion
+
+
         public enum Estados
         {
             Eliminado,
@@ -33,5 +44,6 @@ namespace Entidades
             Modificado,
             NoModificado
         }
+
     }
 }

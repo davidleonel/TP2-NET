@@ -8,25 +8,32 @@ namespace Entidades
 {
     public class Comision:Entidad
     {
+        #region Miembros
         private string _DescripcionComision;
+        private int _AnoEspecialidad;
+        private int _IdPlan;
+        #endregion
+
+        #region Propiedades
         public string DescripcionComision
         {
             get { return _DescripcionComision; }
             set { _DescripcionComision = value; }
         }
 
-        private int _AnoEspecialidad;
+        
         public int AnoEspecialidad
         {
             get { return _AnoEspecialidad; }
             set { _AnoEspecialidad = value; }
         }
 
-        private int _IdPlan;
+        
         public int IdPlan
         {
             get { return _IdPlan; }
             set { _IdPlan = value; }
         }
+        #endregion 
     }
 }

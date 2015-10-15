@@ -1,14 +1,8 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="UI.Web.Usuarios" MasterPageFile="~/Site.Master" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Usuarios</title>
-</head>
-<body>
     <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
-    <form id="formUsuarios" runat="server">
+    
     <div>
        <asp:Panel ID="gridPanel" runat="server">
         <asp:GridView ID="gridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
@@ -79,7 +73,6 @@
         </asp:Panel>
 
     </div>
-    </form>
+
         </asp:Content>
-</body>
-</html>
+
