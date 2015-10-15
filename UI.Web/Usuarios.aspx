@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="UI.Web.Usuarios" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="UI.Web.Usuarios" MasterPageFile="~/Site.Master" %>
 
 <!DOCTYPE html>
 
@@ -7,6 +7,7 @@
     <title>Usuarios</title>
 </head>
 <body>
+    <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
     <form id="formUsuarios" runat="server">
     <div>
        <asp:Panel ID="gridPanel" runat="server">
@@ -79,5 +80,6 @@
 
     </div>
     </form>
+        </asp:Content>
 </body>
 </html>

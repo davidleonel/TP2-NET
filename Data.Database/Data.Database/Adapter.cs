@@ -11,7 +11,7 @@ namespace Data.Database
         //private SqlConnection sqlConnection = new SqlConnection("ConnectionString;");
         
         //Clave por defecto a utlizar para la cadena de conexion
-        const string consKeyDefaultCnnString = "ConnStringExpress";
+        const string consKeyDefaultCnnString = "ConnStringLocal";
 
         private SqlConnection _SqlConn;
 
@@ -24,7 +24,7 @@ namespace Data.Database
         {
             
             string temp = ConfigurationManager.ConnectionStrings[consKeyDefaultCnnString].ConnectionString;
-            SqlConnection SqlConn = new SqlConnection(temp);
+            SqlConn = new SqlConnection(temp);
             SqlConn.Open();
         }
 

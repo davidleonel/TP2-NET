@@ -1,16 +1,12 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="UI.Web.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="UI.Web.Default" MasterPageFile="~/Site.Master" %>
 
-<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Home</title>
-</head>
-<body>
+    <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
     <form id="form1" runat="server">
     <div>
     
     </div>
     </form>
-</body>
-</html>
+    </asp:Content>
+
+
