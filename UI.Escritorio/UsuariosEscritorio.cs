@@ -48,7 +48,7 @@ namespace UI.Escritorio
         }
 
 
-        // FALTA PASO 24
+        // FALTA PASO 24 //VER SI ESTOS ESTAN DE MAS
         //private void toolStripButton1_Click(object sender, EventArgs e)
         //{
         //    UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
