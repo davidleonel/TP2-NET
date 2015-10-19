@@ -15,12 +15,13 @@ namespace UI.Escritorio
     public partial class UsuariosEscritorio : Form
     {
        #region Constructor
-		public UsuariosEscritorio()
+        public UsuariosEscritorio()
         {
             InitializeComponent();
             this.dgvUsuarios.AutoGenerateColumns = false;
+        }
          
-	#endregion}
+	#endregion
 
        #region Metodos y eventos
 		 public void Listar()

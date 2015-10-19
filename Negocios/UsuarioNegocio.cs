@@ -10,18 +10,27 @@ namespace Negocios
 {
     public class UsuarioNegocio: Negocio
     {
+        #region Constructor
         public UsuarioNegocio()
         {
             //UsuarioNegocio UsuNeg = new UsuarioNegocio();
             this.UsuarioDatos = new UsuarioAdapter();
-        }
-        
+        } 
+        #endregion
+
+        #region Miembros
         private UsuarioAdapter _UsuarioDatos;
+        #endregion
+
+        #region Propiedades
         public UsuarioAdapter UsuarioDatos
         {
             get{return _UsuarioDatos;}
             set{_UsuarioDatos= value; }
         }
+        #endregion
+
+        #region Metodos
 
         public Usuario GetOne(int Id) 
         {
@@ -40,6 +49,7 @@ namespace Negocios
         public void Delete(int Id) 
         {
             UsuarioDatos.Delete(Id);
-        }   
+        }
+        #endregion
     }
 }
