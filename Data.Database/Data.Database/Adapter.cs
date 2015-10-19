@@ -11,18 +11,24 @@ namespace Data.Database
         //private SqlConnection sqlConnection = new SqlConnection("ConnectionString;");
         
         //Clave por defecto a utlizar para la cadena de conexion
+        #region Miembros
         const string consKeyDefaultCnnString = "ConnStringLocal";
 
-        private SqlConnection _SqlConn;
+        private SqlConnection _SqlConn; 
+        #endregion
 
+        #region Propiedades
         public SqlConnection SqlConn
         {
             get { return _SqlConn; }
             set { _SqlConn = value; }
-        }
+        } 
+        #endregion
+
+        #region Metodos
         protected void OpenConnection()
         {
-            
+
             string temp = ConfigurationManager.ConnectionStrings[consKeyDefaultCnnString].ConnectionString;
             SqlConn = new SqlConnection(temp);
             SqlConn.Open();
@@ -37,6 +43,7 @@ namespace Data.Database
         protected SqlDataReader ExecuteReader(String commandText)
         {
             throw new Exception("Metodo no implementado");
-        }
+        } 
+        #endregion
     }
 }

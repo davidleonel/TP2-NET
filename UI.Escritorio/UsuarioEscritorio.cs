@@ -15,18 +15,27 @@ namespace UI.Escritorio
 {
     public partial class UsuarioEscritorio : ApplicationForm
     {
-
+        #region Miembros
         private Usuario _UsuarioActual;
+        #endregion
+
+        #region Propiedades
 
         public Usuario UsuarioActual
         {
             get { return _UsuarioActual; }
             set { _UsuarioActual = value; }
         }
+        #endregion
+
+        #region Constructor
         public UsuarioEscritorio()
         {
             InitializeComponent();
         }
+        #endregion
+
+        #region Metodos y eventos
 
         public UsuarioEscritorio(ModoForm modo) : this() 
         {
@@ -175,5 +184,6 @@ namespace UI.Escritorio
         {
             this.Close();
         }
+        #endregion
     }
 }

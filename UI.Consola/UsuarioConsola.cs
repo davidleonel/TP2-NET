@@ -12,21 +12,27 @@ namespace UI.Consola
     public class UsuarioConsola
     {
 
+        #region Constructor
         public UsuarioConsola()
         {
             this.UsuarioNegocio = new UsuarioNegocio();
-        }
+        } 
+        #endregion
 
-
+        #region Miembros
         private UsuarioNegocio _UsuarioNegocio;
+        #endregion
+
+        #region Propiedades
 
         public UsuarioNegocio UsuarioNegocio
         {
             get { return _UsuarioNegocio; }
             set { _UsuarioNegocio = value; }
         }
+        #endregion
 
-
+        #region Metodos
         public void Menu()
         {
 
@@ -142,9 +148,6 @@ namespace UI.Consola
                 Console.WriteLine("Presione una tecla para continuar.");
                 Console.ReadKey();
             }
-
-
-
             
         }
 
@@ -190,9 +193,6 @@ namespace UI.Consola
                 Console.WriteLine("Presione una tecla para continuar.");
                 Console.ReadKey();
             }
-
-            
-
         }
 
 
@@ -220,8 +220,7 @@ namespace UI.Consola
                 Console.ReadKey();
             }
 
-
-
         }
+        #endregion 
     }
 }

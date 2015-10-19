@@ -59,8 +59,9 @@ namespace Data.Database
                 return _Usuarios;
             }
         }
-        #endregion
+        #endregion //Debe ser eliminada porque los datos ahora están en una BD
 
+        #region Metodos
         public List<Entidades.Usuario> GetAll()
         {
             List<Usuario> usuarios = new List<Usuario>();
@@ -281,5 +282,7 @@ namespace Data.Database
             }
             usuario.Estado = Entidad.Estados.NoModificado;
         }
+
+        #endregion
     }
 }
