@@ -1,0 +1,5 @@
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Utiles\bin\Debug\Utiles.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Utiles\bin\Debug\Utiles.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Utiles\obj\Debug\Utiles.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Utiles\obj\Debug\Utiles.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Utiles\obj\Debug\Utiles.pdb

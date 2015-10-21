@@ -1,0 +1,36 @@
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\obj\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\bin\Debug\Negocios.dll
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\bin\Debug\Data.Database.dll
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\bin\Debug\Entidades.dll
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\bin\Debug\Data.Database.pdb
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\obj\Debug\Negocios.dll
+C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\Negocios\obj\Debug\Negocios.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\obj\Debug\Negocios.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\Negocios\obj\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\obj\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\Negocios\obj\Debug\Negocios.pdb

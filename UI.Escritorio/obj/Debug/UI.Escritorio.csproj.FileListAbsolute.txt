@@ -1,0 +1,92 @@
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Desktop\NET\tp2-codigo\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.Form1.resources
+C:\Users\ara--_000\Desktop\NET\academia-tp2-net\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Desktop\NET\academia-tp2-net\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\NET\academia-tp2-net\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Desktop\New folder (2)\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Desktop\New folder (2)\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\New folder (2)\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Desktop\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Desktop\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+F:\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+F:\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe
+F:\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.pdb
+F:\tp2Academia\UI.Escritorio\bin\Debug\Entidades.dll
+F:\tp2Academia\UI.Escritorio\bin\Debug\Negocios.dll
+F:\tp2Academia\UI.Escritorio\bin\Debug\Data.Database.dll
+F:\tp2Academia\UI.Escritorio\bin\Debug\Entidades.pdb
+F:\tp2Academia\UI.Escritorio\bin\Debug\Negocios.pdb
+F:\tp2Academia\UI.Escritorio\bin\Debug\Data.Database.pdb
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.csprojResolveAssemblyReference.cache
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.ApplicationForm.resources
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.UsuarioEscritorio.resources
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
+F:\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.ApplicationForm.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.UsuarioEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.ApplicationForm.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.UsuarioEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\Trabajos Practicos\TP_2 - Integrador\tp2Academia 5\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\UI.Escritorio.exe
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ApplicationForm.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.UsuarioEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
