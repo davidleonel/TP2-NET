@@ -200,8 +200,7 @@ namespace Data.Database
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
                         "UPDATE usuarios SET nombre_usuario = @nombre_usuario, " +
-                        "clave = @clave, habilitado = @habilitado, nombre = @nombre " +
-                        "apellido = @apellido, email = @email" +
+                        "clave = @clave, habilitado = @habilitado, id_persona = @id_persona " +
                         "WHERE id_usuario = @id", SqlConn);
 
 
@@ -236,11 +235,11 @@ namespace Data.Database
 
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                    "insert into usuarios (nombre_usuario,clave,habilitado,nombre,apellido,email) " +
-                    "values(@nombre_usuario,@clave,@habilitado,@nombre,@apellido,@email) " +
+                    "insert into usuarios (nombre_usuario,clave,habilitado,id_persona) " +
+                    "values(@nombre_usuario,@clave,@habilitado,@id_persona) " +
                     "select @@identity", //esta linea es para recuperar el ID que asignó el sql automaticamente
                     SqlConn);
-                
+                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.Id;
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;

@@ -46,8 +46,7 @@ namespace UI.Escritorio
         MessageBoxIcon icono)
         {
             this.Notificar(this.Text, mensaje, botones, icono);
-        }
-
+        }
 
         
     }

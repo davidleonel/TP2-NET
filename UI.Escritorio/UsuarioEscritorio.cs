@@ -33,9 +33,9 @@ namespace UI.Escritorio
         {
             InitializeComponent();
         }
-        
+        #endregion
 
-       
+        #region Metodos y eventos
 
         public UsuarioEscritorio(ModoForm modo) : this() 
         {
@@ -48,16 +48,12 @@ namespace UI.Escritorio
             Modo = modo;
             UsuarioNegocio usr  = new UsuarioNegocio();
             UsuarioActual = usr.GetOne(ID);
-            this.MapearDeDatos();
+            MapearDeDatos();
 
         }
 
-        #endregion
 
-        #region Metodos y eventos
-        //MapearDeDatos trae los datos desde las entidades a los controles del formulario.
-
-        public override void MapearDeDatos() 
+        public virtual void MapearDeDatos() 
         {
             this.txtID.Text = this.UsuarioActual.Id.ToString();
             this.chkHabilitado.Checked = this.UsuarioActual.Habilitado;
@@ -85,9 +81,7 @@ namespace UI.Escritorio
             }        
 
         }
-
-        /* MapearADatos desde los controles del formulario a las entidades*/
-        public override void MapearADatos() 
+        public virtual void MapearADatos() 
         {
             if (Modo == ModoForm.Alta)
             {
@@ -130,16 +124,13 @@ namespace UI.Escritorio
                     break;
             }
         }
-
-        /*GuardarCambios es el método que se encargará de invocar al método correspondiente de la capa de negocio 
-         * según sea el ModoForm en que se encuentre el formulario*/
-        public override void GuardarCambios() 
+        public virtual void GuardarCambios() 
         {
-            this.MapearADatos();
+            MapearDeDatos();
             UsuarioNegocio usrNeg = new UsuarioNegocio();
             usrNeg.Save(UsuarioActual);
         }
-        public override bool Validar() 
+        public virtual bool Validar() 
         {
             Boolean bandera = true;
             if (string.IsNullOrEmpty(this.txtUsuario.Text) || string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||
@@ -164,9 +155,6 @@ namespace UI.Escritorio
             
             return bandera; 
         }
-        /*Notificar es el método que utilizaremos para unificar el mecanismo de avisos al usuario y en caso de tener 
-         * que modificar la forma en que se realizan los avisos al usuario sólo se debe modificar este método, en
-         * lugar de tener que reemplazarlo en toda la aplicación.*/
         public void Notificar(string titulo, string mensaje, MessageBoxButtons
         botones, MessageBoxIcon icono)
         {
