@@ -11,13 +11,11 @@ namespace Data.Database
         //private SqlConnection sqlConnection = new SqlConnection("ConnectionString;");
         
         //Clave por defecto a utlizar para la cadena de conexion
-        #region Miembros
         const string consKeyDefaultCnnString = "ConnStringLocal";
 
-        private SqlConnection _SqlConn; 
-        #endregion
 
         #region Propiedades
+        private SqlConnection _SqlConn;
         public SqlConnection SqlConn
         {
             get { return _SqlConn; }

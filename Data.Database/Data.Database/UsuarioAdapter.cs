@@ -5,6 +5,7 @@ using Entidades;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace Data.Database
 {
     public class UsuarioAdapter : Adapter
@@ -62,34 +63,22 @@ namespace Data.Database
         #endregion //Debe ser eliminada porque los datos ahora están en una BD
 
         #region Metodos
-        public List<Entidades.Usuario> GetAll()
+        public List<Usuario> GetAll()
         {
             List<Usuario> usuarios = new List<Usuario>();
             try
             {
-                //abrimos la conexion a la base de datos con el metodo que creamos antes
                 this.OpenConnection();
 
-                //creamos un objeto sqlcommand Que sera la sentencia SQL
-                //que vamos a ejecutar contra la base de datos 
-                //(los datos de la BD usuarios, contraseña, servidor, etc.
-                //estan en el connection string)
                 SqlCommand cmdUsuarios = new SqlCommand("select * from usuarios", SqlConn);
 
-                //creo objeto datareader que será el que recupera los objetos de la BD
                 SqlDataReader drUsuarios = cmdUsuarios.ExecuteReader();
 
-                //Read() lee una fila de las devueltas por el comando sql
-                //carga los datos en drUsuarios para poder accederlos
-                //devuelve verdadero mientras haya podido leer datos
-                //y avanza a la fila siguiente para el proximo read
                 while (drUsuarios.Read())
                 {
-                    //creamos un objeto usuarios de la capa de entidades para
-                    //copiar los datos de la fila del datareader al objeto de entidades
+
                     Usuario usr = new Usuario();
 
-                    //ahora copiamos los datos de la fila al objeto
                     usr.Id = (int)drUsuarios["id_usuario"];
                     usr.NombreUsuario = (string)drUsuarios["nombre_usuario"];
                     usr.Clave = (string)drUsuarios["clave"];
@@ -98,11 +87,9 @@ namespace Data.Database
                     usr.Apellido = (string)drUsuarios["apellido"];
                     usr.Email = (string)drUsuarios["email"];
 
-                    //agregamos el objeto con datos a la lista que devolveremos
                     usuarios.Add(usr);
                 }
 
-                //cerramos el datareader y la conexion a la BD
                 drUsuarios.Close();
 
             }
@@ -116,11 +103,11 @@ namespace Data.Database
             {
                 this.CloseConnection();
             }
-            //devolvemos el objeto
+
             return usuarios;
         }
 
-        public Entidades.Usuario GetOne(int ID)
+        public Usuario GetOne(int ID)
         {
             {
                 Usuario usr = new Usuario();
@@ -141,6 +128,8 @@ namespace Data.Database
                         usr.Nombre = (string)drUsuarios["nombre"];
                         usr.Apellido = (string)drUsuarios["apellido"];
                         usr.Email = (string)drUsuarios["email"];
+
+                        
                     }
 
                     drUsuarios.Close();
@@ -155,6 +144,7 @@ namespace Data.Database
                 finally
                 {
                     this.CloseConnection();
+                    
                 }
 
                 return usr;
@@ -166,15 +156,12 @@ namespace Data.Database
         {
             try
             {
-                //abrimos la conexion
                 this.OpenConnection();
 
-                //creamos la sentencia Sql y asignamos un valor al parametro
                 SqlCommand cmdDelete =
                     new SqlCommand("delete from usuarios where id_usuario=@id", SqlConn);
                 cmdDelete.Parameters.Add("@id", SqlDbType.Int).Value = ID;
 
-                //ejecutamos la sentencia sql
                 cmdDelete.ExecuteNonQuery();
             }
 
@@ -199,9 +186,8 @@ namespace Data.Database
                 this.OpenConnection();
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                        "UPDATE usuarios SET nombre_usuario = @nombre_usuario, " +
-                        "clave = @clave, habilitado = @habilitado, id_persona = @id_persona " +
-                        "WHERE id_usuario = @id", SqlConn);
+                     "UPDATE usuarios set nombre_usuario= @nombre_usuario, clave= @clave,"+
+                    "habilitado=@habilitado, nombre=@nombre, apellido=@apellido, email=@email WHERE id_usuario=@id", SqlConn);
 
 
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.Id;
@@ -235,20 +221,20 @@ namespace Data.Database
 
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                    "insert into usuarios (nombre_usuario,clave,habilitado,id_persona) " +
-                    "values(@nombre_usuario,@clave,@habilitado,@id_persona) " +
-                    "select @@identity", //esta linea es para recuperar el ID que asignó el sql automaticamente
-                    SqlConn);
-                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.Id;
+                    "insert into usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email)" +
+                    "values( @nombre_usuario,@clave,@habilitado,@nombre, @apellido, @email)" +
+                    " select @@identity AS id_usuario", SqlConn); //esta linea es para recuperar el ID que asignó el sql automaticamente
+
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
                 cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
                 cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
                 cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;
-                cmdSave.ExecuteNonQuery();
-
                 usuario.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
+                //cmdSave.ExecuteNonQuery();
+                /*PREGUNTAR: SI EXECUTEESCALAR ADEMAS DE DEVOLVER EL ID EJECUTA EL INSERT ALTA DUDA*/
+
 
             }
 
@@ -266,7 +252,7 @@ namespace Data.Database
 
         }
 
-        public void Save(Entidades.Usuario usuario)
+        public void Save(Usuario usuario)
         {
             if (usuario.Estado == Entidad.Estados.Eliminado)
             {

@@ -12,18 +12,8 @@ namespace UI.Consola
     public class UsuarioConsola
     {
 
-        #region Constructor
-        public UsuarioConsola()
-        {
-            this.UsuarioNegocio = new UsuarioNegocio();
-        } 
-        #endregion
-
-        #region Miembros
-        private UsuarioNegocio _UsuarioNegocio;
-        #endregion
-
         #region Propiedades
+        private UsuarioNegocio _UsuarioNegocio;
 
         public UsuarioNegocio UsuarioNegocio
         {
@@ -31,6 +21,14 @@ namespace UI.Consola
             set { _UsuarioNegocio = value; }
         }
         #endregion
+
+        #region Constructor
+        public UsuarioConsola()
+        {
+            this.UsuarioNegocio = new UsuarioNegocio();
+        } 
+        #endregion
+
 
         #region Metodos
         public void Menu()
@@ -64,13 +62,13 @@ namespace UI.Consola
                         this.Menu();
                         break;
                     }
-                /*case ConsoleKey.D3:
+                case ConsoleKey.D3:
                     {
                         this.Agregar();
                         Console.ReadKey();
                         this.Menu();
                         break;
-                    }*/
+                    }
                 case ConsoleKey.D4:
                     {
                         Modificar();
@@ -83,20 +81,13 @@ namespace UI.Consola
                         this.Menu();
                         break;
                     }
-                /*case ConsoleKey.D6:
-                    {
-                       
-                        break;
-                    }
-                    }
+               
                 default:
                     {
                         
                         break;
-                    }*/
+                    }
             }
-
-
 
         }
 
@@ -151,10 +142,28 @@ namespace UI.Consola
             
         }
 
-        /*public void Agregar()
+        public void Agregar() //ver las validaciones?
         {
+            Console.Clear();
+            Usuario usu = new Usuario();
+            Console.WriteLine("Nombre: ");
+            usu.Nombre = Console.ReadLine();
+            Console.WriteLine("Apellido: ");
+            usu.Apellido = Console.ReadLine();
+            Console.WriteLine("Nombre de Usuario: ");
+            usu.NombreUsuario = Console.ReadLine();
+            Console.WriteLine("Clave: ");
+            usu.Clave = Console.ReadLine();
+            Console.WriteLine("Email: ");
+            usu.Email = Console.ReadLine();
+            usu.Estado = Entidad.Estados.Nuevo;
+            Console.WriteLine("Habilitado? 1-SI / 2-NO ");
+            usu.Habilitado = (Console.ReadLine() == "1"); //no se que estado tiene un usuario cuando se le da el alta, capaz 1       
+            this.UsuarioNegocio.Save(usu);
+            Console.WriteLine();
+            Console.WriteLine("ID: {0}", usu.Id);
 
-        }*/
+        }
 
         public void Modificar()
         {

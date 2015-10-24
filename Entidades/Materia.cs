@@ -8,37 +8,30 @@ namespace Entidades
 {
     public class Materia:Entidad
     {
-        #region Miembros
-        private string _DescripcionMateria;
-        private int _HsSemanales;
-        private int _HsTotales;
-        private int _IdPlan;
-        #endregion
-
         #region Propiedades
 
-        
+        private string _DescripcionMateria;
         public string DescripcionMateria
         {
             get { return _DescripcionMateria; }
             set { _DescripcionMateria = value; }
         }
 
-        
+        private int _HsSemanales;
         public int HsSemanales
         {
             get { return _HsSemanales; }
             set { _HsSemanales = value; }
         }
 
-        
+        private int _HsTotales;
         public int HsTotales
         {
             get { return _HsTotales; }
             set { _HsTotales = value; }
         }
 
-        
+        private int _IdPlan;
         public int IdPlan
         {
             get { return _IdPlan; }

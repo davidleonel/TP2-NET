@@ -15,27 +15,21 @@ namespace UI.Escritorio
 {
     public partial class UsuarioEscritorio : ApplicationForm
     {
-        #region Miembros
-        private Usuario _UsuarioActual;
-        #endregion
-
         #region Propiedades
+        private Usuario _UsuarioActual;
 
         public Usuario UsuarioActual
         {
             get { return _UsuarioActual; }
             set { _UsuarioActual = value; }
         }
-        #endregion
+        #endregion //ver si no está de mas
 
-        #region Constructor
+        #region Constructores
         public UsuarioEscritorio()
         {
             InitializeComponent();
         }
-        #endregion
-
-        #region Metodos y eventos
 
         public UsuarioEscritorio(ModoForm modo) : this() 
         {
@@ -51,9 +45,10 @@ namespace UI.Escritorio
             MapearDeDatos();
 
         }
+        #endregion
 
-
-        public virtual void MapearDeDatos() 
+        #region Metodos y eventos
+        public override void MapearDeDatos() 
         {
             this.txtID.Text = this.UsuarioActual.Id.ToString();
             this.chkHabilitado.Checked = this.UsuarioActual.Habilitado;
@@ -81,12 +76,12 @@ namespace UI.Escritorio
             }        
 
         }
-        public virtual void MapearADatos() 
+        public override void MapearADatos() 
         {
-            if (Modo == ModoForm.Alta)
+            if (this.Modo == ModoForm.Alta)
             {
-                Usuario usuario  = new Usuario();
-                UsuarioActual = usuario;
+                
+                UsuarioActual = new Usuario();
 
                 this.UsuarioActual.Habilitado = this.chkHabilitado.Checked;
                 this.UsuarioActual.Nombre = this.txtNombre.Text;
@@ -124,13 +119,14 @@ namespace UI.Escritorio
                     break;
             }
         }
-        public virtual void GuardarCambios() 
+        public override void GuardarCambios() 
         {
-            MapearDeDatos();
+            this.MapearADatos();
             UsuarioNegocio usrNeg = new UsuarioNegocio();
             usrNeg.Save(UsuarioActual);
+            MessageBox.Show("Usuario Registrado guardarcambios." + UsuarioActual.Id + UsuarioActual.Nombre);
         }
-        public virtual bool Validar() 
+        public override bool Validar() 
         {
             Boolean bandera = true;
             if (string.IsNullOrEmpty(this.txtUsuario.Text) || string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||
@@ -155,27 +151,28 @@ namespace UI.Escritorio
             
             return bandera; 
         }
-        public void Notificar(string titulo, string mensaje, MessageBoxButtons
+        public override void Notificar(string titulo, string mensaje, MessageBoxButtons
         botones, MessageBoxIcon icono)
         {
             MessageBox.Show(mensaje, titulo, botones, icono);
         }
-        public void Notificar(string mensaje, MessageBoxButtons botones,
+        public override void Notificar(string mensaje, MessageBoxButtons botones,
         MessageBoxIcon icono)
         {
             this.Notificar(this.Text, mensaje, botones, icono);
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        /*private void label1_Click(object sender, EventArgs e)
         {
 
-        }
+        }*/
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if(this.Validar())
             {
                 this.GuardarCambios();
+                
                 this.Close();
             }
         }

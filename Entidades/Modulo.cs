@@ -8,11 +8,9 @@ namespace Entidades
 {
     public class Modulo:Entidad
     {
-        #region Miembros
-        private string _Descripcion;
-        #endregion
-
         #region Propiedades
+        private string _Descripcion;
+
         public string Descripcion
         {
             get { return _Descripcion; }

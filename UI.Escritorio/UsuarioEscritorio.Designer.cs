@@ -93,7 +93,7 @@
             this.lblID.Size = new System.Drawing.Size(21, 13);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID:";
-            this.lblID.Click += new System.EventHandler(this.label1_Click);
+            //this.lblID.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblNombre
             // 
@@ -193,6 +193,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtClave.Location = new System.Drawing.Point(110, 135);
             this.txtClave.Name = "txtClave";
+            this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(155, 20);
             this.txtClave.TabIndex = 11;
             // 
@@ -202,6 +203,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtConfirmarClave.Location = new System.Drawing.Point(378, 135);
             this.txtConfirmarClave.Name = "txtConfirmarClave";
+            this.txtConfirmarClave.PasswordChar = '*';
             this.txtConfirmarClave.Size = new System.Drawing.Size(157, 20);
             this.txtConfirmarClave.TabIndex = 12;
             // 

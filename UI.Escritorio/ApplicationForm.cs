@@ -37,16 +37,17 @@ namespace UI.Escritorio
         public virtual void MapearADatos() { }
         public virtual void GuardarCambios() { }
         public virtual bool Validar() { return false; }
-        public void Notificar(string titulo, string mensaje, MessageBoxButtons
+        public virtual void Notificar(string titulo, string mensaje, MessageBoxButtons
         botones, MessageBoxIcon icono)
         {
             MessageBox.Show(mensaje, titulo, botones, icono);
         }
-        public void Notificar(string mensaje, MessageBoxButtons botones,
+        public virtual void Notificar(string mensaje, MessageBoxButtons botones,
         MessageBoxIcon icono)
         {
             this.Notificar(this.Text, mensaje, botones, icono);
-        }
+        }
+
 
         
     }

@@ -100,16 +100,7 @@ namespace UI.Web
             this.nombreUsuarioTextBox.Text = this.Entity.NombreUsuario;
         }
 
-        protected void editarLinkButton_Click(object sender, EventArgs e)
-        {
-            if (this.isEntitySelected)
-            {
-                this.formPanel.Visible = true;
-                this.FormMode = FormModes.Modificacion;
-                this.LoadForm(this.SelectedID);
-                //this.EnableForm(true);
-            }
-        }
+     
 
         private void LoadEntity(Usuario usuario)
         {
@@ -146,7 +137,7 @@ namespace UI.Web
 
                 case FormModes.Alta:
                     this.Entity = new Usuario();
-                   this.LoadEntity(this.Entity);
+                    this.LoadEntity(this.Entity);
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();
                     break;
@@ -185,6 +176,16 @@ namespace UI.Web
         private void DeleteEntity(int id)
         {
             this.LogicUsuario.Delete(id);
+        }
+        protected void editarLinkButton_Click(object sender, EventArgs e)
+        {
+            if (this.isEntitySelected)
+            {
+                this.formPanel.Visible = true;
+                this.FormMode = FormModes.Modificacion;
+                this.LoadForm(this.SelectedID);
+                //this.EnableForm(true);
+            }
         }
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)

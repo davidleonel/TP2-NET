@@ -10,46 +10,47 @@ namespace Negocios
 {
     public class UsuarioNegocio: Negocio
     {
+        #region Propiedades
+        private UsuarioAdapter _UsuarioDatos;
+        public UsuarioAdapter UsuarioDatos
+        {
+            get { return _UsuarioDatos; }
+            set { _UsuarioDatos = value; }
+        }
+        #endregion
+     
         #region Constructor
         public UsuarioNegocio()
         {
-            //UsuarioNegocio UsuNeg = new UsuarioNegocio();
             this.UsuarioDatos = new UsuarioAdapter();
         } 
         #endregion
 
-        #region Miembros
-        private UsuarioAdapter _UsuarioDatos;
-        #endregion
-
-        #region Propiedades
-        public UsuarioAdapter UsuarioDatos
-        {
-            get{return _UsuarioDatos;}
-            set{_UsuarioDatos= value; }
-        }
-        #endregion
-
         #region Metodos
 
-        public Usuario GetOne(int Id) 
-        {
-            Usuario Usu = UsuarioDatos.GetOne(Id);
-            return Usu;
-        }
         public List<Usuario> GetAll() 
         {
             List<Usuario> ListaUsuarios = UsuarioDatos.GetAll();
             return ListaUsuarios;
         }
-        public void Save(Usuario Usu) 
+
+        public Usuario GetOne(int Id)
         {
-            UsuarioDatos.Save(Usu);
+            Usuario Usu = UsuarioDatos.GetOne(Id);
+            return Usu;
         }
-        public void Delete(int Id) 
+
+        public void Delete(int Id)
         {
             UsuarioDatos.Delete(Id);
         }
+        public void Save(Usuario Usu) 
+        {
+            UsuarioDatos.Save(Usu);
+
+
+        }
+
         #endregion
     }
 }

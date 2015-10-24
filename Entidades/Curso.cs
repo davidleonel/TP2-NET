@@ -8,35 +8,30 @@ namespace Entidades
 {
     public class Curso:Entidad
     {
-        #region Miembros
-        private int _IdMateria;
-        private int _IdComision;
-        private int _AnoCalendario;
-        private int _Cupo;
-        #endregion
-        
         #region Propiedades
+
+        private int _IdMateria;
         public int IdMateria
         {
             get { return _IdMateria; }
             set { _IdMateria = value; }
         }
 
-        
+        private int _IdComision;
         public int IdComision
         {
             get { return _IdComision; }
             set { _IdComision = value; }
         }
 
-        
+        private int _AnoCalendario;
         public int AnoCalendario
         {
             get { return _AnoCalendario; }
             set { _AnoCalendario = value; }
         }
 
-        
+        private int _Cupo;
         public int Cupo
         {
             get { return _Cupo; }

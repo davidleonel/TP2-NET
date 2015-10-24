@@ -6,7 +6,7 @@
     <div>
        <asp:Panel ID="gridPanel" runat="server">
         <asp:GridView ID="gridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
-            SelectedRowStyle-ForeColor="White" DataKeyNames="ID">
+            SelectedRowStyle-ForeColor="White" DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
                 <asp:BoundField HeaderText="Apellido" DataField="Apellido" />
@@ -18,10 +18,10 @@
         </asp:GridView>
     </asp:Panel>
 
-   <asp:Panel ID="gridActionsPanel" runat="server">
-        <asp:LinkButton ID="editarLinkButton" runat="server" >Editar</asp:LinkButton>
-        <asp:LinkButton ID="eliminarLinkButton" runat="server" >Eliminar</asp:LinkButton>
-        <asp:LinkButton ID="nuevoLinkButton" runat="server" >Nuevo</asp:LinkButton>
+    <asp:Panel ID="gridActionsPanel" runat="server">
+        <asp:LinkButton ID="editarLinkButton" runat="server" OnClick="editarLinkButton_Click">Editar</asp:LinkButton>
+        <asp:LinkButton ID="eliminarLinkButton" runat="server" OnClick="eliminarLinkButton_Click">Eliminar</asp:LinkButton>
+        <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click" >Nuevo</asp:LinkButton>
     </asp:Panel>
         
       <asp:Panel ID="formPanel" Visible="false" runat="server">
@@ -59,7 +59,7 @@
             ErrorMessage='La contraseña no puede estar vacía' EnableClientScript="true" SetFocusOnError="true"
             Text="*"></asp:RequiredFieldValidator>
         <br />
-        <asp:Label ID="repetirClaveLabel" runat="server" Text="Dirección: "></asp:Label>
+        <asp:Label ID="repetirClaveLabel" runat="server" Text="Repetir Clave: "></asp:Label>
         <asp:TextBox ID="repetirClaveTextBox" runat="server" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="repetirClaveTextBox"
             ErrorMessage='Las claves no coinciden' EnableClientScript="true" SetFocusOnError="true"
@@ -67,9 +67,11 @@
         <br />
     </asp:Panel>
 
+
+
         <asp:Panel ID="formActionsPanel" runat="server">
-            <asp:LinkButton ID="aceptarLinkButton" runat="server" >Aceptar</asp:LinkButton>
-            <asp:LinkButton ID="cancelarLinkButton" runat="server" >Cancelar</asp:LinkButton>
+            <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click" >Aceptar</asp:LinkButton>
+            <asp:LinkButton ID="cancelarLinkButton" runat="server">Cancelar</asp:LinkButton>
         </asp:Panel>
 
     </div>

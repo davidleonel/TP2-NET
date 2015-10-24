@@ -8,31 +8,30 @@ namespace Entidades
 {
     public class AlumnoInscripcion:Entidad
     {
-        #region Miembros
-        private int _IdAlumno;
-        private int _IdCurso;
-        private string _Condicion;
-        private int _Nota;
-        #endregion 
-        
         #region Propiedades
+
+        private int _IdAlumno;
         public int IdAlumno
         {
             get { return _IdAlumno; }
             set { _IdAlumno = value; }
         }
 
+        private int _IdCurso;
         public int IdCurso
         {
             get { return _IdCurso; }
             set { _IdCurso = value; }
         }
+
+        private string _Condicion;
         public string Condicion
         {
             get { return _Condicion; }
             set { _Condicion = value; }
         }
 
+        private int _Nota;
         public int Nota
         {
             get { return _Nota; }

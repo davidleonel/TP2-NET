@@ -8,51 +8,44 @@ namespace Entidades
 {
     public class ModuloUsuario:Entidad
     {
-        #region Miembros
-        private int _IdUsuario;
-        private int _IdModulo;
-        private bool _PermiteAlta;
-        private bool _PermiteBaja;
-        private bool _PermiteModificacion;
-        private bool _PermiteConsulta;
-        #endregion
-
         #region Propiedades
+
+        private int _IdUsuario;
         public int IdUsuario
         {
             get { return _IdUsuario; }
             set { _IdUsuario = value; }
         }
 
-        
+        private int _IdModulo;
         public int IdModulo
         {
             get { return _IdModulo; }
             set { _IdModulo = value; }
         }
 
-        
+        private bool _PermiteAlta;
         public bool PermiteAlta
         {
             get { return _PermiteAlta; }
             set { _PermiteAlta = value; }
         }
 
-       
+        private bool _PermiteBaja;
         public bool PermiteBaja
         {
             get { return _PermiteBaja; }
             set { _PermiteBaja = value; }
         }
 
-        
+        private bool _PermiteModificacion;
         public bool PermiteModificacion
         {
             get { return _PermiteModificacion; }
             set { _PermiteModificacion = value; }
         }
 
-        
+        private bool _PermiteConsulta;
         public bool PermiteConsulta
         {
             get { return _PermiteConsulta; }
