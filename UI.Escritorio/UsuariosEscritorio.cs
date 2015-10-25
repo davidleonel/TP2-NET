@@ -23,64 +23,67 @@ namespace UI.Escritorio
          
 	#endregion
 
-       #region Metodos y eventos
+       #region Metodos
 		 public void Listar()
         {
             UsuarioNegocio ul = new UsuarioNegocio();
             this.dgvUsuarios.DataSource = ul.GetAll();
         } 
+        #endregion 
 
-                private void UsuariosEscritorio_Load(object sender, EventArgs e)
-                {
-                    // TODO: This line of code loads data into the 'academiaDataSet.usuarios' table. You can move, or remove it, as needed.
-                    this.Listar();
-                }
+       #region Eventos
 
-                private void btnActualizar_Click(object sender, EventArgs e)
-                {
-                    this.Listar();
-                }
+         private void UsuariosEscritorio_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'academiaDataSet.usuarios' table. You can move, or remove it, as needed.
+            this.Listar();
+        }
 
-                private void btnSalir_Click(object sender, EventArgs e)
-                {
-                    this.Close();
-                }
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            this.Listar();
+        }
 
-                private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
-                {
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-                }
+        /*private void dgvUsuarios_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-                private void tsbEliminar_Click(object sender, EventArgs e)
-                {
-                    if (dgvUsuarios.SelectedRows.Count > 0)
-                    {
-                        int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
-                        UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Baja);
-                        usrEsc.ShowDialog();
-                        this.Listar();
-                    }
+        }*/
 
-                }
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvUsuarios.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
+                UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Baja);
+                usrEsc.ShowDialog();
+                this.Listar();
+            }
 
-                private void tsbNuevo_Click(object sender, EventArgs e)
-                {
-                    UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
-                    usrEsc.ShowDialog();
-                    this.Listar();
-                }
+        }
 
-                private void tsbEditar_Click(object sender, EventArgs e)
-                {
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
+            usrEsc.ShowDialog();
+            this.Listar();
+        }
 
-                     if ( dgvUsuarios.SelectedRows.Count > 0)
-                    {
-                        int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
-                        UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Modificacion);
-                        usrEsc.ShowDialog();
-                        this.Listar();
-                    }
-                }
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+
+                if ( dgvUsuarios.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
+                UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Modificacion);
+                usrEsc.ShowDialog();
+                this.Listar();
+            }
+        }
         #endregion 
     }
 }

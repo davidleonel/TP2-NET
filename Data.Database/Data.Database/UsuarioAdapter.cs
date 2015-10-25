@@ -178,7 +178,6 @@ namespace Data.Database
             }
         }
 
-
         protected void Update(Usuario usuario)
         {
             try

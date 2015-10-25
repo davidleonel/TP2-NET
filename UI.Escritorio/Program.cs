@@ -16,7 +16,7 @@ namespace UI.Escritorio
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UsuariosEscritorio());
+            Application.Run(new EspecialidadesEscritorio());
         }
     }
 }

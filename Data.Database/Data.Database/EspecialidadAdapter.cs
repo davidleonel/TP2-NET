@@ -9,13 +9,54 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    class EspecialidadAdapter: Adapter
+    public class EspecialidadAdapter: Adapter
     {
+        #region Metodos
+        public List<Especialidad> GetAll()
+        {
+            List<Especialidad> listEspecialidades = new List<Especialidad>();
+            try
+            {
+                this.OpenConnection();
+
+                SqlCommand cmdEspecialidades = new SqlCommand("select * from especialidades", SqlConn);
+
+                SqlDataReader drEspecialidades = cmdEspecialidades.ExecuteReader();
+
+                while (drEspecialidades.Read())
+                {
+
+                    Especialidad esp = new Especialidad();
+
+                    esp.Id = (int)drEspecialidades["id_especialidad"];
+                    esp.DescripcionEspecialidad = (string)drEspecialidades["desc_especialidad"];
+
+                    listEspecialidades.Add(esp);
+                }
+
+                drEspecialidades.Close();
+
+            }
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                new Exception("Error al recuperar lista de usuarios", Ex);
+                throw ExcepcionManejada;
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+
+            return listEspecialidades;
+        }
+
+
         public void Save(Especialidad esp)
         {
             if (esp.Estado == Entidad.Estados.Eliminado)
             {
-               // this.Delete(esp.Id);
+                // this.Delete(esp.Id);
             }
             else if (esp.Estado == Entidad.Estados.Nuevo)
             {
@@ -23,7 +64,7 @@ namespace Data.Database
             }
             else if (esp.Estado == Entidad.Estados.Modificado)
             {
-               // this.Update(esp);
+                // this.Update(esp);
             }
             esp.Estado = Entidad.Estados.NoModificado;
         }
@@ -58,11 +99,12 @@ namespace Data.Database
             finally
             {
                 this.CloseConnection();
-                
+
             }
 
         }
-
+        
+        #endregion
 
     }
 }

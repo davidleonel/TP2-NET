@@ -8,22 +8,40 @@ using Data.Database;
 
 namespace Negocios
 {
-    class EspecialidadNegocio
+    public class EspecialidadNegocio: Negocio
     {
+        #region Propiedades
         private EspecialidadAdapter _EspecialidadDatos;
 
         public EspecialidadAdapter EspecialidadDatos
         {
             get { return _EspecialidadDatos; }
             set { _EspecialidadDatos = value; }
+        } 
+        #endregion
+
+        #region Constructor
+        public EspecialidadNegocio()
+        {
+            this.EspecialidadDatos = new EspecialidadAdapter();
+
+        } 
+        #endregion
+
+        #region Metodos
+        public List<Especialidad> GetAll()
+        {
+            List<Especialidad> listEspecialidades = EspecialidadDatos.GetAll();
+            return listEspecialidades;
+
         }
 
-        
 
         public void Save(Especialidad Esp)
         {
             EspecialidadDatos.Save(Esp);
 
-        }
+        } 
+        #endregion
     }
 }

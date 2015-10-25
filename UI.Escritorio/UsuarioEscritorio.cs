@@ -47,7 +47,7 @@ namespace UI.Escritorio
         }
         #endregion
 
-        #region Metodos y eventos
+        #region Metodos
         public override void MapearDeDatos() 
         {
             this.txtID.Text = this.UsuarioActual.Id.ToString();
@@ -124,7 +124,7 @@ namespace UI.Escritorio
             this.MapearADatos();
             UsuarioNegocio usrNeg = new UsuarioNegocio();
             usrNeg.Save(UsuarioActual);
-            MessageBox.Show("Usuario Registrado guardarcambios." + UsuarioActual.Id + UsuarioActual.Nombre);
+            
         }
         public override bool Validar() 
         {
@@ -161,12 +161,9 @@ namespace UI.Escritorio
         {
             this.Notificar(this.Text, mensaje, botones, icono);
         }
+        #endregion
 
-        /*private void label1_Click(object sender, EventArgs e)
-        {
-
-        }*/
-
+        #region Eventos
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if(this.Validar())
