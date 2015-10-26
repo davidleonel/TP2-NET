@@ -24,11 +24,11 @@ namespace Entidades
             set { _IdComision = value; }
         }
 
-        private int _AnoCalendario;
-        public int AnoCalendario
+        private int _AnioCalendario;
+        public int AnioCalendario
         {
-            get { return _AnoCalendario; }
-            set { _AnoCalendario = value; }
+            get { return _AnioCalendario; }
+            set { _AnioCalendario = value; }
         }
 
         private int _Cupo;

@@ -108,3 +108,6 @@ C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\U
 C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
 C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
 C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadesEscritorio.resources
+G:\ultima version github\Nueva carpeta\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+G:\ultima version github\Nueva carpeta\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+G:\ultima version github\Nueva carpeta\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
