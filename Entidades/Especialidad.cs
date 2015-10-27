@@ -9,6 +9,7 @@ namespace Entidades
     public class Especialidad:Entidad
     {
         #region Propiedades
+   
         private string _DescripcionEspecialidad;
 
         public string DescripcionEspecialidad
