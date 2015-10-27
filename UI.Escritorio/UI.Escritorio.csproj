@@ -70,6 +70,18 @@
     <Compile Include="ApplicationForm.Designer.cs">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ComisionesEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComisionesEscritorio.Designer.cs">
+      <DependentUpon>ComisionesEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComisionEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComisionEscritorio.Designer.cs">
+      <DependentUpon>ComisionEscritorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="EspecialidadEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +122,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="ApplicationForm.resx">
       <DependentUpon>ApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComisionesEscritorio.resx">
+      <DependentUpon>ComisionesEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComisionEscritorio.resx">
+      <DependentUpon>ComisionEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EspecialidadEscritorio.resx">
       <DependentUpon>EspecialidadEscritorio.cs</DependentUpon>

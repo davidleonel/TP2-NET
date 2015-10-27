@@ -17,11 +17,11 @@ namespace Entidades
             set { _DescripcionComision = value; }
         }
 
-        private int _AnoEspecialidad;
-        public int AnoEspecialidad
+        private int _AnioEspecialidad;
+        public int AnioEspecialidad
         {
-            get { return _AnoEspecialidad; }
-            set { _AnoEspecialidad = value; }
+            get { return _AnioEspecialidad; }
+            set { _AnioEspecialidad = value; }
         }
 
         private int _IdPlan;

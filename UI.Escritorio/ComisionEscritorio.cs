@@ -13,35 +13,35 @@ using Entidades;
 
 namespace UI.Escritorio
 {
-    public partial class CursoEscritorio : ApplicationForm
+    public partial class ComisionEscritorio : ApplicationForm
     {
         #region Propiedades
-        private Curso _CursoActual;
+        private Comision _ComisionActual;
 
-        public Curso CursoActual
+        public Comision ComisionActual
         {
-            get { return _CursoActual; }
-            set { _CursoActual = value; }
+            get { return _ComisionActual; }
+            set { _ComisionActual = value; }
         }
         #endregion //ver si no está de mas
 
         #region Constructores
-        public CursoEscritorio()
+        public ComisionEscritorio()
         {
             InitializeComponent();
         }
 
-        public CursoEscritorio(ModoForm modo) : this() 
+        public ComisionEscritorio(ModoForm modo) : this() 
         {
             Modo = modo;   
 
         }
 
-        public CursoEscritorio(int ID, ModoForm modo):this()
+        public ComisionEscritorio(int ID, ModoForm modo):this()
         {
             Modo = modo;
-            CursoNegocio cur  = new CursoNegocio();
-            CursoActual = cur.GetOne(ID);
+            ComisionNegocio com  = new ComisionNegocio();
+            ComisionActual = com.GetOne(ID);
             MapearDeDatos();
 
         }
@@ -50,11 +50,11 @@ namespace UI.Escritorio
         #region Metodos
         public override void MapearDeDatos() 
         {
-            this.txtIdCurso.Text = this.CursoActual.Id.ToString();
-            this.txtIdMateria.Text = this.CursoActual.IdMateria.ToString(); ;
-            this.txtAnioCalendario.Text = this.CursoActual.AnioCalendario.ToString();
-            this.txtCupo.Text = this.CursoActual.Cupo.ToString();
-            this.txtIdComision.Text = this.CursoActual.IdComision.ToString();
+
+            this.txtIDCom.Text = this.ComisionActual.Id.ToString();
+            this.txtDescCom.Text = this.ComisionActual.DescripcionComision.ToString();
+            this.txtAnioEsp.Text = this.ComisionActual.AnioEspecialidad.ToString();
+            this.txtIdPlan.Text = this.ComisionActual.IdPlan.ToString();
 
 
 
@@ -79,51 +79,49 @@ namespace UI.Escritorio
             if (this.Modo == ModoForm.Alta)
             {
                 
-                CursoActual = new Curso();
+                ComisionActual = new Comision();
 
-                this.CursoActual.IdMateria = Convert.ToInt32(this.txtIdMateria.Text);
-                this.CursoActual.IdComision = Convert.ToInt32(this.txtIdComision.Text);
-                this.CursoActual.AnioCalendario = Convert.ToInt32(this.txtAnioCalendario.Text);
-                this.CursoActual.Cupo = Convert.ToInt32(this.txtCupo.Text);
+                this.ComisionActual.DescripcionComision =this.txtDescCom.Text;
+                this.ComisionActual.AnioEspecialidad = Convert.ToInt32(this.txtAnioEsp.Text);
+                this.ComisionActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
+
 
             }
             else if (Modo == ModoForm.Modificacion)
             {
-                this.CursoActual.Id = Convert.ToInt32(this.txtIdCurso.Text);
-                this.CursoActual.IdMateria = Convert.ToInt32(this.txtIdMateria.Text);
-                this.CursoActual.IdComision = Convert.ToInt32(this.txtIdComision.Text);
-                this.CursoActual.AnioCalendario = Convert.ToInt32(this.txtAnioCalendario.Text);
-                this.CursoActual.Cupo = Convert.ToInt32(this.txtCupo.Text);
+                this.ComisionActual.Id = Convert.ToInt32(this.txtAnioEsp.Text);
+                this.ComisionActual.DescripcionComision = this.txtDescCom.Text;
+                this.ComisionActual.AnioEspecialidad = Convert.ToInt32(this.txtAnioEsp.Text);
+                this.ComisionActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
             }
 
             switch (Modo)
             {
                 case ModoForm.Alta:
-                    CursoActual.Estado = Entidad.Estados.Nuevo;
+                    ComisionActual.Estado = Entidad.Estados.Nuevo;
                     break;
                 case ModoForm.Baja:
-                    CursoActual.Estado = Entidad.Estados.Eliminado;
+                    ComisionActual.Estado = Entidad.Estados.Eliminado;
                     break;
                 case ModoForm.Consulta:
-                    CursoActual.Estado = Entidad.Estados.NoModificado;
+                    ComisionActual.Estado = Entidad.Estados.NoModificado;
                     break;
                 case ModoForm.Modificacion:
-                    CursoActual.Estado = Entidad.Estados.Modificado;
+                    ComisionActual.Estado = Entidad.Estados.Modificado;
                     break;
             }
         }
         public override void GuardarCambios() 
         {
             this.MapearADatos();
-            CursoNegocio curNeg = new CursoNegocio();
-            curNeg.Save(CursoActual);
+            ComisionNegocio comNeg = new ComisionNegocio();
+            comNeg.Save(ComisionActual);
             
         }
         public override bool Validar() 
         {
             Boolean bandera = true;
-            if (string.IsNullOrEmpty(this.txtIdMateria.Text) || string.IsNullOrEmpty(this.txtIdComision.Text) || string.IsNullOrEmpty(this.txtAnioCalendario.Text) ||
-                string.IsNullOrEmpty(this.txtCupo.Text)  )
+            if (string.IsNullOrEmpty(this.txtDescCom.Text) || string.IsNullOrEmpty(this.txtAnioEsp.Text) || string.IsNullOrEmpty(this.txtIdPlan.Text))
             {
                 Notificar("Campos vacíos", "No puede haber campos sin contenido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bandera = false;

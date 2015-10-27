@@ -104,7 +104,7 @@ namespace Data.Database
 
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                    "insert into cursos(id_materia,id_comision,anio?calendario,cupo)" +
+                    "insert into cursos(id_materia,id_comision,anio_calendario,cupo)" +
                     "values( @id_materia,@id_comision,@anio_calendario,@cupo)" +
                     " select @@identity AS id_curso", SqlConn); //esta linea es para recuperar el ID que asignó el sql automaticamente
 

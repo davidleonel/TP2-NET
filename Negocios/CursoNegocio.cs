@@ -18,6 +18,13 @@ namespace Negocios
             set { _CursoDatos = value; }
         }
         
+        #region Constructor
+        public CursoNegocio()
+        {
+            this.CursoDatos = new CursoAdapter();
+        } 
+        #endregion
+
         public void Save(Curso Cur)
         {
             CursoDatos.Save(Cur);
@@ -25,8 +32,8 @@ namespace Negocios
         }
         public List<Curso> GetAll()
         {
-            List<Curso> ListaUsuarios = CursoDatos.GetAll();
-            return ListaUsuarios;
+            List<Curso> ListaCursos = CursoDatos.GetAll();
+            return ListaCursos;
         }
 
         public Curso GetOne(int Id)
