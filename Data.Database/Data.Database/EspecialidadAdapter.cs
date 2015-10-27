@@ -9,7 +9,7 @@ using System.Data.SqlClient;
 
 namespace Data.Database
 {
-    public class EspecialidadAdapter: Adapter
+    public class EspecialidadAdapter : Adapter
     {
         #region Metodos
         public List<Especialidad> GetAll()
@@ -51,12 +51,49 @@ namespace Data.Database
             return listEspecialidades;
         }
 
+        public Especialidad GetOne(int ID)
+        {
+
+            Especialidad esp = new Especialidad();
+            try
+            {
+
+                this.OpenConnection();
+                SqlCommand cmdEspecialidades = new SqlCommand("select * from especialidades where id_especialidad = @id", SqlConn);
+                cmdEspecialidades.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+                SqlDataReader drEspecialidades = cmdEspecialidades.ExecuteReader();
+                if (drEspecialidades.Read())
+                {
+
+                    esp.Id = (int)drEspecialidades["id_especialidad"];
+                    esp.DescripcionEspecialidad = (string)drEspecialidades["desc_especialidad"];
+
+                }
+
+                drEspecialidades.Close();
+
+            }
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                new Exception("Error al recuperar lista de usuarios", Ex);
+                throw ExcepcionManejada;
+            }
+            finally
+            {
+                this.CloseConnection();
+
+            }
+
+            return esp;
+        }
+
 
         public void Save(Especialidad esp)
         {
             if (esp.Estado == Entidad.Estados.Eliminado)
             {
-                // this.Delete(esp.Id);
+                this.Delete(esp.Id);
             }
             else if (esp.Estado == Entidad.Estados.Nuevo)
             {
@@ -64,7 +101,7 @@ namespace Data.Database
             }
             else if (esp.Estado == Entidad.Estados.Modificado)
             {
-                // this.Update(esp);
+                this.Update(esp);
             }
             esp.Estado = Entidad.Estados.NoModificado;
         }
@@ -77,7 +114,7 @@ namespace Data.Database
 
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                    "insert into especialidad(desc_especialidad) values( @desc_especialidad)" +
+                    "insert into especialidades(desc_especialidad) values( @desc_especialidad)" +
                     " select @@identity AS id_especialidad", SqlConn);
 
                 cmdSave.Parameters.Add("@desc_especialidad", SqlDbType.VarChar, 50).Value = esp.DescripcionEspecialidad;
@@ -103,8 +140,62 @@ namespace Data.Database
             }
 
         }
-        
-        #endregion
 
+        protected void Update(Especialidad esp)
+        {
+            try
+            {
+                this.OpenConnection();
+                SqlCommand cmdSave;
+                cmdSave = new SqlCommand(
+                     "UPDATE especialidades set desc_especialidad= @desc_especialidad WHERE id_especialidad=@id", SqlConn);
+
+
+                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = esp.Id;
+                cmdSave.Parameters.Add("@desc_especialidad", SqlDbType.VarChar, 50).Value = esp.DescripcionEspecialidad;
+                cmdSave.ExecuteNonQuery();
+            }
+
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                    new Exception("Error al modificar datos del usuario", Ex);
+                throw ExcepcionManejada;
+            }
+
+            finally
+            {
+                this.CloseConnection();
+            }
+        }
+
+        public void Delete(int ID)
+        {
+            try
+            {
+                this.OpenConnection();
+
+                SqlCommand cmdDelete =
+                    new SqlCommand("delete from especialidades where id_especialidad=@id", SqlConn);
+                cmdDelete.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+
+                cmdDelete.ExecuteNonQuery();
+            }
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                    new Exception("Error al eliminar el usuario", Ex);
+                throw ExcepcionManejada;
+            }
+
+            finally
+            {
+                this.CloseConnection();
+            }
+        }
+
+
+        #endregion
     }
+
 }

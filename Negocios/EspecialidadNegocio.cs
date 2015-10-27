@@ -36,7 +36,16 @@ namespace Negocios
 
         }
 
+        public Especialidad GetOne(int Id)
+        {
+            Especialidad esp = EspecialidadDatos.GetOne(Id);
+            return esp;
+        }
 
+        public void Delete(int Id)
+        {
+            EspecialidadDatos.Delete(Id);
+        }
         public void Save(Especialidad Esp)
         {
             EspecialidadDatos.Save(Esp);

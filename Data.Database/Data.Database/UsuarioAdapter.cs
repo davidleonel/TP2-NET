@@ -109,7 +109,7 @@ namespace Data.Database
 
         public Usuario GetOne(int ID)
         {
-            {
+            
                 Usuario usr = new Usuario();
                 try
                 {
@@ -149,8 +149,6 @@ namespace Data.Database
 
                 return usr;
             }
-
-        }
 
         public void Delete(int ID)
         {

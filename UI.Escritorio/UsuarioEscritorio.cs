@@ -23,7 +23,7 @@ namespace UI.Escritorio
             get { return _UsuarioActual; }
             set { _UsuarioActual = value; }
         }
-        #endregion //ver si no está de mas
+        #endregion 
 
         #region Constructores
         public UsuarioEscritorio()

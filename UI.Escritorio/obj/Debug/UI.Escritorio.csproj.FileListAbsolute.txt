@@ -111,3 +111,6 @@ C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\U
 G:\ultima version github\Nueva carpeta\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
 G:\ultima version github\Nueva carpeta\UI.Escritorio\obj\Debug\UI.Escritorio.exe
 G:\ultima version github\Nueva carpeta\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadEscritorio_.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.CursoEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.CursosEscritorio.resources

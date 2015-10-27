@@ -34,10 +34,11 @@ namespace UI.Escritorio
         #endregion
 
         #region Eventos
-        private void Especialidades_Load(object sender, EventArgs e)
+        private void EspecialidadesEscritorio_Load(object sender, EventArgs e)
         {
             this.Listar();
         }
+
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             this.Listar();
@@ -47,11 +48,44 @@ namespace UI.Escritorio
         {
             this.Close();
         }
-        #endregion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+            EspecialidadEscritorio_ espEsc = new EspecialidadEscritorio_(ApplicationForm.ModoForm.Alta);
+            espEsc.ShowDialog();
+            this.Listar();
+        }
+
+        private void btnEditar_CLick(object sender, EventArgs e)
+        {
+            if (dgvEspecialidades.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Especialidad)this.dgvEspecialidades.SelectedRows[0].DataBoundItem).Id;
+                EspecialidadEscritorio_ EspEsc = new EspecialidadEscritorio_(ID, ApplicationForm.ModoForm.Modificacion);
+                EspEsc.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una especialidad si desea editar");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvEspecialidades.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Especialidad)this.dgvEspecialidades.SelectedRows[0].DataBoundItem).Id;
+                EspecialidadEscritorio_ EspEsc = new EspecialidadEscritorio_(ID, ApplicationForm.ModoForm.Baja);
+                EspEsc.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una especialidad si desea eliminar");
+            }
 
         }
+        #endregion 
     }
 }

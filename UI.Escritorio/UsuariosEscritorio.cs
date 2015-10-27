@@ -18,7 +18,7 @@ namespace UI.Escritorio
         public UsuariosEscritorio()
         {
             InitializeComponent();
-            this.dgvCursos.AutoGenerateColumns = false;
+            this.dgvUsuarios.AutoGenerateColumns = false;
         }
          
 	#endregion
@@ -27,7 +27,7 @@ namespace UI.Escritorio
 		 public void Listar()
         {
             UsuarioNegocio ul = new UsuarioNegocio();
-            this.dgvCursos.DataSource = ul.GetAll();
+            this.dgvUsuarios.DataSource = ul.GetAll();
         } 
         #endregion 
 
@@ -56,9 +56,9 @@ namespace UI.Escritorio
 
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
-            if (dgvCursos.SelectedRows.Count > 0)
+            if (dgvUsuarios.SelectedRows.Count > 0)
             {
-                int ID = ((Entidades.Usuario)this.dgvCursos.SelectedRows[0].DataBoundItem).Id;
+                int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
                 UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Baja);
                 usrEsc.ShowDialog();
                 this.Listar();
@@ -76,9 +76,9 @@ namespace UI.Escritorio
         private void tsbEditar_Click(object sender, EventArgs e)
         {
 
-                if ( dgvCursos.SelectedRows.Count > 0)
+            if (dgvUsuarios.SelectedRows.Count > 0)
             {
-                int ID = ((Entidades.Usuario)this.dgvCursos.SelectedRows[0].DataBoundItem).Id;
+                int ID = ((Entidades.Usuario)this.dgvUsuarios.SelectedRows[0].DataBoundItem).Id;
                 UsuarioEscritorio usrEsc = new UsuarioEscritorio(ID, ApplicationForm.ModoForm.Modificacion);
                 usrEsc.ShowDialog();
                 this.Listar();
