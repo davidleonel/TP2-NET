@@ -42,6 +42,10 @@ namespace UI.Escritorio
             this.Modo = modo;
             PlanNegocio pn = new PlanNegocio();
             PlanActual = pn.GetOne(ID);
+            if (Modo == ModoForm.Modificacion)
+            {
+                this.cargarCbEspecialidades();
+            }
             this.MapearDeDatos();
         } 
 
@@ -67,7 +71,7 @@ namespace UI.Escritorio
         {
             this.txtIdPlan.Text = this.PlanActual.Id.ToString();
             this.txtDescripcionPlan.Text = this.PlanActual.DescripcionPlan;
-            this.cbEspecialidades.Text = this.PlanActual.IdEspecialidad.ToString();
+
 
             switch (Modo)
             {
@@ -76,6 +80,7 @@ namespace UI.Escritorio
                     this.btnAceptar.Text = "Guardar";
                     break;
                 case ModoForm.Baja:
+                    this.cbEspecialidades.Text = this.PlanActual.IdEspecialidad.ToString();
                     this.btnAceptar.Text = "Eliminar";
                     break;
                 case ModoForm.Consulta:

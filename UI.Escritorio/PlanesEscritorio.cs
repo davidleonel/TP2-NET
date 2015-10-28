@@ -59,6 +59,17 @@ namespace UI.Escritorio
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
+            if (dgvPlanes.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Plan)this.dgvPlanes.SelectedRows[0].DataBoundItem).Id;
+                PlanEscritorio planEsc = new PlanEscritorio(ID, ApplicationForm.ModoForm.Modificacion);
+                planEsc.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un plan para elimnar");
+            }
 
         }
 

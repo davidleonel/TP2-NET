@@ -87,7 +87,68 @@ namespace Data.Database
 
             return plan;
         }
+        protected void Insert(Plan plan)
+        {
+            try
+            {
+                this.OpenConnection();
 
+                SqlCommand cmdSave;
+                cmdSave = new SqlCommand(
+                    "insert into planes(desc_plan,id_especialidad) values( @desc_plan,@id_especialidad)" +
+                    " select @@identity AS id_plan", SqlConn);
+
+                cmdSave.Parameters.Add("@desc_plan", SqlDbType.VarChar, 50).Value = plan.DescripcionPlan;
+                cmdSave.Parameters.Add("@id_especialidad", SqlDbType.Int).Value = plan.IdEspecialidad;
+
+                plan.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
+
+
+            }
+
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                    new Exception("Error al crear datos del plan", Ex);
+                throw ExcepcionManejada;
+            }
+
+            finally
+            {
+                this.CloseConnection();
+            }
+
+        }
+
+        protected void Update(Plan plan)
+        {
+            try
+            {
+                this.OpenConnection();
+                SqlCommand cmdSave;
+                cmdSave = new SqlCommand(
+                     "UPDATE planes SET desc_plan = @desc_plan, " +
+                    "id_especialidad = @id_especialidad WHERE id_plan = @id", SqlConn);
+
+                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = plan.Id;
+                cmdSave.Parameters.Add("@desc_plan", SqlDbType.VarChar, 50).Value = plan.DescripcionPlan;
+                cmdSave.Parameters.Add("@id_especialidad", SqlDbType.Int).Value = plan.IdEspecialidad;
+    
+                cmdSave.ExecuteNonQuery();
+            }
+
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                    new Exception("Error al modificar datos del plan", Ex);
+                throw ExcepcionManejada;
+            }
+
+            finally
+            {
+                this.CloseConnection();
+            }
+        }
         public void Delete(int ID)
         {
             try
@@ -126,42 +187,11 @@ namespace Data.Database
             }
             else if (plan.Estado == Entidad.Estados.Modificado)
             {
-               // this.Update(usuario);
+               this.Update(plan);
             }
             plan.Estado = Entidad.Estados.NoModificado;
         }
 
-        protected void Insert(Plan plan)
-        {
-            try
-            {
-                this.OpenConnection();
 
-                SqlCommand cmdSave;
-                cmdSave = new SqlCommand(
-                    "insert into planes(desc_plan,id_especialidad) values( @desc_plan,@id_especialidad)" +
-                    " select @@identity AS id_plan", SqlConn);
-
-                cmdSave.Parameters.Add("@desc_plan", SqlDbType.VarChar, 50).Value = plan.DescripcionPlan;
-                cmdSave.Parameters.Add("@id_especialidad", SqlDbType.Int).Value = plan.IdEspecialidad;
-                
-                plan.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
-
-
-            }
-
-            catch (Exception Ex)
-            {
-                Exception ExcepcionManejada =
-                    new Exception("Error al crear datos del plan", Ex);
-                throw ExcepcionManejada;
-            }
-
-            finally
-            {
-                this.CloseConnection();
-            }
-
-        }
     }
 }
