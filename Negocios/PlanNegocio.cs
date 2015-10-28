@@ -34,6 +34,23 @@ namespace Negocios
             listaPlanes = PlanDatos.GetAll();
             return listaPlanes;
         }
+
+        public Plan GetOne(int ID) 
+        {
+            Plan p = new Plan();
+            p = PlanDatos.GetOne(ID);
+            return p;
+        }
+
+        public void Delete(int Id)
+        {
+            PlanDatos.Delete(Id);
+        }
+
+        public void Save(Plan plan) 
+        {
+            PlanDatos.Save(plan);
+        }
         #endregion 
     }
 }

@@ -40,7 +40,7 @@ namespace Data.Database
             catch (Exception Ex)
             {
                 Exception ExcepcionManejada =
-                new Exception("Error al recuperar lista de usuarios", Ex);
+                new Exception("Error al recuperar lista de especialidades", Ex);
                 throw ExcepcionManejada;
             }
             finally
@@ -76,7 +76,7 @@ namespace Data.Database
             catch (Exception Ex)
             {
                 Exception ExcepcionManejada =
-                new Exception("Error al recuperar lista de usuarios", Ex);
+                new Exception("Error al recuperar una especialidad", Ex);
                 throw ExcepcionManejada;
             }
             finally
@@ -129,7 +129,7 @@ namespace Data.Database
             catch (Exception Ex)
             {
                 Exception ExcepcionManejada =
-                    new Exception("Error al crear datos del usuario", Ex);
+                    new Exception("Error al crear datos de la especialidad", Ex);
                 throw ExcepcionManejada;
             }
 
@@ -159,7 +159,7 @@ namespace Data.Database
             catch (Exception Ex)
             {
                 Exception ExcepcionManejada =
-                    new Exception("Error al modificar datos del usuario", Ex);
+                    new Exception("Error al modificar datos de la especialidad", Ex);
                 throw ExcepcionManejada;
             }
 
@@ -184,7 +184,7 @@ namespace Data.Database
             catch (Exception Ex)
             {
                 Exception ExcepcionManejada =
-                    new Exception("Error al eliminar el usuario", Ex);
+                    new Exception("Error al eliminar la especialidad", Ex);
                 throw ExcepcionManejada;
             }
 

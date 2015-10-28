@@ -32,7 +32,6 @@ namespace UI.Escritorio
         }
         #endregion 
 
-
         #region Eventos
         private void Planes_Load(object sender, EventArgs e)
         {
@@ -49,7 +48,15 @@ namespace UI.Escritorio
             this.Close();
         }
 
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            PlanEscritorio planEsc = new PlanEscritorio(ApplicationForm.ModoForm.Alta);
+            planEsc.ShowDialog();
+            this.Listar();
+        }
+
         #endregion
+
 
 
 
