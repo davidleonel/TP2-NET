@@ -67,6 +67,7 @@ namespace UI.Escritorio
         {
             this.txtIdPlan.Text = this.PlanActual.Id.ToString();
             this.txtDescripcionPlan.Text = this.PlanActual.DescripcionPlan;
+            this.cbEspecialidades.Text = this.PlanActual.IdEspecialidad.ToString();
 
             switch (Modo)
             {
