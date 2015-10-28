@@ -14,7 +14,7 @@ namespace Data.Database
         #region Metodos
         public List<Especialidad> GetAll()
         {
-            List<Especialidad> listEspecialidades = new List<Especialidad>();
+            List<Especialidad> especialidades = new List<Especialidad>();
             try
             {
                 this.OpenConnection();
@@ -31,7 +31,7 @@ namespace Data.Database
                     esp.Id = (int)drEspecialidades["id_especialidad"];
                     esp.DescripcionEspecialidad = (string)drEspecialidades["desc_especialidad"];
 
-                    listEspecialidades.Add(esp);
+                    especialidades.Add(esp);
                 }
 
                 drEspecialidades.Close();
@@ -48,7 +48,7 @@ namespace Data.Database
                 this.CloseConnection();
             }
 
-            return listEspecialidades;
+            return especialidades;
         }
 
         public Especialidad GetOne(int ID)

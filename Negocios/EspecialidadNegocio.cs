@@ -31,8 +31,8 @@ namespace Negocios
         #region Metodos
         public List<Especialidad> GetAll()
         {
-            List<Especialidad> listEspecialidades = EspecialidadDatos.GetAll();
-            return listEspecialidades;
+            List<Especialidad> listaEspecialidades = EspecialidadDatos.GetAll();
+            return listaEspecialidades;
 
         }
 

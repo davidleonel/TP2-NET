@@ -12,27 +12,34 @@ namespace UI.Escritorio
 {
     public partial class ApplicationForm : Form
     {
+        #region Propiedades
         private ModoForm _Modo;
 
         public ModoForm Modo
         {
             get { return _Modo; }
             set { _Modo = value; }
-        }
+        } 
+        #endregion
 
+        #region Constructor
         public ApplicationForm()
         {
             InitializeComponent();
-        }
+        } 
+        #endregion
 
-        public enum ModoForm 
+        #region Enumeradores
+        public enum ModoForm
         {
             Alta,
             Baja,
             Modificacion,
             Consulta
-        }
+        } 
+        #endregion
 
+        #region Metodos
         public virtual void MapearDeDatos() { }
         public virtual void MapearADatos() { }
         public virtual void GuardarCambios() { }
@@ -47,8 +54,8 @@ namespace UI.Escritorio
         {
             this.Notificar(this.Text, mensaje, botones, icono);
         }
-
-
         
+        #endregion
+ 
     }
 }

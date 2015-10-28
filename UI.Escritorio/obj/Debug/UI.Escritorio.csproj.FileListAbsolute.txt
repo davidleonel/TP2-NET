@@ -137,3 +137,6 @@ C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - cop
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionesEscritorio.resources
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionesEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionEscritorio.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.PlanesEscritorio.resources
