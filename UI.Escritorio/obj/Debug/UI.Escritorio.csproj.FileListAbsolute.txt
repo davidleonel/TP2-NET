@@ -174,3 +174,4 @@ C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia
 C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.exe
 C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
 C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.Menu.resources
+C:\Users\ara--_000\Dropbox\.NET (1)\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.MateriasEscritorio.resources

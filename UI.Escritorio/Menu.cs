@@ -49,7 +49,8 @@ namespace UI.Escritorio
 
         private void btnABMMaterias_Click(object sender, EventArgs e)
         {
-
+            MateriasEscritorio matEsc = new MateriasEscritorio();
+            matEsc.ShowDialog();
         }
     }
 }

@@ -42,6 +42,7 @@
     <Compile Include="ComisionNegocio.cs" />
     <Compile Include="CursoNegocio.cs" />
     <Compile Include="EspecialidadNegocio.cs" />
+    <Compile Include="MateriaNegocio.cs" />
     <Compile Include="Negocio.cs" />
     <Compile Include="PlanNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
