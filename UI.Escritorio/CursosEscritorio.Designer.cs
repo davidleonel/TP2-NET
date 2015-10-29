@@ -170,26 +170,36 @@
             // 
             // id_curso
             // 
+            this.id_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_curso.DataPropertyName = "Id";
             this.id_curso.HeaderText = "ID Curso";
             this.id_curso.Name = "id_curso";
             // 
             // id_materia
             // 
+            this.id_materia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_materia.DataPropertyName = "IdMateria";
             this.id_materia.HeaderText = "ID Materia";
             this.id_materia.Name = "id_materia";
             // 
             // id_comision
             // 
+            this.id_comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_comision.DataPropertyName = "IdComision";
             this.id_comision.HeaderText = "ID Comision";
             this.id_comision.Name = "id_comision";
             // 
             // anio_calendario
             // 
+            this.anio_calendario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.anio_calendario.DataPropertyName = "AnioCalendario";
             this.anio_calendario.HeaderText = "Anio Calendario";
             this.anio_calendario.Name = "anio_calendario";
             // 
             // cupo
             // 
+            this.cupo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cupo.DataPropertyName = "Cupo";
             this.cupo.HeaderText = "Cupo";
             this.cupo.Name = "cupo";
             // 

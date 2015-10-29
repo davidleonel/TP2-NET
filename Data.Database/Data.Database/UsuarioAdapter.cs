@@ -10,7 +10,7 @@ namespace Data.Database
 {
     public class UsuarioAdapter : Adapter
     {
-        #region DatosEnMemoria
+      /*  #region DatosEnMemoria
         // Esta región solo se usa en esta etapa donde los datos se mantienen en memoria.
         // Al modificar este proyecto para que acceda a la base de datos esta será eliminada
         private static List<Entidades.Usuario> _Usuarios;
@@ -61,7 +61,7 @@ namespace Data.Database
             }
         }
         #endregion //Debe ser eliminada porque los datos ahora están en una BD
-
+        */
         #region Metodos
         public List<Usuario> GetAll()
         {
@@ -83,9 +83,9 @@ namespace Data.Database
                     usr.NombreUsuario = (string)drUsuarios["nombre_usuario"];
                     usr.Clave = (string)drUsuarios["clave"];
                     usr.Habilitado = (bool)drUsuarios["habilitado"];
-                    usr.Nombre = (string)drUsuarios["nombre"];
+                   /* usr.Nombre = (string)drUsuarios["nombre"];
                     usr.Apellido = (string)drUsuarios["apellido"];
-                    usr.Email = (string)drUsuarios["email"];
+                    usr.Email = (string)drUsuarios["email"];*/
 
                     usuarios.Add(usr);
                 }
@@ -125,9 +125,9 @@ namespace Data.Database
                         usr.NombreUsuario = (string)drUsuarios["nombre_usuario"];
                         usr.Clave = (string)drUsuarios["clave"];
                         usr.Habilitado = (bool)drUsuarios["habilitado"];
-                        usr.Nombre = (string)drUsuarios["nombre"];
+                       /* usr.Nombre = (string)drUsuarios["nombre"];
                         usr.Apellido = (string)drUsuarios["apellido"];
-                        usr.Email = (string)drUsuarios["email"];
+                        usr.Email = (string)drUsuarios["email"];*/
 
                         
                     }
@@ -184,16 +184,17 @@ namespace Data.Database
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
                      "UPDATE usuarios set nombre_usuario= @nombre_usuario, clave= @clave,"+
-                    "habilitado=@habilitado, nombre=@nombre, apellido=@apellido, email=@email WHERE id_usuario=@id", SqlConn);
+                    "habilitado=@habilitado WHERE id_usuario=@id", SqlConn);
 
+                //nombre=@nombre, apellido=@apellido, email=@email
 
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.Id;
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
-                cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
+              /*  cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
                 cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
-                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;
+                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;*/
                 cmdSave.ExecuteNonQuery();
             }
 
@@ -218,16 +219,18 @@ namespace Data.Database
 
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                    "insert into usuarios(nombre_usuario,clave,habilitado,nombre,apellido,email)" +
-                    "values( @nombre_usuario,@clave,@habilitado,@nombre, @apellido, @email)" +
+                    "insert into usuarios(nombre_usuario,clave,habilitado)" +
+                    //,nombre,apellido,email
+                    "values( @nombre_usuario,@clave,@habilitado)" +
+                    //,@nombre, @apellido, @email
                     " select @@identity AS id_usuario", SqlConn); //esta linea es para recuperar el ID que asignó el sql automaticamente
 
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
-                cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
+              /* cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
                 cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
-                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;
+                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;*/
                 usuario.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
                 //cmdSave.ExecuteNonQuery();
                 /*PREGUNTAR: SI EXECUTEESCALAR ADEMAS DE DEVOLVER EL ID EJECUTA EL INSERT ALTA DUDA*/

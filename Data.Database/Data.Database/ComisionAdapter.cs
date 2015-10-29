@@ -27,7 +27,7 @@ namespace Data.Database
 
                     Comision com = new Comision();
 
-                    com.Id = (int)drComisiones["id_usuario"];
+                    com.Id = (int)drComisiones["id_comision"];
                     com.DescripcionComision = (string)drComisiones["desc_comision"];
                     com.AnioEspecialidad = (int)drComisiones["anio_especialidad"];
                     com.IdPlan = (int)drComisiones["id_plan"];

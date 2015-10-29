@@ -52,10 +52,8 @@ namespace UI.Escritorio
         {
             this.txtID.Text = this.UsuarioActual.Id.ToString();
             this.chkHabilitado.Checked = this.UsuarioActual.Habilitado;
-            this.txtNombre.Text = this.UsuarioActual.Nombre;
-            this.txtApellido.Text = this.UsuarioActual.Apellido.ToString();
+            //faltan los datos de persona
             this.txtUsuario.Text = this.UsuarioActual.NombreUsuario.ToString();
-            this.txtEmail.Text = this.UsuarioActual.Email.ToString();
             this.txtClave.Text = this.UsuarioActual.Clave.ToString();
             this.txtConfirmarClave.Text = this.UsuarioActual.Clave.ToString();
 
@@ -84,10 +82,10 @@ namespace UI.Escritorio
                 UsuarioActual = new Usuario();
 
                 this.UsuarioActual.Habilitado = this.chkHabilitado.Checked;
-                this.UsuarioActual.Nombre = this.txtNombre.Text;
-                this.UsuarioActual.Apellido = this.txtApellido.Text;
+               // this.UsuarioActual.Nombre = this.txtNombre.Text;
+               // this.UsuarioActual.Apellido = this.txtApellido.Text;
                 this.UsuarioActual.NombreUsuario = this.txtUsuario.Text;
-                this.UsuarioActual.Email =  this.txtEmail.Text;
+               // this.UsuarioActual.Email =  this.txtEmail.Text;
                 this.UsuarioActual.Clave = this.txtClave.Text;
                 this.UsuarioActual.Clave = this.txtConfirmarClave.Text;
             }
@@ -95,10 +93,10 @@ namespace UI.Escritorio
             {
                 this.UsuarioActual.Id = Convert.ToInt32(this.txtID.Text);
                 this.UsuarioActual.Habilitado = this.chkHabilitado.Checked;
-                this.UsuarioActual.Nombre = this.txtNombre.Text;
-                this.UsuarioActual.Apellido = this.txtApellido.Text;
+             //   this.UsuarioActual.Nombre = this.txtNombre.Text;
+              //  this.UsuarioActual.Apellido = this.txtApellido.Text;
                 this.UsuarioActual.NombreUsuario = this.txtUsuario.Text;
-                this.UsuarioActual.Email = this.txtEmail.Text;
+              //  this.UsuarioActual.Email = this.txtEmail.Text;
                 this.UsuarioActual.Clave = this.txtClave.Text;
                 this.UsuarioActual.Clave = this.txtConfirmarClave.Text;
             }
@@ -129,9 +127,10 @@ namespace UI.Escritorio
         public override bool Validar() 
         {
             Boolean bandera = true;
-            if (string.IsNullOrEmpty(this.txtUsuario.Text) || string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||
-                string.IsNullOrEmpty(this.txtClave.Text) ||string.IsNullOrEmpty(this.txtConfirmarClave.Text) ||string.IsNullOrEmpty(this.txtEmail.Text) )
+            if (string.IsNullOrEmpty(this.txtUsuario.Text) ||
+                string.IsNullOrEmpty(this.txtClave.Text) ||string.IsNullOrEmpty(this.txtConfirmarClave.Text) ) 
             {
+                // string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||string.IsNullOrEmpty(this.txtEmail.Text
                 Notificar("Campos vacíos", "No puede haber campos sin contenido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bandera = false;
             }

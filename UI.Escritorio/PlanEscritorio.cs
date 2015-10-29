@@ -42,10 +42,7 @@ namespace UI.Escritorio
             this.Modo = modo;
             PlanNegocio pn = new PlanNegocio();
             PlanActual = pn.GetOne(ID);
-            if (Modo == ModoForm.Modificacion)
-            {
-                this.cargarCbEspecialidades();
-            }
+            this.cargarCbEspecialidades();
             this.MapearDeDatos();
         } 
 
@@ -60,17 +57,13 @@ namespace UI.Escritorio
             cbEspecialidades.DisplayMember = "DescripcionEspecialidad";
             cbEspecialidades.ValueMember = "Id";
         }
-        /*public Especialidad buscarEspecialidad(int ID)
-        {
-            EspecialidadNegocio en = new EspecialidadNegocio();
-            Especialidad esp = en.GetOne(ID);
-            return esp;
-        }*/
+       
 
         public override void MapearDeDatos()
         {
             this.txtIdPlan.Text = this.PlanActual.Id.ToString();
             this.txtDescripcionPlan.Text = this.PlanActual.DescripcionPlan;
+            this.cbEspecialidades.SelectedValue = this.PlanActual.IdEspecialidad;
 
 
             switch (Modo)
@@ -80,7 +73,6 @@ namespace UI.Escritorio
                     this.btnAceptar.Text = "Guardar";
                     break;
                 case ModoForm.Baja:
-                    this.cbEspecialidades.Text = this.PlanActual.IdEspecialidad.ToString();
                     this.btnAceptar.Text = "Eliminar";
                     break;
                 case ModoForm.Consulta:

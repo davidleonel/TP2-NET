@@ -100,6 +100,12 @@
     <Compile Include="CursoEscritorio.Designer.cs">
       <DependentUpon>CursoEscritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlanEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CursoEscritorio.resx">
       <DependentUpon>CursoEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlanEscritorio.resx">
       <DependentUpon>PlanEscritorio.cs</DependentUpon>

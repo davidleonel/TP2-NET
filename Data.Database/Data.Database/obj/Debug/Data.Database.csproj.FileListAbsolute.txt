@@ -40,3 +40,10 @@ C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - cop
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\Data.Database\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\Data.Database\Data.Database\obj\Debug\Data.Database.dll
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\Data.Database\Data.Database\obj\Debug\Data.Database.pdb
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\bin\Debug\Data.Database.dll
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\bin\Debug\Data.Database.pdb
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\bin\Debug\Entidades.dll
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\bin\Debug\Entidades.pdb
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.dll
+C:\Users\Computadora\Desktop\TP2 Github - copia\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.pdb
