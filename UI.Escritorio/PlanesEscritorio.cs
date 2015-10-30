@@ -55,7 +55,6 @@ namespace UI.Escritorio
             this.Listar();
         }
 
-        #endregion
 
         private void tsbEditar_Click(object sender, EventArgs e)
         {
@@ -87,6 +86,7 @@ namespace UI.Escritorio
                 MessageBox.Show("Debe seleccionar un plan para elimnar");
             }
         }
+        #endregion
 
 
 

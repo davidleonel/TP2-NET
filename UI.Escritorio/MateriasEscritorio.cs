@@ -46,6 +46,46 @@ namespace UI.Escritorio
         {
             this.Close();
         }
+
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            MateriaEscritorio me = new MateriaEscritorio(ApplicationForm.ModoForm.Alta);
+            me.ShowDialog();
+            this.Listar();
+        }
+
+
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvMaterias.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).Id;
+                MateriaEscritorio matEsc = new MateriaEscritorio( ID, ApplicationForm.ModoForm.Modificacion);
+                matEsc.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un plan para elimnar");
+            }
+        }
+
+        private void tsbEliminar_Click(object sender, EventArgs e)
+        {
+            if (dgvMaterias.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Materia)this.dgvMaterias.SelectedRows[0].DataBoundItem).Id;
+                MateriaEscritorio matEsc = new MateriaEscritorio(ID, ApplicationForm.ModoForm.Baja);
+                matEsc.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar un plan para elimnar");
+            }
+
+        }
         #endregion
     }
 }

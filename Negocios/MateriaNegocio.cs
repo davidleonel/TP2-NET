@@ -34,6 +34,26 @@ namespace Negocios
             List<Materia> listaMaterias = MateriaDatos.GetAll();
             return listaMaterias;
         }
+
+        public Materia GetOne(int id)
+        {
+            Materia m = MateriaDatos.GetOne(id);
+            return m;
+        }
+
+        public void Save(Materia mat)
+        {
+            MateriaDatos.Save(mat);
+
+        }
+
+        public void Delete(int Id)
+        {
+            MateriaDatos.Delete(Id);
+        }
+
         #endregion
+
+
     }
 }
