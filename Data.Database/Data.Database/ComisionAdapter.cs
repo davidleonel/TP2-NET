@@ -103,7 +103,7 @@ namespace Data.Database
                 cmdSave = new SqlCommand(
                     "insert into comisiones(desc_comision,anio_especialidad,id_plan)" +
                     "values( @desc_comision,@anio_especialidad,@id_plan)" +
-                    " select @@identity AS id_comision", SqlConn); //esta linea es para recuperar el ID que asignó el sql automaticamente
+                    " select @@identity AS id_comision", SqlConn); 
 
                 cmdSave.Parameters.Add("@desc_comision", SqlDbType.VarChar, 50).Value = com.DescripcionComision;
                 cmdSave.Parameters.Add("@anio_especialidad", SqlDbType.Int).Value = com.AnioEspecialidad;
@@ -111,8 +111,6 @@ namespace Data.Database
 
 
                 com.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
-                //cmdSave.ExecuteNonQuery();
-                /*PREGUNTAR: SI EXECUTEESCALAR ADEMAS DE DEVOLVER EL ID EJECUTA EL INSERT ALTA DUDA*/
 
 
             }
@@ -180,8 +178,10 @@ namespace Data.Database
                 this.OpenConnection();
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                     "UPDATE comisiones SET desc_comision = @desc_comision, anio_especialidad = @anio_especialidad, id_plan = @id_plan WHERE id_comision = @id", SqlConn);
-
+                        "UPDATE comisiones set desc_comision=@desc_comision, anio_especialidad=@anio_especialidad," +
+                        "id_plan=@id_plan WHERE id_comision=@id", SqlConn);
+                
+             
 
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = com.Id;
                 cmdSave.Parameters.Add("@desc_comision", SqlDbType.VarChar, 50).Value = com.DescripcionComision;

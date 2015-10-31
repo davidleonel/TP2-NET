@@ -34,6 +34,19 @@ namespace Negocios
             return ListaPersonas;
         }
 
+        public List<Persona> GetAllAlumnos()
+        {
+            List<Persona> ListaPersonas = PersonaDatos.GetAllAlumnos();
+            return ListaPersonas;
+        }
+
+
+        public List<Persona> GetAllDocentes()
+        {
+            List<Persona> ListaPersonas = PersonaDatos.GetAllDocentes();
+            return ListaPersonas;
+        }
+
         public Persona GetOne(int Id)
         {
             Persona per = PersonaDatos.GetOne(Id);
@@ -44,10 +57,9 @@ namespace Negocios
         {
             PersonaDatos.Delete(Id);
         }
-        public void Save(Persona per) 
+        public void Save(int tipo, Persona per) 
         {
-            PersonaDatos.Save(per);
-
+            PersonaDatos.Save(tipo, per);
 
         }
 

@@ -46,6 +46,7 @@
             this.telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaNac = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.legajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -100,7 +101,8 @@
             this.email,
             this.telefono,
             this.fechaNac,
-            this.legajo});
+            this.legajo,
+            this.idPlan});
             this.tlDocentes.SetColumnSpan(this.dgvDocentes, 2);
             this.dgvDocentes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvDocentes.Location = new System.Drawing.Point(3, 3);
@@ -238,6 +240,14 @@
             this.legajo.Name = "legajo";
             this.legajo.ReadOnly = true;
             // 
+            // idPlan
+            // 
+            this.idPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idPlan.DataPropertyName = "IdPlan";
+            this.idPlan.HeaderText = "ID Plan";
+            this.idPlan.Name = "idPlan";
+            this.idPlan.ReadOnly = true;
+            // 
             // DocentesEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -279,6 +289,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn telefono;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaNac;
         private System.Windows.Forms.DataGridViewTextBoxColumn legajo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPlan;
 
     }
 }

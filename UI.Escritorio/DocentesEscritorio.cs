@@ -27,7 +27,7 @@ namespace UI.Escritorio
 		 public void Listar()
         {
             PersonaNegocio pn = new PersonaNegocio();
-            this.dgvDocentes.DataSource = pn.GetAll();
+            this.dgvDocentes.DataSource = pn.GetAllDocentes();
 
         } 
         #endregion 
@@ -59,7 +59,7 @@ namespace UI.Escritorio
         {
             if (dgvDocentes.SelectedRows.Count > 0)
             {
-                int ID = ((Entidades.Usuario)this.dgvDocentes.SelectedRows[0].DataBoundItem).Id;
+                int ID = ((Entidades.Persona)this.dgvDocentes.SelectedRows[0].DataBoundItem).Id;
                 DocenteEscritorio perEsc = new DocenteEscritorio(ID, ApplicationForm.ModoForm.Baja);
                 perEsc.ShowDialog();
                 this.Listar();

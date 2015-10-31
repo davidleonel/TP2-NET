@@ -18,3 +18,8 @@ C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - cop
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\Entidades\obj\Debug\Entidades.dll
 C:\Users\Computadora\Desktop\TP2- Ultima Version 27-10-2015\Tp 2- Academia - copia\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\bin\Debug\Entidades.dll
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\obj\Debug\Entidades.dll
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\obj\Debug\Entidades.pdb

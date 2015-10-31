@@ -58,6 +58,7 @@ namespace UI.Escritorio
             this.txtTelefono.Text = this.DocenteActual.Telefono.ToString();
             //this.mcFecNac.DateSelected = this.DocenteActual.FechaNacimiento.ToString();
             this.txtLegajo.Text  = this.DocenteActual.Legajo.ToString();
+            this.txtIdPlan.Text = this.DocenteActual.IdPlan.ToString();
             
 
 
@@ -84,8 +85,6 @@ namespace UI.Escritorio
             {
                 
                 DocenteActual = new Persona();
-
-
                 this.DocenteActual.Nombre = this.txtNombre.Text;
                 this.DocenteActual.Apellido = this.txtApellido.Text;
                 this.DocenteActual.Direccion = this.txtDireccion.Text;
@@ -93,7 +92,8 @@ namespace UI.Escritorio
                 this.DocenteActual.Telefono = this.txtTelefono.Text;
                 //this.DocenteActual.FechaNacimiento = this.mcFecNac.DateSelected();
                 this.DocenteActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
-
+                this.DocenteActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
+                
 
             }
             else if (Modo == ModoForm.Modificacion)
@@ -106,6 +106,7 @@ namespace UI.Escritorio
                 this.DocenteActual.Telefono = this.txtTelefono.Text;
                 //this.DocenteActual.FechaNacimiento = this.mcFecNac.DateSelected();
                 this.DocenteActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
+                this.DocenteActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
             }
 
             switch (Modo)
@@ -128,7 +129,7 @@ namespace UI.Escritorio
         {
             this.MapearADatos();
             PersonaNegocio perNeg = new PersonaNegocio();
-            perNeg.Save(DocenteActual);
+            perNeg.Save(2, DocenteActual);
             
         }
         public override bool Validar() 
@@ -136,7 +137,7 @@ namespace UI.Escritorio
             Boolean bandera = true;
             if (string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||
                 string.IsNullOrEmpty(this.txtDireccion.Text) || string.IsNullOrEmpty(this.txtEmail.Text) ||
-                string.IsNullOrEmpty(this.txtTelefono.Text) || string.IsNullOrEmpty(this.txtLegajo.Text) 
+                string.IsNullOrEmpty(this.txtTelefono.Text) || string.IsNullOrEmpty(this.txtLegajo.Text) || string.IsNullOrEmpty(this.txtIdPlan.Text)
                 )
             {
                 // string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||string.IsNullOrEmpty(this.txtEmail.Text

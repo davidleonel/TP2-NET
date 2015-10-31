@@ -102,7 +102,7 @@ namespace UI.Escritorio
             }
             else if (Modo == ModoForm.Modificacion)
             {
-                this.ComisionActual.Id = Convert.ToInt32(this.txtAnioEsp.Text);
+                this.ComisionActual.Id = Convert.ToInt32(this.txtIDCom.Text);
                 this.ComisionActual.DescripcionComision = this.txtDescCom.Text;
                 this.ComisionActual.AnioEspecialidad = Convert.ToInt32(this.txtAnioEsp.Text);
                 this.ComisionActual.IdPlan = Convert.ToInt32(this.cbIdPlan.SelectedValue);

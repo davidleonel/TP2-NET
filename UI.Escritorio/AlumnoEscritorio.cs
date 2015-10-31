@@ -58,6 +58,7 @@ namespace UI.Escritorio
             this.txtTelefono.Text = this.AlumnoActual.Telefono.ToString();
             //this.mcFecNac.DateSelected = this.AlumnoActual.FechaNacimiento.ToString();
             this.txtLegajo.Text  = this.AlumnoActual.Legajo.ToString();
+            this.txtIdPlan.Text = this.AlumnoActual.IdPlan.ToString();
             
 
 
@@ -93,6 +94,7 @@ namespace UI.Escritorio
                 this.AlumnoActual.Telefono = this.txtTelefono.Text;
                 //this.AlumnoActual.FechaNacimiento = this.mcFecNac.DateSelected();
                 this.AlumnoActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
+                this.AlumnoActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
 
 
             }
@@ -106,6 +108,7 @@ namespace UI.Escritorio
                 this.AlumnoActual.Telefono = this.txtTelefono.Text;
                 //this.AlumnoActual.FechaNacimiento = this.mcFecNac.DateSelected();
                 this.AlumnoActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
+                this.AlumnoActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
             }
 
             switch (Modo)
@@ -128,7 +131,7 @@ namespace UI.Escritorio
         {
             this.MapearADatos();
             PersonaNegocio perNeg = new PersonaNegocio();
-            perNeg.Save(AlumnoActual);
+            perNeg.Save(1, AlumnoActual);
             
         }
         public override bool Validar() 

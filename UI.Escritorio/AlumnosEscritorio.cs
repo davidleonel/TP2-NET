@@ -27,7 +27,7 @@ namespace UI.Escritorio
 		 public void Listar()
         {
             PersonaNegocio pn = new PersonaNegocio();
-            this.dgvAlumnos.DataSource = pn.GetAll();
+            this.dgvAlumnos.DataSource = pn.GetAllAlumnos();
 
         } 
         #endregion 
