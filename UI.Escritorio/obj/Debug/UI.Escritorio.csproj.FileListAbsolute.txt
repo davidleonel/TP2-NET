@@ -204,3 +204,6 @@ C:\Users\ara--_000\Desktop\GIT NET TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escrit
 C:\Users\ara--_000\Desktop\GIT NET TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT NET TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
 C:\Users\ara--_000\Desktop\GIT NET TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\bin\Debug\UI.Escritorio.exe.config
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.exe
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.pdb
