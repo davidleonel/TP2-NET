@@ -55,8 +55,15 @@ namespace UI.Escritorio
 
         private void btnABMProfesores_Click(object sender, EventArgs e)
         {
-            DocentesCursosEscritorio docCurEsc = new DocentesCursosEscritorio();
-            docCurEsc.ShowDialog();
+            DocentesEscritorio docEsc = new DocentesEscritorio();
+            docEsc.ShowDialog();
+
+        }
+
+        private void btnABMAlumno_Click(object sender, EventArgs e)
+        {
+            AlumnosEscritorio aluEsc = new AlumnosEscritorio();
+            aluEsc.ShowDialog();
 
         }
     }

@@ -88,6 +88,18 @@
     <Compile Include="DocenteCurso.Designer.cs">
       <DependentUpon>DocenteCurso.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlumnosEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosEscritorio.Designer.cs">
+      <DependentUpon>AlumnosEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnoEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnoEscritorio.Designer.cs">
+      <DependentUpon>AlumnoEscritorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="EspecialidadEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +154,12 @@
     <Compile Include="PlanesEscritorio.Designer.cs">
       <DependentUpon>PlanesEscritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocenteEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocenteEscritorio.Designer.cs">
+      <DependentUpon>DocenteEscritorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +171,12 @@
     </Compile>
     <Compile Include="CursosEscritorio.Designer.cs">
       <DependentUpon>CursosEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocentesEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocentesEscritorio.Designer.cs">
+      <DependentUpon>DocentesEscritorio.cs</DependentUpon>
     </Compile>
     <Compile Include="UsuariosEscritorio.cs">
       <SubType>Form</SubType>
@@ -173,6 +197,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocenteCurso.resx">
       <DependentUpon>DocenteCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosEscritorio.resx">
+      <DependentUpon>AlumnosEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnoEscritorio.resx">
+      <DependentUpon>AlumnoEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EspecialidadEscritorio.resx">
       <DependentUpon>EspecialidadEscritorio.cs</DependentUpon>
@@ -201,11 +231,17 @@
     <EmbeddedResource Include="PlanesEscritorio.resx">
       <DependentUpon>PlanesEscritorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DocenteEscritorio.resx">
+      <DependentUpon>DocenteEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsuarioEscritorio.resx">
       <DependentUpon>UsuarioEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CursosEscritorio.resx">
       <DependentUpon>CursosEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocentesEscritorio.resx">
+      <DependentUpon>DocentesEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuariosEscritorio.resx">
       <DependentUpon>UsuariosEscritorio.cs</DependentUpon>
