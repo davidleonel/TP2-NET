@@ -62,6 +62,8 @@ namespace Data.Database
         }
         #endregion //Debe ser eliminada porque los datos ahora están en una BD
         */
+
+
         #region Metodos
         public List<Usuario> GetAll()
         {

@@ -38,6 +38,10 @@
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
+            this.id_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionComision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anioEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -84,6 +88,11 @@
             // dgvComisiones
             // 
             this.dgvComisiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvComisiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_descripcion,
+            this.descripcionComision,
+            this.anioEspecialidad,
+            this.idPlan});
             this.tlComisiones.SetColumnSpan(this.dgvComisiones, 2);
             this.dgvComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvComisiones.Location = new System.Drawing.Point(3, 3);
@@ -157,6 +166,38 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
+            // id_descripcion
+            // 
+            this.id_descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_descripcion.DataPropertyName = "Id";
+            this.id_descripcion.HeaderText = "ID";
+            this.id_descripcion.Name = "id_descripcion";
+            this.id_descripcion.ReadOnly = true;
+            // 
+            // descripcionComision
+            // 
+            this.descripcionComision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripcionComision.DataPropertyName = "descripcionComision";
+            this.descripcionComision.HeaderText = "Descripcion";
+            this.descripcionComision.Name = "descripcionComision";
+            this.descripcionComision.ReadOnly = true;
+            // 
+            // anioEspecialidad
+            // 
+            this.anioEspecialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.anioEspecialidad.DataPropertyName = "anioEspecialidad";
+            this.anioEspecialidad.HeaderText = "Anio Especialidad";
+            this.anioEspecialidad.Name = "anioEspecialidad";
+            this.anioEspecialidad.ReadOnly = true;
+            // 
+            // idPlan
+            // 
+            this.idPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idPlan.DataPropertyName = "idPlan";
+            this.idPlan.HeaderText = "ID Plan";
+            this.idPlan.Name = "idPlan";
+            this.idPlan.ReadOnly = true;
+            // 
             // ComisionesEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +232,10 @@
         private System.Windows.Forms.ToolStripButton tsbEditar;
         private System.Windows.Forms.ToolStripButton tsbEliminar;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_Comision;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descripcionComision;
+        private System.Windows.Forms.DataGridViewTextBoxColumn anioEspecialidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idPlan;
 
     }
 }

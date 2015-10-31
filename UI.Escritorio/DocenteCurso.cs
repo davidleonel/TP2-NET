@@ -13,73 +13,71 @@ using Entidades;
 
 namespace UI.Escritorio
 {
-    public partial class CursoEscritorio : ApplicationForm
+    public partial class DocenteCursoEscritorio : ApplicationForm
     {
         #region Propiedades
-        private Curso _CursoActual;
+        private DocenteCurso _DocenteCursoActual;
 
-        public Curso CursoActual
+        public DocenteCurso DocenteCursoActual
         {
-            get { return _CursoActual; }
-            set { _CursoActual = value; }
+            get { return _DocenteCursoActual; }
+            set { _DocenteCursoActual = value; }
         }
         #endregion //ver si no está de mas
 
         #region Constructores
-        public CursoEscritorio()
+        public DocenteCursoEscritorio()
         {
             InitializeComponent();
         }
 
-        public CursoEscritorio(ModoForm modo) : this() 
+        public DocenteCursoEscritorio(ModoForm modo) : this() 
         {
             Modo = modo;
-            this.cargarCbMaterias();
-            this.cargarCbComisiones();
+            this.cargarCbCurso();
+           // this.cargarCbDocente();
+
 
 
         }
 
-        public CursoEscritorio(int ID, ModoForm modo):this()
+        public DocenteCursoEscritorio(int ID, ModoForm modo):this()
         {
             Modo = modo;
-            CursoNegocio cur  = new CursoNegocio();
-            CursoActual = cur.GetOne(ID);
+            DocenteCursoNegocio docCurEsc  = new DocenteCursoNegocio();
+            DocenteCursoActual = docCurEsc.GetOne(ID);
             MapearDeDatos();
-            this.cargarCbMaterias();
-            this.cargarCbComisiones();
+            this.cargarCbCurso();
+            //this.cargarCbDocente();
 
         }
         #endregion
 
         #region Metodos
 
-        private void cargarCbMaterias()
+        private void cargarCbCurso()
         {
-            MateriaNegocio mn = new MateriaNegocio();
-            cbIdMateria.DataSource = mn.GetAll();
-            cbIdMateria.DisplayMember = "DescripcionMateria";
-            cbIdMateria.ValueMember = "Id";
+            CursoNegocio cn = new CursoNegocio();
+            cbIdDocente.DataSource = cn.GetAll();
+            cbIdDocente.DisplayMember = "Id";
+            cbIdDocente.ValueMember = "Id";
         }
 
-        private void cargarCbComisiones()
+       /* private void cargarCbDocente()
         {
-            ComisionNegocio cn = new ComisionNegocio();
-            cbIdComision.DataSource = cn.GetAll();
-            cbIdComision.DisplayMember = "DescripcionComision";
-            cbIdComision.ValueMember = "Id";
-        }
+            P dcn = new DocenteCursoNegocio();
+            cbIdCurso.DataSource = dcn.GetAll();
+            cbIdCurso.DisplayMember = "DescripcionComision";
+            cbIdCurso.ValueMember = "Id";
+        }*/
 
 
         public override void MapearDeDatos() 
         {
-            this.txtIdCurso.Text = this.CursoActual.Id.ToString();
-            this.cbIdMateria.SelectedValue = this.CursoActual.IdMateria;
-            this.txtAnioCalendario.Text = this.CursoActual.AnioCalendario.ToString();
-            this.txtCupo.Text = this.CursoActual.Cupo.ToString();
-            this.cbIdComision.SelectedValue = this.CursoActual.IdComision;
-
-
+            this.txtIdDocenteCurso.Text = this.DocenteCursoActual.Id.ToString();
+            this.cbIdCurso.SelectedValue = this.DocenteCursoActual.IdCurso;
+            this.txtCargo.Text = this.DocenteCursoActual.Cargo.ToString();
+            this.cbIdDocente.SelectedValue = this.DocenteCursoActual.IdDocente;
 
 
             switch (Modo)
@@ -103,52 +101,51 @@ namespace UI.Escritorio
             if (this.Modo == ModoForm.Alta)
             {
                 
-                CursoActual = new Curso();
+                DocenteCursoActual = new DocenteCurso();
 
-                this.CursoActual.IdMateria = Convert.ToInt32(this.cbIdMateria.SelectedValue);
-                this.CursoActual.IdComision = Convert.ToInt32(this.cbIdComision.SelectedValue);
-                this.CursoActual.AnioCalendario = Convert.ToInt32(this.txtAnioCalendario.Text);
-                this.CursoActual.Cupo = Convert.ToInt32(this.txtCupo.Text);
+                this.DocenteCursoActual.IdDocente = Convert.ToInt32(this.cbIdDocente.SelectedValue);
+                this.DocenteCursoActual.IdCurso = Convert.ToInt32(this.cbIdCurso.SelectedValue);
+                this.DocenteCursoActual.Cargo = Convert.ToInt32(this.txtCargo.Text);
+
 
             }
             else if (Modo == ModoForm.Modificacion)
             {
-                this.CursoActual.Id = Convert.ToInt32(this.txtIdCurso.Text);
-                this.CursoActual.IdMateria = Convert.ToInt32(this.cbIdMateria.SelectedValue);
-                this.CursoActual.IdComision = Convert.ToInt32(this.cbIdComision.SelectedValue);
-                this.CursoActual.AnioCalendario = Convert.ToInt32(this.txtAnioCalendario.Text);
-                this.CursoActual.Cupo = Convert.ToInt32(this.txtCupo.Text);
+                this.DocenteCursoActual.Id = Convert.ToInt32(this.txtIdDocenteCurso.Text);
+                this.DocenteCursoActual.IdDocente = Convert.ToInt32(this.cbIdDocente.SelectedValue);
+                this.DocenteCursoActual.IdCurso = Convert.ToInt32(this.cbIdCurso.SelectedValue);
+                this.DocenteCursoActual.Cargo = Convert.ToInt32(this.txtCargo.Text);
+
             }
 
             switch (Modo)
             {
                 case ModoForm.Alta:
-                    CursoActual.Estado = Entidad.Estados.Nuevo;
+                    DocenteCursoActual.Estado = Entidad.Estados.Nuevo;
                     break;
                 case ModoForm.Baja:
-                    CursoActual.Estado = Entidad.Estados.Eliminado;
+                    DocenteCursoActual.Estado = Entidad.Estados.Eliminado;
                     break;
                 case ModoForm.Consulta:
-                    CursoActual.Estado = Entidad.Estados.NoModificado;
+                    DocenteCursoActual.Estado = Entidad.Estados.NoModificado;
                     break;
                 case ModoForm.Modificacion:
-                    CursoActual.Estado = Entidad.Estados.Modificado;
+                    DocenteCursoActual.Estado = Entidad.Estados.Modificado;
                     break;
             }
         }
         public override void GuardarCambios() 
         {
             this.MapearADatos();
-            CursoNegocio curNeg = new CursoNegocio();
-            curNeg.Save(CursoActual);
+            DocenteCursoNegocio dcn = new DocenteCursoNegocio();
+            dcn.Save(DocenteCursoActual);
             
         }
         public override bool Validar() 
         {
             //FALTA VALIDAR LOS COMBOS
             Boolean bandera = true;
-            if ( string.IsNullOrEmpty(this.txtAnioCalendario.Text) ||
-                string.IsNullOrEmpty(this.txtCupo.Text)  )
+            if ( string.IsNullOrEmpty(this.txtCargo.Text))
             {
                 Notificar("Campos vacíos", "No puede haber campos sin contenido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bandera = false;

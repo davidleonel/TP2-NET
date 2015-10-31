@@ -30,7 +30,6 @@
         {
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAceptar = new System.Windows.Forms.Button();
-            this.txtIdPlan = new System.Windows.Forms.TextBox();
             this.txtDescCom = new System.Windows.Forms.TextBox();
             this.lblIdPlan = new System.Windows.Forms.Label();
             this.lblAnioEsp = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.txtIDCom = new System.Windows.Forms.TextBox();
             this.txtAnioEsp = new System.Windows.Forms.TextBox();
+            this.cbIdPlan = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,15 +61,6 @@
             this.btnAceptar.Text = "Aceptar";
             this.btnAceptar.UseVisualStyleBackColor = true;
             this.btnAceptar.Click += new System.EventHandler(this.btnAceptar_Click);
-            // 
-            // txtIdPlan
-            // 
-            this.txtIdPlan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdPlan.Location = new System.Drawing.Point(378, 61);
-            this.txtIdPlan.Name = "txtIdPlan";
-            this.txtIdPlan.Size = new System.Drawing.Size(157, 20);
-            this.txtIdPlan.TabIndex = 14;
             // 
             // txtDescCom
             // 
@@ -128,11 +119,11 @@
             this.tableLayoutPanel1.Controls.Add(this.lblAnioEsp, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblIdPlan, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtDescCom, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtIdPlan, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAceptar, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtIDCom, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtAnioEsp, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cbIdPlan, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -163,6 +154,15 @@
             this.txtAnioEsp.Size = new System.Drawing.Size(155, 20);
             this.txtAnioEsp.TabIndex = 18;
             // 
+            // cbIdPlan
+            // 
+            this.cbIdPlan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbIdPlan.FormattingEnabled = true;
+            this.cbIdPlan.Location = new System.Drawing.Point(378, 61);
+            this.cbIdPlan.Name = "cbIdPlan";
+            this.cbIdPlan.Size = new System.Drawing.Size(157, 21);
+            this.cbIdPlan.TabIndex = 19;
+            // 
             // ComisionEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,7 +181,6 @@
 
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAceptar;
-        private System.Windows.Forms.TextBox txtIdPlan;
         private System.Windows.Forms.TextBox txtDescCom;
         private System.Windows.Forms.Label lblIdPlan;
         private System.Windows.Forms.Label lblAnioEsp;
@@ -190,6 +189,7 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.TextBox txtIDCom;
         private System.Windows.Forms.TextBox txtAnioEsp;
+        private System.Windows.Forms.ComboBox cbIdPlan;
 
     }
 }

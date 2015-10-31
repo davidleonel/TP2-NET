@@ -34,8 +34,6 @@
             this.btnABMEspecialidades = new System.Windows.Forms.Button();
             this.btnABMProfesores = new System.Windows.Forms.Button();
             this.btnABMPlanes = new System.Windows.Forms.Button();
-            this.btnABMComisiones = new System.Windows.Forms.Button();
-            this.btnABMCursos = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.aBMToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.inscripcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,6 +41,8 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnABMComisiones = new System.Windows.Forms.Button();
+            this.btnABMCursos = new System.Windows.Forms.Button();
             this.btnABMMaterias = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -121,6 +121,7 @@
             this.btnABMProfesores.TabIndex = 3;
             this.btnABMProfesores.Text = "ABM Profesores";
             this.btnABMProfesores.UseVisualStyleBackColor = true;
+            this.btnABMProfesores.Click += new System.EventHandler(this.btnABMProfesores_Click);
             // 
             // btnABMPlanes
             // 
@@ -132,28 +133,6 @@
             this.btnABMPlanes.Text = "ABM Planes";
             this.btnABMPlanes.UseVisualStyleBackColor = true;
             this.btnABMPlanes.Click += new System.EventHandler(this.btnABMPlanes_Click);
-            // 
-            // btnABMComisiones
-            // 
-            this.btnABMComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMComisiones.Location = new System.Drawing.Point(155, 381);
-            this.btnABMComisiones.Name = "btnABMComisiones";
-            this.btnABMComisiones.Size = new System.Drawing.Size(197, 48);
-            this.btnABMComisiones.TabIndex = 5;
-            this.btnABMComisiones.Text = "ABM Comisiones";
-            this.btnABMComisiones.UseVisualStyleBackColor = true;
-            this.btnABMComisiones.Click += new System.EventHandler(this.btnABMComisiones_Click);
-            // 
-            // btnABMCursos
-            // 
-            this.btnABMCursos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMCursos.Location = new System.Drawing.Point(155, 435);
-            this.btnABMCursos.Name = "btnABMCursos";
-            this.btnABMCursos.Size = new System.Drawing.Size(197, 48);
-            this.btnABMCursos.TabIndex = 6;
-            this.btnABMCursos.Text = "ABM Cursos";
-            this.btnABMCursos.UseVisualStyleBackColor = true;
-            this.btnABMCursos.Click += new System.EventHandler(this.btnABMCursos_Click);
             // 
             // menuStrip1
             // 
@@ -207,6 +186,28 @@
             this.reportesDeToolStripMenuItem.Name = "reportesDeToolStripMenuItem";
             this.reportesDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.reportesDeToolStripMenuItem.Text = "Reportes de Planes";
+            // 
+            // btnABMComisiones
+            // 
+            this.btnABMComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnABMComisiones.Location = new System.Drawing.Point(155, 381);
+            this.btnABMComisiones.Name = "btnABMComisiones";
+            this.btnABMComisiones.Size = new System.Drawing.Size(197, 48);
+            this.btnABMComisiones.TabIndex = 5;
+            this.btnABMComisiones.Text = "ABM Comisiones";
+            this.btnABMComisiones.UseVisualStyleBackColor = true;
+            this.btnABMComisiones.Click += new System.EventHandler(this.btnABMComisiones_Click);
+            // 
+            // btnABMCursos
+            // 
+            this.btnABMCursos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnABMCursos.Location = new System.Drawing.Point(155, 435);
+            this.btnABMCursos.Name = "btnABMCursos";
+            this.btnABMCursos.Size = new System.Drawing.Size(197, 48);
+            this.btnABMCursos.TabIndex = 6;
+            this.btnABMCursos.Text = "ABM Cursos";
+            this.btnABMCursos.UseVisualStyleBackColor = true;
+            this.btnABMCursos.Click += new System.EventHandler(this.btnABMCursos_Click);
             // 
             // btnABMMaterias
             // 

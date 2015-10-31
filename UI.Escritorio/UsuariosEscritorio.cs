@@ -28,6 +28,7 @@ namespace UI.Escritorio
         {
             UsuarioNegocio ul = new UsuarioNegocio();
             this.dgvUsuarios.DataSource = ul.GetAll();
+
         } 
         #endregion 
 
@@ -85,5 +86,6 @@ namespace UI.Escritorio
             }
         }
         #endregion 
+
     }
 }

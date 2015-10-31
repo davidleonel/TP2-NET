@@ -52,5 +52,12 @@ namespace UI.Escritorio
             MateriasEscritorio matEsc = new MateriasEscritorio();
             matEsc.ShowDialog();
         }
+
+        private void btnABMProfesores_Click(object sender, EventArgs e)
+        {
+            DocentesCursosEscritorio docCurEsc = new DocentesCursosEscritorio();
+            docCurEsc.ShowDialog();
+
+        }
     }
 }

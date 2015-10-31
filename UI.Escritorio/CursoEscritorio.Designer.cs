@@ -35,12 +35,12 @@
             this.lblCupo = new System.Windows.Forms.Label();
             this.lblAnioCalendario = new System.Windows.Forms.Label();
             this.txtIdCurso = new System.Windows.Forms.TextBox();
-            this.txtIdMateria = new System.Windows.Forms.TextBox();
-            this.txtIdComision = new System.Windows.Forms.TextBox();
             this.txtCupo = new System.Windows.Forms.TextBox();
             this.txtAnioCalendario = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.cbIdMateria = new System.Windows.Forms.ComboBox();
+            this.cbIdComision = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,12 +57,12 @@
             this.tableLayoutPanel1.Controls.Add(this.lblCupo, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblAnioCalendario, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtIdCurso, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtIdMateria, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtIdComision, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtCupo, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtAnioCalendario, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btnAceptar, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.btnCancelar, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.cbIdMateria, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbIdComision, 1, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -129,24 +129,6 @@
             this.txtIdCurso.Size = new System.Drawing.Size(155, 20);
             this.txtIdCurso.TabIndex = 8;
             // 
-            // txtIdMateria
-            // 
-            this.txtIdMateria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdMateria.Location = new System.Drawing.Point(110, 61);
-            this.txtIdMateria.Name = "txtIdMateria";
-            this.txtIdMateria.Size = new System.Drawing.Size(155, 20);
-            this.txtIdMateria.TabIndex = 9;
-            // 
-            // txtIdComision
-            // 
-            this.txtIdComision.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtIdComision.Location = new System.Drawing.Point(110, 119);
-            this.txtIdComision.Name = "txtIdComision";
-            this.txtIdComision.Size = new System.Drawing.Size(155, 20);
-            this.txtIdComision.TabIndex = 10;
-            // 
             // txtCupo
             // 
             this.txtCupo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -185,6 +167,24 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // cbIdMateria
+            // 
+            this.cbIdMateria.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbIdMateria.FormattingEnabled = true;
+            this.cbIdMateria.Location = new System.Drawing.Point(110, 61);
+            this.cbIdMateria.Name = "cbIdMateria";
+            this.cbIdMateria.Size = new System.Drawing.Size(155, 21);
+            this.cbIdMateria.TabIndex = 17;
+            // 
+            // cbIdComision
+            // 
+            this.cbIdComision.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbIdComision.FormattingEnabled = true;
+            this.cbIdComision.Location = new System.Drawing.Point(110, 119);
+            this.cbIdComision.Name = "cbIdComision";
+            this.cbIdComision.Size = new System.Drawing.Size(155, 21);
+            this.cbIdComision.TabIndex = 18;
+            // 
             // CursoEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -208,11 +208,11 @@
         private System.Windows.Forms.Label lblCupo;
         private System.Windows.Forms.Label lblAnioCalendario;
         private System.Windows.Forms.TextBox txtIdCurso;
-        private System.Windows.Forms.TextBox txtIdMateria;
-        private System.Windows.Forms.TextBox txtIdComision;
         private System.Windows.Forms.TextBox txtCupo;
         private System.Windows.Forms.TextBox txtAnioCalendario;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cbIdMateria;
+        private System.Windows.Forms.ComboBox cbIdComision;
     }
 }

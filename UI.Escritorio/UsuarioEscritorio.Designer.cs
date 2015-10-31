@@ -32,18 +32,18 @@
             this.lblID = new System.Windows.Forms.Label();
             this.lblTipoP = new System.Windows.Forms.Label();
             this.lblPersona = new System.Windows.Forms.Label();
-            this.lblClave = new System.Windows.Forms.Label();
-            this.lblUsuario = new System.Windows.Forms.Label();
-            this.lblConfirmarClave = new System.Windows.Forms.Label();
             this.chkHabilitado = new System.Windows.Forms.CheckBox();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblClave = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
-            this.txtConfirmarClave = new System.Windows.Forms.TextBox();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.btnAceptar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.lblConfirmarClave = new System.Windows.Forms.Label();
+            this.txtConfirmarClave = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -109,33 +109,6 @@
             this.lblPersona.TabIndex = 2;
             this.lblPersona.Text = "Persona:";
             // 
-            // lblClave
-            // 
-            this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(3, 180);
-            this.lblClave.Name = "lblClave";
-            this.lblClave.Size = new System.Drawing.Size(37, 13);
-            this.lblClave.TabIndex = 3;
-            this.lblClave.Text = "Clave:";
-            // 
-            // lblUsuario
-            // 
-            this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(3, 135);
-            this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
-            this.lblUsuario.TabIndex = 4;
-            this.lblUsuario.Text = "Usuario:";
-            // 
-            // lblConfirmarClave
-            // 
-            this.lblConfirmarClave.AutoSize = true;
-            this.lblConfirmarClave.Location = new System.Drawing.Point(3, 225);
-            this.lblConfirmarClave.Name = "lblConfirmarClave";
-            this.lblConfirmarClave.Size = new System.Drawing.Size(84, 13);
-            this.lblConfirmarClave.TabIndex = 5;
-            this.lblConfirmarClave.Text = "Confirmar Clave:";
-            // 
             // chkHabilitado
             // 
             this.chkHabilitado.AutoSize = true;
@@ -156,6 +129,33 @@
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 8;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(185, 48);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(268, 21);
+            this.comboBox1.TabIndex = 17;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(185, 93);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(268, 21);
+            this.comboBox2.TabIndex = 18;
+            // 
+            // lblClave
+            // 
+            this.lblClave.AutoSize = true;
+            this.lblClave.Location = new System.Drawing.Point(3, 180);
+            this.lblClave.Name = "lblClave";
+            this.lblClave.Size = new System.Drawing.Size(37, 13);
+            this.lblClave.TabIndex = 3;
+            this.lblClave.Text = "Clave:";
+            // 
             // txtClave
             // 
             this.txtClave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -166,15 +166,14 @@
             this.txtClave.Size = new System.Drawing.Size(268, 20);
             this.txtClave.TabIndex = 11;
             // 
-            // txtConfirmarClave
+            // lblUsuario
             // 
-            this.txtConfirmarClave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtConfirmarClave.Location = new System.Drawing.Point(185, 228);
-            this.txtConfirmarClave.Name = "txtConfirmarClave";
-            this.txtConfirmarClave.PasswordChar = '*';
-            this.txtConfirmarClave.Size = new System.Drawing.Size(268, 20);
-            this.txtConfirmarClave.TabIndex = 12;
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.Location = new System.Drawing.Point(3, 135);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(46, 13);
+            this.lblUsuario.TabIndex = 4;
+            this.lblUsuario.Text = "Usuario:";
             // 
             // txtUsuario
             // 
@@ -206,23 +205,24 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // comboBox1
+            // lblConfirmarClave
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(185, 48);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(268, 21);
-            this.comboBox1.TabIndex = 17;
+            this.lblConfirmarClave.AutoSize = true;
+            this.lblConfirmarClave.Location = new System.Drawing.Point(3, 225);
+            this.lblConfirmarClave.Name = "lblConfirmarClave";
+            this.lblConfirmarClave.Size = new System.Drawing.Size(84, 13);
+            this.lblConfirmarClave.TabIndex = 5;
+            this.lblConfirmarClave.Text = "Confirmar Clave:";
             // 
-            // comboBox2
+            // txtConfirmarClave
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(185, 93);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(268, 21);
-            this.comboBox2.TabIndex = 18;
+            this.txtConfirmarClave.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtConfirmarClave.Location = new System.Drawing.Point(185, 228);
+            this.txtConfirmarClave.Name = "txtConfirmarClave";
+            this.txtConfirmarClave.PasswordChar = '*';
+            this.txtConfirmarClave.Size = new System.Drawing.Size(268, 20);
+            this.txtConfirmarClave.TabIndex = 12;
             // 
             // UsuarioEscritorio
             // 

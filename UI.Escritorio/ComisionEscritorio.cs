@@ -33,7 +33,8 @@ namespace UI.Escritorio
 
         public ComisionEscritorio(ModoForm modo) : this() 
         {
-            Modo = modo;   
+            Modo = modo;
+            this.cargarCbPlanes();
 
         }
 
@@ -43,18 +44,30 @@ namespace UI.Escritorio
             ComisionNegocio com  = new ComisionNegocio();
             ComisionActual = com.GetOne(ID);
             MapearDeDatos();
+            this.cargarCbPlanes();
 
         }
         #endregion
 
         #region Metodos
+
+
+        private void cargarCbPlanes()
+        {
+            PlanNegocio pn = new PlanNegocio();
+            cbIdPlan.DataSource = pn.GetAll();
+            cbIdPlan.DisplayMember = "DescripcionPlan";
+            cbIdPlan.ValueMember = "Id";
+        }
+
+
         public override void MapearDeDatos() 
         {
 
             this.txtIDCom.Text = this.ComisionActual.Id.ToString();
             this.txtDescCom.Text = this.ComisionActual.DescripcionComision.ToString();
             this.txtAnioEsp.Text = this.ComisionActual.AnioEspecialidad.ToString();
-            this.txtIdPlan.Text = this.ComisionActual.IdPlan.ToString();
+            this.cbIdPlan.SelectedValue = this.ComisionActual.IdPlan.ToString();
 
 
 
@@ -83,7 +96,7 @@ namespace UI.Escritorio
 
                 this.ComisionActual.DescripcionComision =this.txtDescCom.Text;
                 this.ComisionActual.AnioEspecialidad = Convert.ToInt32(this.txtAnioEsp.Text);
-                this.ComisionActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
+                this.ComisionActual.IdPlan = Convert.ToInt32(this.cbIdPlan.SelectedValue);
 
 
             }
@@ -92,7 +105,7 @@ namespace UI.Escritorio
                 this.ComisionActual.Id = Convert.ToInt32(this.txtAnioEsp.Text);
                 this.ComisionActual.DescripcionComision = this.txtDescCom.Text;
                 this.ComisionActual.AnioEspecialidad = Convert.ToInt32(this.txtAnioEsp.Text);
-                this.ComisionActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
+                this.ComisionActual.IdPlan = Convert.ToInt32(this.cbIdPlan.SelectedValue);
             }
 
             switch (Modo)
@@ -116,12 +129,13 @@ namespace UI.Escritorio
             this.MapearADatos();
             ComisionNegocio comNeg = new ComisionNegocio();
             comNeg.Save(ComisionActual);
-            
+           
         }
         public override bool Validar() 
         {
+            //FALTA VALIDAR EL BOMBO
             Boolean bandera = true;
-            if (string.IsNullOrEmpty(this.txtDescCom.Text) || string.IsNullOrEmpty(this.txtAnioEsp.Text) || string.IsNullOrEmpty(this.txtIdPlan.Text))
+            if (string.IsNullOrEmpty(this.txtDescCom.Text) || string.IsNullOrEmpty(this.txtAnioEsp.Text))
             {
                 Notificar("Campos vacíos", "No puede haber campos sin contenido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bandera = false;

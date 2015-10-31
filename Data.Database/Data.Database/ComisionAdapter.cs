@@ -135,7 +135,7 @@ namespace Data.Database
         {
             if (com.Estado == Entidad.Estados.Eliminado)
             {
-              //  this.Delete(cur.Id);
+                this.Delete(com.Id);
             }
             else if (com.Estado == Entidad.Estados.Nuevo)
             {
@@ -143,9 +143,65 @@ namespace Data.Database
             }
             else if (com.Estado == Entidad.Estados.Modificado)
             {
-              //  this.Update(cur);
+                this.Update(com);
             }
             com.Estado = Entidad.Estados.NoModificado;
+        }
+        public void Delete(int ID)
+        {
+            try
+            {
+                this.OpenConnection();
+
+                SqlCommand cmdDelete =
+                    new SqlCommand("delete from comisiones WHERE id_comision=@id", SqlConn);
+                cmdDelete.Parameters.Add("@id", SqlDbType.Int).Value = ID;
+
+                cmdDelete.ExecuteNonQuery();
+            }
+
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                    new Exception("Error al eliminar la comision", Ex);
+                throw ExcepcionManejada;
+            }
+
+            finally
+            {
+                this.CloseConnection();
+            }
+        }
+
+        protected void Update(Comision com)
+        {
+            try
+            {
+                this.OpenConnection();
+                SqlCommand cmdSave;
+                cmdSave = new SqlCommand(
+                     "UPDATE comisiones SET desc_comision = @desc_comision, anio_especialidad = @anio_especialidad, id_plan = @id_plan WHERE id_comision = @id", SqlConn);
+
+
+                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = com.Id;
+                cmdSave.Parameters.Add("@desc_comision", SqlDbType.VarChar, 50).Value = com.DescripcionComision;
+                cmdSave.Parameters.Add("@anio_especialidad", SqlDbType.Int).Value = com.AnioEspecialidad;
+                cmdSave.Parameters.Add("@id_plan", SqlDbType.Int).Value = com.IdPlan;
+                
+                cmdSave.ExecuteNonQuery();
+            }
+
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                    new Exception("Error al modificar datos de la especialidad", Ex);
+                throw ExcepcionManejada;
+            }
+
+            finally
+            {
+                this.CloseConnection();
+            }
         }
 
 

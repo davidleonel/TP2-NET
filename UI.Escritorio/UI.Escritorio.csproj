@@ -82,6 +82,12 @@
     <Compile Include="ComisionEscritorio.Designer.cs">
       <DependentUpon>ComisionEscritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="DocenteCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocenteCurso.Designer.cs">
+      <DependentUpon>DocenteCurso.cs</DependentUpon>
+    </Compile>
     <Compile Include="EspecialidadEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +111,12 @@
     </Compile>
     <Compile Include="MateriaEscritorio.Designer.cs">
       <DependentUpon>MateriaEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocentesCursosEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocentesCursosEscritorio.Designer.cs">
+      <DependentUpon>DocentesCursosEscritorio.cs</DependentUpon>
     </Compile>
     <Compile Include="MateriasEscritorio.cs">
       <SubType>Form</SubType>
@@ -159,6 +171,9 @@
     <EmbeddedResource Include="ComisionEscritorio.resx">
       <DependentUpon>ComisionEscritorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DocenteCurso.resx">
+      <DependentUpon>DocenteCurso.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EspecialidadEscritorio.resx">
       <DependentUpon>EspecialidadEscritorio.cs</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MateriaEscritorio.resx">
       <DependentUpon>MateriaEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocentesCursosEscritorio.resx">
+      <DependentUpon>DocentesCursosEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MateriasEscritorio.resx">
       <DependentUpon>MateriasEscritorio.cs</DependentUpon>
