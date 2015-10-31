@@ -126,7 +126,7 @@
             this.bntEliminar});
             this.tsEspecialidades.Location = new System.Drawing.Point(3, 0);
             this.tsEspecialidades.Name = "tsEspecialidades";
-            this.tsEspecialidades.Size = new System.Drawing.Size(112, 25);
+            this.tsEspecialidades.Size = new System.Drawing.Size(81, 25);
             this.tsEspecialidades.TabIndex = 0;
             // 
             // btnNuevo
@@ -167,10 +167,10 @@
             // 
             // DescripcionEspecialidad
             // 
+            this.DescripcionEspecialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.DescripcionEspecialidad.DataPropertyName = "DescripcionEspecialidad";
             this.DescripcionEspecialidad.HeaderText = "Descripcion";
             this.DescripcionEspecialidad.Name = "DescripcionEspecialidad";
-            this.DescripcionEspecialidad.Width = 200;
             // 
             // EspecialidadesEscritorio
             // 

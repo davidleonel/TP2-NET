@@ -43,6 +43,8 @@
             this.btnABMEspecialidades = new System.Windows.Forms.Button();
             this.btnABMAlumno = new System.Windows.Forms.Button();
             this.btnABMProfesores = new System.Windows.Forms.Button();
+            this.docenteACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnoACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -116,6 +118,9 @@
             // 
             // inscripcionesToolStripMenuItem
             // 
+            this.inscripcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.docenteACursoToolStripMenuItem,
+            this.alumnoACursoToolStripMenuItem});
             this.inscripcionesToolStripMenuItem.Name = "inscripcionesToolStripMenuItem";
             this.inscripcionesToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.inscripcionesToolStripMenuItem.Text = "Inscripciones";
@@ -213,6 +218,20 @@
             this.btnABMProfesores.UseVisualStyleBackColor = true;
             this.btnABMProfesores.Click += new System.EventHandler(this.btnABMProfesores_Click);
             // 
+            // docenteACursoToolStripMenuItem
+            // 
+            this.docenteACursoToolStripMenuItem.Name = "docenteACursoToolStripMenuItem";
+            this.docenteACursoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.docenteACursoToolStripMenuItem.Text = "Docente a Curso";
+            this.docenteACursoToolStripMenuItem.Click += new System.EventHandler(this.docenteACursoToolStripMenuItem_Click);
+            // 
+            // alumnoACursoToolStripMenuItem
+            // 
+            this.alumnoACursoToolStripMenuItem.Name = "alumnoACursoToolStripMenuItem";
+            this.alumnoACursoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.alumnoACursoToolStripMenuItem.Text = "Alumno a Curso";
+            this.alumnoACursoToolStripMenuItem.Click += new System.EventHandler(this.alumnoACursoToolStripMenuItem_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -247,5 +266,7 @@
         private System.Windows.Forms.ToolStripMenuItem reportesDeCursoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesDeToolStripMenuItem;
         private System.Windows.Forms.Button btnABMMaterias;
+        private System.Windows.Forms.ToolStripMenuItem docenteACursoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alumnoACursoToolStripMenuItem;
     }
 }

@@ -240,3 +240,5 @@ C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\bin\Debug\Negocios
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\bin\Debug\Data.Database.pdb
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnosEscritorio.resources
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnoEscritorio.resources
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnoInscripcionEscritorio.resources
+C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnosInscripcionesEscritorio.resources

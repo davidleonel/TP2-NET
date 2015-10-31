@@ -21,7 +21,7 @@ namespace Data.Database
             {
                 this.OpenConnection();
 
-                SqlCommand cmdDocCur = new SqlCommand("select * from docentes_curso", SqlConn);
+                SqlCommand cmdDocCur = new SqlCommand("select * from docentes_cursos", SqlConn);
 
                 SqlDataReader drDocCurso = cmdDocCur.ExecuteReader();
 

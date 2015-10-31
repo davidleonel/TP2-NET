@@ -131,7 +131,7 @@ namespace Data.Database
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
                      "UPDATE alumnos_inscripciones set id_alumno= @id_alumno, id_curso= @id_curso," +
-                    "condicion=@condicion, nota=@nota WHERE id_AlumnoInscripcion=@id", SqlConn);
+                    "condicion=@condicion, nota=@nota WHERE id_inscripcion=@id", SqlConn);
 
 
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = AlumnoInscripcion.Id;
@@ -170,10 +170,10 @@ namespace Data.Database
 
                     " select @@identity AS id_AlumnoInscripcion", SqlConn); 
 
-                cmdSave.Parameters.Add("@id_alumno", SqlDbType.VarChar, 50).Value = AlumnoInscripcion.IdAlumno;
-                cmdSave.Parameters.Add("@id_curso", SqlDbType.VarChar, 50).Value = AlumnoInscripcion.IdCurso;
-                cmdSave.Parameters.Add("@condicion", SqlDbType.Bit).Value = AlumnoInscripcion.Condicion;
-                cmdSave.Parameters.Add("@nota", SqlDbType.Bit).Value = AlumnoInscripcion.Nota;
+                cmdSave.Parameters.Add("@id_alumno", SqlDbType.Int).Value = AlumnoInscripcion.IdAlumno;
+                cmdSave.Parameters.Add("@id_curso", SqlDbType.Int).Value = AlumnoInscripcion.IdCurso;
+                cmdSave.Parameters.Add("@condicion", SqlDbType.VarChar, 50).Value = AlumnoInscripcion.Condicion;
+                cmdSave.Parameters.Add("@nota", SqlDbType.Int).Value = AlumnoInscripcion.Nota;
 
                 AlumnoInscripcion.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
 

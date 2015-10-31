@@ -82,11 +82,17 @@
     <Compile Include="ComisionEscritorio.Designer.cs">
       <DependentUpon>ComisionEscritorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="DocenteCurso.cs">
+    <Compile Include="AlumnoInscripcionEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DocenteCurso.Designer.cs">
-      <DependentUpon>DocenteCurso.cs</DependentUpon>
+    <Compile Include="AlumnoInscripcionEscritorio.Designer.cs">
+      <DependentUpon>AlumnoInscripcionEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocenteCursoEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DocenteCursoEscritorio.Designer.cs">
+      <DependentUpon>DocenteCursoEscritorio.cs</DependentUpon>
     </Compile>
     <Compile Include="AlumnosEscritorio.cs">
       <SubType>Form</SubType>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="AlumnoEscritorio.Designer.cs">
       <DependentUpon>AlumnoEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlumnosInscripcionesEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlumnosInscripcionesEscritorio.Designer.cs">
+      <DependentUpon>AlumnosInscripcionesEscritorio.cs</DependentUpon>
     </Compile>
     <Compile Include="EspecialidadEscritorio.cs">
       <SubType>Form</SubType>
@@ -195,14 +207,20 @@
     <EmbeddedResource Include="ComisionEscritorio.resx">
       <DependentUpon>ComisionEscritorio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DocenteCurso.resx">
-      <DependentUpon>DocenteCurso.cs</DependentUpon>
+    <EmbeddedResource Include="AlumnoInscripcionEscritorio.resx">
+      <DependentUpon>AlumnoInscripcionEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocenteCursoEscritorio.resx">
+      <DependentUpon>DocenteCursoEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AlumnosEscritorio.resx">
       <DependentUpon>AlumnosEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AlumnoEscritorio.resx">
       <DependentUpon>AlumnoEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlumnosInscripcionesEscritorio.resx">
+      <DependentUpon>AlumnosInscripcionesEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EspecialidadEscritorio.resx">
       <DependentUpon>EspecialidadEscritorio.cs</DependentUpon>

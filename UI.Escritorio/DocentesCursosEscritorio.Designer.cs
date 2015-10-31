@@ -174,7 +174,7 @@
             // id_curso
             // 
             this.id_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.id_curso.DataPropertyName = "id_curso";
+            this.id_curso.DataPropertyName = "idCurso";
             this.id_curso.HeaderText = "ID Curso";
             this.id_curso.Name = "id_curso";
             this.id_curso.ReadOnly = true;
@@ -182,7 +182,7 @@
             // id_docente
             // 
             this.id_docente.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.id_docente.DataPropertyName = "id_docente";
+            this.id_docente.DataPropertyName = "idDocente";
             this.id_docente.HeaderText = "ID Docente";
             this.id_docente.Name = "id_docente";
             this.id_docente.ReadOnly = true;

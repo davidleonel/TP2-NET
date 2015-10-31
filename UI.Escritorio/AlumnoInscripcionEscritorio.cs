@@ -13,42 +13,42 @@ using Entidades;
 
 namespace UI.Escritorio
 {
-    public partial class DocenteCursoEscritorio : ApplicationForm
+    public partial class alumnoInscripcionEscritorio : ApplicationForm
     {
         #region Propiedades
-        private DocenteCurso _DocenteCursoActual;
+        private AlumnoInscripcion _alumnoInscripcionActual;
 
-        public DocenteCurso DocenteCursoActual
+        public AlumnoInscripcion alumnoInscripcionActual
         {
-            get { return _DocenteCursoActual; }
-            set { _DocenteCursoActual = value; }
+            get { return _alumnoInscripcionActual; }
+            set { _alumnoInscripcionActual = value; }
         }
         #endregion //ver si no está de mas
 
         #region Constructores
-        public DocenteCursoEscritorio()
+        public alumnoInscripcionEscritorio()
         {
             InitializeComponent();
         }
 
-        public DocenteCursoEscritorio(ModoForm modo) : this() 
+        public alumnoInscripcionEscritorio(ModoForm modo) : this() 
         {
             Modo = modo;
             this.cargarCbCurso();
-           // this.cargarCbDocente();
+            this.cargarCbAlumno();
 
 
 
         }
 
-        public DocenteCursoEscritorio(int ID, ModoForm modo):this()
+        public alumnoInscripcionEscritorio(int ID, ModoForm modo):this()
         {
             Modo = modo;
-            DocenteCursoNegocio docCurEsc  = new DocenteCursoNegocio();
-            DocenteCursoActual = docCurEsc.GetOne(ID);
+            alumnoInscripcionNegocio aluInsEsc  = new alumnoInscripcionNegocio();
+            alumnoInscripcionActual = aluInsEsc.GetOne(ID);
             MapearDeDatos();
             this.cargarCbCurso();
-            //this.cargarCbDocente();
+            this.cargarCbAlumno();
 
         }
         #endregion
@@ -58,26 +58,28 @@ namespace UI.Escritorio
         private void cargarCbCurso()
         {
             CursoNegocio cn = new CursoNegocio();
-            cbIdDocente.DataSource = cn.GetAll();
-            cbIdDocente.DisplayMember = "Id";
-            cbIdDocente.ValueMember = "Id";
+            cbIdCurso.DataSource = cn.GetAll();
+            cbIdCurso.DisplayMember = "Id";
+            cbIdCurso.ValueMember = "Id";
         }
 
-       /* private void cargarCbDocente()
+        private void cargarCbAlumno()
         {
-            P dcn = new DocenteCursoNegocio();
-            cbIdCurso.DataSource = dcn.GetAll();
-            cbIdCurso.DisplayMember = "DescripcionComision";
-            cbIdCurso.ValueMember = "Id";
-        }*/
+
+            PersonaNegocio pn = new PersonaNegocio();
+            cbIdAlumno.DataSource = pn.GetAllAlumnos();
+            cbIdAlumno.DisplayMember = "Nombre";
+            cbIdAlumno.ValueMember = "Id";
+        }
 
 
         public override void MapearDeDatos() 
         {
-            this.txtIdDocenteCurso.Text = this.DocenteCursoActual.Id.ToString();
-            this.cbIdCurso.SelectedValue = this.DocenteCursoActual.IdCurso;
-            this.txtCargo.Text = this.DocenteCursoActual.Cargo.ToString();
-            this.cbIdDocente.SelectedValue = this.DocenteCursoActual.IdDocente;
+            this.txtIdalumnoInscripcion.Text = this.alumnoInscripcionActual.Id.ToString();
+            this.cbIdAlumno.SelectedValue = this.alumnoInscripcionActual.IdAlumno;
+            this.txtCondicion.Text = this.alumnoInscripcionActual.Condicion.ToString();
+            this.txtNota.Text = this.alumnoInscripcionActual.Nota.ToString();
+            this.cbIdCurso.SelectedValue = this.alumnoInscripcionActual.IdCurso;
 
 
             switch (Modo)
@@ -101,51 +103,53 @@ namespace UI.Escritorio
             if (this.Modo == ModoForm.Alta)
             {
                 
-                DocenteCursoActual = new DocenteCurso();
+                alumnoInscripcionActual = new AlumnoInscripcion();
 
-                this.DocenteCursoActual.IdDocente = Convert.ToInt32(this.cbIdDocente.SelectedValue);
-                this.DocenteCursoActual.IdCurso = Convert.ToInt32(this.cbIdCurso.SelectedValue);
-                this.DocenteCursoActual.Cargo = Convert.ToInt32(this.txtCargo.Text);
+                this.alumnoInscripcionActual.IdCurso = Convert.ToInt32(this.cbIdCurso.SelectedValue);
+                this.alumnoInscripcionActual.IdAlumno = Convert.ToInt32(this.cbIdAlumno.SelectedValue);
+                this.alumnoInscripcionActual.Condicion = this.txtCondicion.Text;
+                this.alumnoInscripcionActual.Nota = Convert.ToInt32(this.txtNota.Text);
 
 
             }
             else if (Modo == ModoForm.Modificacion)
             {
-                this.DocenteCursoActual.Id = Convert.ToInt32(this.txtIdDocenteCurso.Text);
-                this.DocenteCursoActual.IdDocente = Convert.ToInt32(this.cbIdDocente.SelectedValue);
-                this.DocenteCursoActual.IdCurso = Convert.ToInt32(this.cbIdCurso.SelectedValue);
-                this.DocenteCursoActual.Cargo = Convert.ToInt32(this.txtCargo.Text);
+                this.alumnoInscripcionActual.Id = Convert.ToInt32(this.txtIdalumnoInscripcion.Text);
+                this.alumnoInscripcionActual.IdCurso = Convert.ToInt32(this.cbIdCurso.SelectedValue);
+                this.alumnoInscripcionActual.IdAlumno = Convert.ToInt32(this.cbIdAlumno.SelectedValue);
+                this.alumnoInscripcionActual.Condicion = this.txtCondicion.Text;
+                this.alumnoInscripcionActual.Nota = Convert.ToInt32(this.txtNota.Text);
 
             }
 
             switch (Modo)
             {
                 case ModoForm.Alta:
-                    DocenteCursoActual.Estado = Entidad.Estados.Nuevo;
+                    alumnoInscripcionActual.Estado = Entidad.Estados.Nuevo;
                     break;
                 case ModoForm.Baja:
-                    DocenteCursoActual.Estado = Entidad.Estados.Eliminado;
+                    alumnoInscripcionActual.Estado = Entidad.Estados.Eliminado;
                     break;
                 case ModoForm.Consulta:
-                    DocenteCursoActual.Estado = Entidad.Estados.NoModificado;
+                    alumnoInscripcionActual.Estado = Entidad.Estados.NoModificado;
                     break;
                 case ModoForm.Modificacion:
-                    DocenteCursoActual.Estado = Entidad.Estados.Modificado;
+                    alumnoInscripcionActual.Estado = Entidad.Estados.Modificado;
                     break;
             }
         }
         public override void GuardarCambios() 
         {
             this.MapearADatos();
-            DocenteCursoNegocio dcn = new DocenteCursoNegocio();
-            dcn.Save(DocenteCursoActual);
+            alumnoInscripcionNegocio ain = new alumnoInscripcionNegocio();
+            ain.Save(alumnoInscripcionActual);
             
         }
         public override bool Validar() 
         {
             //FALTA VALIDAR LOS COMBOS
             Boolean bandera = true;
-            if ( string.IsNullOrEmpty(this.txtCargo.Text))
+            if ( string.IsNullOrEmpty(this.txtCondicion.Text))
             {
                 Notificar("Campos vacíos", "No puede haber campos sin contenido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bandera = false;
