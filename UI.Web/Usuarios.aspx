@@ -8,9 +8,6 @@
         <asp:GridView ID="gridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
             SelectedRowStyle-ForeColor="White" DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
-                <asp:BoundField HeaderText="Nombre" DataField="Nombre" />
-                <asp:BoundField HeaderText="Apellido" DataField="Apellido" />
-                <asp:BoundField HeaderText="Email" DataField="Email" />
                 <asp:BoundField HeaderText="Usuario" DataField="NombreUsuario" />
                 <asp:BoundField HeaderText="Habilitado" DataField="Habilitado" />
                 <asp:CommandField SelectText="Seleccionar" ShowSelectButton="true" />
@@ -26,24 +23,6 @@
         
       <asp:Panel ID="formPanel" Visible="false" runat="server">
         
-        <asp:Label ID="nombreLabel" runat="server" Text="Nombre: "></asp:Label>
-        <asp:TextBox ID="nombreTextBox" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="nombreTextBox"
-            ErrorMessage='El nombre no puede estar vacío' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
-        <asp:Label ID="apellidoLabel" runat="server" Text="Apellido: "></asp:Label>
-        <asp:TextBox ID="apellidoTextBox" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="apellidoTextBox"
-            ErrorMessage='El apellido no puede estar vacío' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
-        <asp:Label ID="emailLabel" runat="server" Text="Email: "></asp:Label>
-        <asp:TextBox ID="emailTextBox" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="emailTextBox"
-            ErrorMessage='El mail es inválido' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
         <asp:Label ID="habilitadoLabel" runat="server" Text="Habilitado: "></asp:Label>
         <asp:CheckBox ID="habilitadoCheckBox" runat="server" />
         <br />

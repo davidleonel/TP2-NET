@@ -93,9 +93,6 @@ namespace UI.Web
         private void LoadForm(int id)
         {
             this.Entity = this.LogicUsuario.GetOne(id);
-            this.nombreTextBox.Text = this.Entity.Nombre;
-            this.apellidoTextBox.Text = this.Entity.Apellido;
-            this.emailTextBox.Text = this.Entity.Email;
             this.habilitadoCheckBox.Checked = this.Entity.Habilitado;
             this.nombreUsuarioTextBox.Text = this.Entity.NombreUsuario;
         }
@@ -104,9 +101,6 @@ namespace UI.Web
 
         private void LoadEntity(Usuario usuario)
         {
-            usuario.Nombre = this.nombreTextBox.Text;
-            usuario.Apellido = this.apellidoTextBox.Text;
-            usuario.Email = this.emailTextBox.Text;
             usuario.NombreUsuario = this.nombreUsuarioTextBox.Text;
             usuario.Clave = this.claveTextBox.Text;
             usuario.Habilitado = this.habilitadoCheckBox.Checked;
@@ -151,9 +145,6 @@ namespace UI.Web
 
         private void EnableForm(bool enable)
         {
-            this.nombreTextBox.Enabled = enable;
-            this.apellidoTextBox.Enabled = enable;
-            this.emailTextBox.Enabled = enable;
             this.nombreUsuarioTextBox.Enabled = enable;
             this.claveTextBox.Visible = enable;
             this.claveLabel.Visible = enable;
@@ -198,9 +189,6 @@ namespace UI.Web
 
         private void ClearForm()
         {
-            this.nombreTextBox.Text = string.Empty;
-            this.apellidoTextBox.Text = string.Empty;
-            this.emailTextBox.Text = string.Empty;
             this.habilitadoCheckBox.Checked = false;
             this.nombreUsuarioTextBox.Text = string.Empty;
         }

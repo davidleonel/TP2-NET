@@ -242,3 +242,22 @@ C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escri
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnoEscritorio.resources
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnoInscripcionEscritorio.resources
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnosInscripcionesEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionesEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnoInscripcionEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteCursoEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnosEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnoEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnosInscripcionesEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadEscritorio_.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadesEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.CursoEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MateriaEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocentesCursosEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MateriasEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Menu.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PlanEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PlanesEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.CursosEscritorio.resources
+C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocentesEscritorio.resources
