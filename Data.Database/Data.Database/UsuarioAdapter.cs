@@ -220,23 +220,15 @@ namespace Data.Database
 
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
-                    "insert into usuarios(nombre_usuario,clave,habilitado)" +
-                    //,nombre,apellido,email
-                    "values( @nombre_usuario,@clave,@habilitado)" +
-                    //,@nombre, @apellido, @email
-                    " select @@identity AS id_usuario", SqlConn); //esta linea es para recuperar el ID que asignó el sql automaticamente
+                    "insert into usuarios(nombre_usuario,clave,habilitado, id_persona)" +
+                    "values( @nombre_usuario,@clave,@habilitado, 3)" +
+                    " select @@identity AS id_usuario", SqlConn);
 
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
-              /* cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
-                cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
-                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;*/
                 usuario.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
-                //cmdSave.ExecuteNonQuery();
-                /*PREGUNTAR: SI EXECUTEESCALAR ADEMAS DE DEVOLVER EL ID EJECUTA EL INSERT ALTA DUDA*/
-
-
+               
             }
 
             catch (Exception Ex)
