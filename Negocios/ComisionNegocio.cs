@@ -41,6 +41,10 @@ namespace Negocios
             Comision Com = ComisionDatos.GetOne(Id);
             return Com;
         }
-        
+
+        public void Delete(int Id)
+        {
+            ComisionDatos.Delete(Id);
+        }
     }
 }

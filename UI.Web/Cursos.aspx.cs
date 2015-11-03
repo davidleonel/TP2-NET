@@ -101,8 +101,8 @@ namespace UI.Web
         {
             this.CursoActual = this.CurNeg.GetOne(id);
             this.idCursoTextBox.Text = this.CursoActual.Id.ToString();
-            this.MateriaDropDownList.Text = this.CursoActual.IdMateria.ToString();
-            this.ComisionDropDownList.Text = this.CursoActual.IdComision.ToString();
+            this.MateriaDropDownList.Items.Insert(0, new ListItem(this.CursoActual.IdMateria.ToString(), "0"));
+            this.ComisionDropDownList.Items.Insert(0, new ListItem(this.CursoActual.IdComision.ToString(), "0"));
             this.anioCalendarioTextBox.Text = this.CursoActual.AnioCalendario.ToString();
             this.cupoTextBox.Text = this.CursoActual.Cupo.ToString();
         }
@@ -111,8 +111,9 @@ namespace UI.Web
 
         private void LoadEntity(Curso Curso)
         {
-            //Curso.IdMateria = this.MateriaDropDownList.SelectedValue;
-            //Curso.IdComision = Convert.ToInt32(this..Text);
+
+            Curso.IdMateria = Convert.ToInt32(this.MateriaDropDownList.SelectedValue);
+            Curso.IdComision = Convert.ToInt32(this.ComisionDropDownList.SelectedValue);
             Curso.AnioCalendario = Convert.ToInt32(this.anioCalendarioTextBox.Text);
             Curso.Cupo = Convert.ToInt32(this.cupoTextBox.Text);
         }
@@ -172,9 +173,9 @@ namespace UI.Web
 
             this.MateriaDropDownList.DataSource = mn.GetAll();
             this.MateriaDropDownList.DataValueField = "Id";
-            this.MateriaDropDownList.DataTextField = "DescripcionPlan";
-            // this.MateriaDropDownList.DataBind();
-            this.MateriaDropDownList.Items.Insert(0, new ListItem("Seleccione Plan.", "0"));
+            this.MateriaDropDownList.DataTextField = "DescripcionMateria";
+            this.MateriaDropDownList.DataBind();
+            this.MateriaDropDownList.Items.Insert(0, new ListItem("Seleccione Materia.", "0"));
 
         }
 
@@ -184,8 +185,8 @@ namespace UI.Web
 
             this.ComisionDropDownList.DataSource = cn.GetAll();
             this.ComisionDropDownList.DataValueField = "Id";
-            this.ComisionDropDownList.DataTextField = "DescripcionPlan";
-            // this.ComisionDropDownList.DataBind();
+            this.ComisionDropDownList.DataTextField = "DescripcionComision";
+            this.ComisionDropDownList.DataBind();
             this.ComisionDropDownList.Items.Insert(0, new ListItem("Seleccione Plan.", "0"));
 
         }
@@ -211,8 +212,11 @@ namespace UI.Web
             {
                 this.CursoPanel.Visible = true;
                 this.FormMode = FormModes.Modificacion;
+                this.CargaDropDownListMaterias();
+                this.CargaDropDownListComisiones();
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(true);
+
             }
         }
 
@@ -242,26 +246,7 @@ namespace UI.Web
             this.cupoTextBox.Text = string.Empty;
         }
 
-        /*
-
-        protected void personaDropDownList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (personaDropDownList.SelectedIndex != 0)
-
-            {
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = false;  
-                this.FormMode = FormModes.AltaU;
-                this.EnableForm(true);
-            }
-            else if (personaDropDownList.SelectedIndex == 0)
-            {
-                this.FormMode = FormModes.AltaP;
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = true;  
-            }
-        }
-        */
+        
 
         /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
         {

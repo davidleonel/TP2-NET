@@ -42,6 +42,10 @@ namespace Negocios
             return Cur;
         }
 
+        public void Delete(int Id)
+        {
+            CursoDatos.Delete(Id);
+        }
 
     }
 }

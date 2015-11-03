@@ -104,7 +104,7 @@ namespace UI.Web
             this.descMateriaTextBox.Text = this.MateriaActual.DescripcionMateria;
             this.hsSemanalesTextBox.Text = this.MateriaActual.HsSemanales.ToString();
             this.hsTotalesTextBox.Text = this.MateriaActual.HsTotales.ToString();
-            this.PlanesDropDownList.Text = this.MateriaActual.IdPlan.ToString();
+            this.PlanesDropDownList.Items.Insert(0, new ListItem(this.MateriaActual.IdPlan.ToString(), "0"));
         }
 
      
@@ -114,7 +114,7 @@ namespace UI.Web
             Materia.DescripcionMateria = this.descMateriaTextBox.Text;
             Materia.HsSemanales = Convert.ToInt32(this.hsSemanalesTextBox.Text);
             Materia.HsTotales = Convert.ToInt32(this.hsTotalesTextBox.Text);
-            Materia.IdPlan = Convert.ToInt32(this.PlanesDropDownList.Text);
+            Materia.IdPlan = Convert.ToInt32(this.PlanesDropDownList.SelectedValue);
         }
 
 
@@ -173,7 +173,7 @@ namespace UI.Web
             this.PlanesDropDownList.DataSource = pn.GetAll();
             this.PlanesDropDownList.DataValueField = "Id";
             this.PlanesDropDownList.DataTextField = "DescripcionPlan";
-           // this.PlanesDropDownList.DataBind();
+            this.PlanesDropDownList.DataBind();
             this.PlanesDropDownList.Items.Insert(0, new ListItem("Seleccione Plan.", "0"));
 
         }
@@ -198,6 +198,7 @@ namespace UI.Web
             {
                 this.MateriaPanel.Visible = true;
                 this.FormMode = FormModes.Modificacion;
+                this.CargaDropDownListPlanes();
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(true);
             }
@@ -228,29 +229,10 @@ namespace UI.Web
             this.descMateriaTextBox.Text = string.Empty;
             this.hsSemanalesTextBox.Text = string.Empty;
             this.hsTotalesTextBox.Text = string.Empty;
-            this.PlanesDropDownList.Text = string.Empty;
+
         }
 
-        /*
-
-        protected void personaDropDownList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (personaDropDownList.SelectedIndex != 0)
-
-            {
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = false;  
-                this.FormMode = FormModes.AltaU;
-                this.EnableForm(true);
-            }
-            else if (personaDropDownList.SelectedIndex == 0)
-            {
-                this.FormMode = FormModes.AltaP;
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = true;  
-            }
-        }
-        */
+        
 
         /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
         {

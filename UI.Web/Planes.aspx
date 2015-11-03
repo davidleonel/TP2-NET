@@ -38,7 +38,7 @@
             Text="*"></asp:RequiredFieldValidator>
         <br />
 
-        <asp:Label ID="idEspecialidadLabel" runat="server" Text="ID Plan: "></asp:Label>
+        <asp:Label ID="idEspecialidadLabel" runat="server" Text="ID Especialidad: "></asp:Label>
         <asp:DropDownList ID="EspecialidadesDropDownList" runat="server" Width="153px">
         </asp:DropDownList>
 

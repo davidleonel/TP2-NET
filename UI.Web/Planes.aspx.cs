@@ -102,7 +102,8 @@ namespace UI.Web
             this.planActual = this.PlanNeg.GetOne(id);
             this.idplanTextBox.Text = this.planActual.Id.ToString();
             this.descplanTextBox.Text = this.planActual.DescripcionPlan;
-            this.EspecialidadesDropDownList.Text = this.planActual.IdEspecialidad.ToString();
+            this.EspecialidadesDropDownList.Items.Insert(0, new ListItem(this.planActual.IdEspecialidad.ToString(), "0"));
+
         }
 
      
@@ -110,7 +111,7 @@ namespace UI.Web
         private void LoadEntity(Plan plan)
         {
             plan.DescripcionPlan = this.descplanTextBox.Text;
-            plan.IdEspecialidad = Convert.ToInt32(this.EspecialidadesDropDownList.Text);
+            plan.IdEspecialidad = Convert.ToInt32(this.EspecialidadesDropDownList.SelectedValue);
         }
 
 
@@ -162,12 +163,12 @@ namespace UI.Web
 
         public void CargaDropDownListEspecialidades()
         {
-            PlanNegocio pn = new PlanNegocio();
+            EspecialidadNegocio en = new EspecialidadNegocio();
 
-            this.EspecialidadesDropDownList.DataSource = pn.GetAll();
+            this.EspecialidadesDropDownList.DataSource = en.GetAll();
             this.EspecialidadesDropDownList.DataValueField = "Id";
-            this.EspecialidadesDropDownList.DataTextField = "DescripcionPlan";
-            // this.EspecialidadesDropDownList.DataBind();
+            this.EspecialidadesDropDownList.DataTextField = "DescripcionEspecialidad";
+            this.EspecialidadesDropDownList.DataBind();
             this.EspecialidadesDropDownList.Items.Insert(0, new ListItem("Seleccione Especialidad.", "0"));
 
         }
@@ -192,8 +193,11 @@ namespace UI.Web
             {
                 this.planPanel.Visible = true;
                 this.FormMode = FormModes.Modificacion;
+                this.CargaDropDownListEspecialidades();
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(true);
+                
+    
             }
         }
 
@@ -220,29 +224,9 @@ namespace UI.Web
         {
             this.idplanTextBox.Text = string.Empty;
             this.descplanTextBox.Text = string.Empty;
-            this.EspecialidadesDropDownList.Text = string.Empty;
+
         }
 
-        /*
-
-        protected void personaDropDownList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (personaDropDownList.SelectedIndex != 0)
-
-            {
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = false;  
-                this.FormMode = FormModes.AltaU;
-                this.EnableForm(true);
-            }
-            else if (personaDropDownList.SelectedIndex == 0)
-            {
-                this.FormMode = FormModes.AltaP;
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = true;  
-            }
-        }
-        */
 
         /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
         {

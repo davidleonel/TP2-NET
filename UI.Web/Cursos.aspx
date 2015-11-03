@@ -40,14 +40,12 @@
         <asp:Label ID="idComisionLabel" runat="server" Text="ID Comision: "></asp:Label>
         <asp:DropDownList ID="ComisionDropDownList" runat="server" Width="165px">
         </asp:DropDownList>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="idComisionTextBox"
-            ErrorMessage='El ID de la Comision no puede estar vacio.' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
+     
         <br />
         <asp:Label ID="anioCalendarioLabel" runat="server" Text="Anio Calendario: "></asp:Label>
         <asp:TextBox ID="anioCalendarioTextBox" runat="server" Text=""></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="anioCalendarioTextBox"
-            ErrorMessage='Las horas totales no pueden ser nulas.' EnableClientScript="true" SetFocusOnError="true"
+         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="anioCalendarioTextBox"
+            ErrorMessage='El anio no puede ser nulo.' EnableClientScript="true" SetFocusOnError="true"
             Text="*"></asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="cupoLabel" runat="server" Text="Cupo: "></asp:Label>
