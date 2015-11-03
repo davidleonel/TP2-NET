@@ -7,22 +7,21 @@ using System.Web.UI.WebControls;
 using Negocios;
 using Entidades;
 
-
 namespace UI.Web
 {
-    public partial class Materias : System.Web.UI.Page
+    public partial class Comisiones : System.Web.UI.Page
     {
         #region Propiedades
-        MateriaNegocio _MatNeg;
-        private MateriaNegocio MatNeg
+        ComisionNegocio _ComNeg;
+        private ComisionNegocio ComNeg
         {
             get
             {
-                if (_MatNeg == null)
+                if (_ComNeg == null)
                 {
-                    _MatNeg = new MateriaNegocio();
+                    _ComNeg = new ComisionNegocio();
                 }
-                return _MatNeg;
+                return _ComNeg;
             }
         }
 
@@ -32,7 +31,7 @@ namespace UI.Web
             set { this.ViewState["FormMode"] = value; }
         }
 
-        private Materia MateriaActual
+        private Comision ComActual
         {
             get;
             set;
@@ -64,6 +63,7 @@ namespace UI.Web
                 return (this.SelectedID != 0);
             }
         }
+
         #endregion 
 
         #region Enumerador
@@ -73,45 +73,44 @@ namespace UI.Web
             Baja,
             Modificacion
         }
-        #endregion 
+        #endregion
 
         #region Metodos
         private void LoadGrid()
         {
-            this.MateriasgridView.DataSource = this.MatNeg.GetAll();
-            this.MateriasgridView.DataBind();
+            this.ComisionesgridView.DataSource = this.ComNeg.GetAll();
+            this.ComisionesgridView.DataBind();
         }
+
 
         private void LoadForm(int id)
         {
-            this.MateriaActual = this.MatNeg.GetOne(id);
-            this.idMateriaTextBox.Text = this.MateriaActual.Id.ToString();
-            this.descMateriaTextBox.Text = this.MateriaActual.DescripcionMateria;
-            this.hsSemanalesTextBox.Text = this.MateriaActual.HsSemanales.ToString();
-            this.hsTotalesTextBox.Text = this.MateriaActual.HsTotales.ToString();
-            this.PlanesDropDownList.Items.Insert(0, new ListItem(this.MateriaActual.IdPlan.ToString(), "0"));
-            this.PlanesDropDownList.SelectedValue = this.MateriaActual.IdPlan.ToString();
+            this.ComActual = this.ComNeg.GetOne(id);
+            this.idComisionTextBox.Text = this.ComActual.Id.ToString();
+            this.descComisionTextBox.Text = this.ComActual.DescripcionComision;
+            this.anioTextBox.Text = this.ComActual.AnioEspecialidad.ToString();
+            this.PlanesDropDownList.Items.Insert(0, new ListItem(this.ComActual.IdPlan.ToString(), "0"));
+            this.PlanesDropDownList.SelectedValue = this.ComActual.IdPlan.ToString();
+        }
+        private void LoadEntity(Comision comision)
+        {
+            comision.DescripcionComision = this.descComisionTextBox.Text;
+            comision.AnioEspecialidad = Convert.ToInt32(this.anioTextBox.Text); 
+            comision.IdPlan = Convert.ToInt32(this.PlanesDropDownList.SelectedValue);
+            
+
         }
 
-        private void LoadEntity(Materia Materia)
+        private void SaveEntity(Comision comision)
         {
-            Materia.DescripcionMateria = this.descMateriaTextBox.Text;
-            Materia.HsSemanales = Convert.ToInt32(this.hsSemanalesTextBox.Text);
-            Materia.HsTotales = Convert.ToInt32(this.hsTotalesTextBox.Text);
-            Materia.IdPlan = Convert.ToInt32(this.PlanesDropDownList.SelectedValue);
-        }
-
-        private void SaveEntity(Materia Materia)
-        {
-            this.MatNeg.Save(Materia);
+            this.ComNeg.Save(comision);
         }
 
         private void EnableForm(bool enable)
         {
 
-            this.descMateriaTextBox.Enabled = enable;
-            this.hsSemanalesTextBox.Enabled = enable;
-            this.hsTotalesTextBox.Enabled = enable;
+            this.descComisionTextBox.Enabled = enable;
+            this.anioTextBox.Enabled = enable;
             this.PlanesDropDownList.Enabled = enable;
 
         }
@@ -127,22 +126,21 @@ namespace UI.Web
             this.PlanesDropDownList.Items.Insert(0, new ListItem("Seleccione Plan.", "0"));
 
         }
-        
+
         private void DeleteEntity(int id)
         {
-            this.MatNeg.Delete(id);
+            this.ComNeg.Delete(id);
         }
-        
+
         private void ClearForm()
         {
-            this.idMateriaTextBox.Text = string.Empty;
-            this.descMateriaTextBox.Text = string.Empty;
-            this.hsSemanalesTextBox.Text = string.Empty;
-            this.hsTotalesTextBox.Text = string.Empty;
+            this.idComisionTextBox.Text = string.Empty;
+            this.descComisionTextBox.Text = string.Empty;
+            this.anioTextBox.Text = string.Empty;
 
         }
 
-        #endregion 
+        #endregion
 
         #region Eventos
         protected void Page_Load(object sender, EventArgs e)
@@ -155,7 +153,7 @@ namespace UI.Web
 
         protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.SelectedID = (int)this.MateriasgridView.SelectedValue;
+            this.SelectedID = (int)this.ComisionesgridView.SelectedValue;
         }
 
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
@@ -168,19 +166,19 @@ namespace UI.Web
                     break;
 
                 case FormModes.Modificacion:
-                    this.MateriaActual = new Materia();
-                    this.MateriaActual.Id = this.SelectedID;
-                    this.MateriaActual.Estado = Entidad.Estados.Modificado;
-                    this.LoadEntity(this.MateriaActual);
-                    this.SaveEntity(this.MateriaActual);
+                    this.ComActual = new Comision();
+                    this.ComActual.Id = this.SelectedID;
+                    this.ComActual.Estado = Entidad.Estados.Modificado;
+                    this.LoadEntity(this.ComActual);
+                    this.SaveEntity(this.ComActual);
                     this.LoadGrid();
                     break;
 
                 case FormModes.Alta:
 
-                    this.MateriaActual = new Materia();
-                    this.LoadEntity(this.MateriaActual);
-                    this.SaveEntity(this.MateriaActual);
+                    this.ComActual = new Comision();
+                    this.LoadEntity(this.ComActual);
+                    this.SaveEntity(this.ComActual);
                     this.LoadGrid();
                     break;
 
@@ -188,14 +186,15 @@ namespace UI.Web
                     break;
             }
 
-            this.MateriaPanel.Visible = false;
+            this.ComisionPanel.Visible = false;
         }
+
         protected void nuevoLinkButton_Click(object sender, EventArgs e)
         {
 
 
             this.FormMode = FormModes.Alta;
-            this.MateriaPanel.Visible = true;
+            this.ComisionPanel.Visible = true;
             this.ClearForm();
             this.EnableForm(true);
             this.CargaDropDownListPlanes();
@@ -206,7 +205,7 @@ namespace UI.Web
         {
             if (this.isEntitySelected)
             {
-                this.MateriaPanel.Visible = true;
+                this.ComisionPanel.Visible = true;
                 this.FormMode = FormModes.Modificacion;
                 this.CargaDropDownListPlanes();
                 this.LoadForm(this.SelectedID);
@@ -218,7 +217,7 @@ namespace UI.Web
         {
             if (this.isEntitySelected)
             {
-                this.MateriaPanel.Visible = true;
+                this.ComisionPanel.Visible = true;
                 this.FormMode = FormModes.Baja;
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(false);
@@ -230,7 +229,7 @@ namespace UI.Web
                 this.LoadGrid();
             }*/
         //preguntar si este evento es así
-        #endregion 
 
+        #endregion
     }
 }

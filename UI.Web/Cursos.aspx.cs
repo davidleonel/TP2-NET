@@ -12,9 +12,8 @@ namespace UI.Web
 {
     public partial class Cursos : System.Web.UI.Page
     {
+        #region Propiedades
         CursoNegocio _CurNeg;
-
-
         private CursoNegocio CurNeg
         {
             get
@@ -26,30 +25,7 @@ namespace UI.Web
                 return _CurNeg;
             }
         }
-    
-        
 
-        private void LoadGrid()
-        {
-            this.CursosgridView.DataSource = this.CurNeg.GetAll();
-            this.CursosgridView.DataBind();
-        }
-
-
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!this.IsPostBack)
-            {
-                this.LoadGrid();
-            }
-        }
-
-        public enum FormModes
-        {
-            Alta,
-            Baja,
-            Modificacion
-        }
         public FormModes FormMode
         {
             get { return (FormModes)this.ViewState["FormMode"]; }
@@ -62,8 +38,6 @@ namespace UI.Web
             set;
         }
 
-         
-        
         private int SelectedID
         {
             get
@@ -90,24 +64,35 @@ namespace UI.Web
                 return (this.SelectedID != 0);
             }
         }
+        #endregion 
 
-        protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
+        #region Enumerador
+        public enum FormModes
         {
-            this.SelectedID = (int)this.CursosgridView.SelectedValue;
+            Alta,
+            Baja,
+            Modificacion
         }
+        #endregion 
 
+        #region Metodos
+        private void LoadGrid()
+        {
+            this.CursosgridView.DataSource = this.CurNeg.GetAll();
+            this.CursosgridView.DataBind();
+        }
 
         private void LoadForm(int id)
         {
             this.CursoActual = this.CurNeg.GetOne(id);
             this.idCursoTextBox.Text = this.CursoActual.Id.ToString();
             this.MateriaDropDownList.Items.Insert(0, new ListItem(this.CursoActual.IdMateria.ToString(), "0"));
+            this.MateriaDropDownList.SelectedValue = this.CursoActual.IdMateria.ToString();
             this.ComisionDropDownList.Items.Insert(0, new ListItem(this.CursoActual.IdComision.ToString(), "0"));
+            this.ComisionDropDownList.SelectedValue = this.CursoActual.IdComision.ToString();
             this.anioCalendarioTextBox.Text = this.CursoActual.AnioCalendario.ToString();
             this.cupoTextBox.Text = this.CursoActual.Cupo.ToString();
         }
-
-     
 
         private void LoadEntity(Curso Curso)
         {
@@ -118,48 +103,14 @@ namespace UI.Web
             Curso.Cupo = Convert.ToInt32(this.cupoTextBox.Text);
         }
 
-
         private void SaveEntity(Curso Curso)
         {
             this.CurNeg.Save(Curso);
         }
 
-        protected void aceptarLinkButton_Click(object sender, EventArgs e)
-        {
-            switch(this.FormMode)
-            {
-                case FormModes.Baja:
-                    this.DeleteEntity(this.SelectedID);
-                    this.LoadGrid();
-                    break;
-                
-                case FormModes.Modificacion:
-                    this.CursoActual = new Curso();
-                    this.CursoActual.Id = this.SelectedID;
-                    this.CursoActual.Estado = Entidad.Estados.Modificado;
-                    this.LoadEntity(this.CursoActual);
-                    this.SaveEntity(this.CursoActual);
-                    this.LoadGrid();
-                    break;
-
-                case FormModes.Alta:
-
-                    this.CursoActual = new Curso();
-                    this.LoadEntity(this.CursoActual);
-                    this.SaveEntity(this.CursoActual);
-                    this.LoadGrid();
-                    break;
-
-                default:
-                    break;
-            }
-            
-            this.CursoPanel.Visible = false;
-        }
-
         private void EnableForm(bool enable)
         {
-            
+
             this.anioCalendarioTextBox.Enabled = enable;
             this.cupoTextBox.Enabled = enable;
             this.ComisionDropDownList.Enabled = enable;
@@ -191,7 +142,65 @@ namespace UI.Web
 
         }
 
+        private void DeleteEntity(int id)
+        {
+            this.CurNeg.Delete(id);
+        }
 
+        private void ClearForm()
+        {
+            this.idCursoTextBox.Text = string.Empty;
+            this.anioCalendarioTextBox.Text = string.Empty;
+            this.cupoTextBox.Text = string.Empty;
+        }
+
+        #endregion 
+
+        #region Eventos
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!this.IsPostBack)
+            {
+                this.LoadGrid();
+            }
+        }
+
+        protected void gridView_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            this.SelectedID = (int)this.CursosgridView.SelectedValue;
+        }
+        protected void aceptarLinkButton_Click(object sender, EventArgs e)
+        {
+            switch (this.FormMode)
+            {
+                case FormModes.Baja:
+                    this.DeleteEntity(this.SelectedID);
+                    this.LoadGrid();
+                    break;
+
+                case FormModes.Modificacion:
+                    this.CursoActual = new Curso();
+                    this.CursoActual.Id = this.SelectedID;
+                    this.CursoActual.Estado = Entidad.Estados.Modificado;
+                    this.LoadEntity(this.CursoActual);
+                    this.SaveEntity(this.CursoActual);
+                    this.LoadGrid();
+                    break;
+
+                case FormModes.Alta:
+
+                    this.CursoActual = new Curso();
+                    this.LoadEntity(this.CursoActual);
+                    this.SaveEntity(this.CursoActual);
+                    this.LoadGrid();
+                    break;
+
+                default:
+                    break;
+            }
+
+            this.CursoPanel.Visible = false;
+        }
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)
         {
@@ -225,33 +234,18 @@ namespace UI.Web
             if (this.isEntitySelected)
             {
                 this.CursoPanel.Visible = true;
-                this.FormMode = FormModes.Baja;      
+                this.FormMode = FormModes.Baja;
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(false);
             }
         }
 
-        private void DeleteEntity(int id)
-        {
-            this.CurNeg.Delete(id);
-        }
-
-
-
-
-        private void ClearForm()
-        {
-            this.idCursoTextBox.Text = string.Empty;
-            this.anioCalendarioTextBox.Text = string.Empty;
-            this.cupoTextBox.Text = string.Empty;
-        }
-
-        
-
         /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
-        {
-            this.LoadGrid();
-        }*/ //preguntar si este evento es así
+            {
+                this.LoadGrid();
+            }*/
+        //preguntar si este evento es así
+        #endregion
 
     }
 }

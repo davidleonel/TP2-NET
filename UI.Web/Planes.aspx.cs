@@ -12,9 +12,8 @@ namespace UI.Web
 {
     public partial class planes : System.Web.UI.Page
     {
+        #region Propiedades
         PlanNegocio _PlanNeg;
-
-
         private PlanNegocio PlanNeg
         {
             get
@@ -26,44 +25,16 @@ namespace UI.Web
                 return _PlanNeg;
             }
         }
-    
-        
-
-        private void LoadGrid()
-        {
-            this.planesgridView.DataSource = this.PlanNeg.GetAll();
-            this.planesgridView.DataBind();
-        }
-
-
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            if (!this.IsPostBack)
-            {
-                this.LoadGrid();
-            }
-        }
-
-        public enum FormModes
-        {
-            Alta,
-            Baja,
-            Modificacion
-        }
         public FormModes FormMode
         {
             get { return (FormModes)this.ViewState["FormMode"]; }
             set { this.ViewState["FormMode"] = value; }
         }
-
         private Plan planActual
         {
             get;
             set;
         }
-
-         
-        
         private int SelectedID
         {
             get
@@ -82,12 +53,88 @@ namespace UI.Web
                 this.ViewState["SelectedID"] = value;
             }
         }
-
         private bool isEntitySelected
         {
             get
             {
                 return (this.SelectedID != 0);
+            }
+        }
+        #endregion
+
+        #region Enumerador
+        public enum FormModes
+        {
+            Alta,
+            Baja,
+            Modificacion
+        }
+        #endregion
+
+        #region Metodos
+        private void LoadGrid()
+        {
+            this.planesgridView.DataSource = this.PlanNeg.GetAll();
+            this.planesgridView.DataBind();
+        }
+        private void LoadForm(int id)
+        {
+            this.planActual = this.PlanNeg.GetOne(id);
+            this.idplanTextBox.Text = this.planActual.Id.ToString();
+            this.descplanTextBox.Text = this.planActual.DescripcionPlan;
+            this.EspecialidadesDropDownList.Items.Insert(0, new ListItem(this.planActual.IdEspecialidad.ToString(), "0"));
+            this.EspecialidadesDropDownList.SelectedValue = this.planActual.IdEspecialidad.ToString();
+
+        }
+
+        private void LoadEntity(Plan plan)
+        {
+            plan.DescripcionPlan = this.descplanTextBox.Text;
+            plan.IdEspecialidad = Convert.ToInt32(this.EspecialidadesDropDownList.SelectedValue);
+        }
+        private void SaveEntity(Plan plan)
+        {
+            this.PlanNeg.Save(plan);
+        }
+
+        private void EnableForm(bool enable)
+        {
+
+            this.descplanTextBox.Enabled = enable;
+            this.EspecialidadesDropDownList.Enabled = enable;
+
+        }
+
+        public void CargaDropDownListEspecialidades()
+        {
+            EspecialidadNegocio en = new EspecialidadNegocio();
+
+            this.EspecialidadesDropDownList.DataSource = en.GetAll();
+            this.EspecialidadesDropDownList.DataValueField = "Id";
+            this.EspecialidadesDropDownList.DataTextField = "DescripcionEspecialidad";
+            this.EspecialidadesDropDownList.DataBind();
+            this.EspecialidadesDropDownList.Items.Insert(0, new ListItem("Seleccione Especialidad.", "0"));
+
+        }
+
+        private void DeleteEntity(int id)
+        {
+            this.PlanNeg.Delete(id);
+        }
+        private void ClearForm()
+        {
+            this.idplanTextBox.Text = string.Empty;
+            this.descplanTextBox.Text = string.Empty;
+
+        }
+        #endregion
+
+        #region Eventos
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!this.IsPostBack)
+            {
+                this.LoadGrid();
             }
         }
 
@@ -96,39 +143,15 @@ namespace UI.Web
             this.SelectedID = (int)this.planesgridView.SelectedValue;
         }
 
-
-        private void LoadForm(int id)
-        {
-            this.planActual = this.PlanNeg.GetOne(id);
-            this.idplanTextBox.Text = this.planActual.Id.ToString();
-            this.descplanTextBox.Text = this.planActual.DescripcionPlan;
-            this.EspecialidadesDropDownList.Items.Insert(0, new ListItem(this.planActual.IdEspecialidad.ToString(), "0"));
-
-        }
-
-     
-
-        private void LoadEntity(Plan plan)
-        {
-            plan.DescripcionPlan = this.descplanTextBox.Text;
-            plan.IdEspecialidad = Convert.ToInt32(this.EspecialidadesDropDownList.SelectedValue);
-        }
-
-
-        private void SaveEntity(Plan plan)
-        {
-            this.PlanNeg.Save(plan);
-        }
-
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
         {
-            switch(this.FormMode)
+            switch (this.FormMode)
             {
                 case FormModes.Baja:
                     this.DeleteEntity(this.SelectedID);
                     this.LoadGrid();
                     break;
-                
+
                 case FormModes.Modificacion:
                     this.planActual = new Plan();
                     this.planActual.Id = this.SelectedID;
@@ -149,31 +172,9 @@ namespace UI.Web
                 default:
                     break;
             }
-            
+
             this.planPanel.Visible = false;
         }
-
-        private void EnableForm(bool enable)
-        {
-            
-            this.descplanTextBox.Enabled = enable;
-            this.EspecialidadesDropDownList.Enabled = enable;
-
-        }
-
-        public void CargaDropDownListEspecialidades()
-        {
-            EspecialidadNegocio en = new EspecialidadNegocio();
-
-            this.EspecialidadesDropDownList.DataSource = en.GetAll();
-            this.EspecialidadesDropDownList.DataValueField = "Id";
-            this.EspecialidadesDropDownList.DataTextField = "DescripcionEspecialidad";
-            this.EspecialidadesDropDownList.DataBind();
-            this.EspecialidadesDropDownList.Items.Insert(0, new ListItem("Seleccione Especialidad.", "0"));
-
-        }
-
-
 
         protected void nuevoLinkButton_Click(object sender, EventArgs e)
         {
@@ -196,8 +197,8 @@ namespace UI.Web
                 this.CargaDropDownListEspecialidades();
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(true);
-                
-    
+
+
             }
         }
 
@@ -206,32 +207,17 @@ namespace UI.Web
             if (this.isEntitySelected)
             {
                 this.planPanel.Visible = true;
-                this.FormMode = FormModes.Baja;      
+                this.FormMode = FormModes.Baja;
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(false);
             }
         }
 
-        private void DeleteEntity(int id)
-        {
-            this.PlanNeg.Delete(id);
-        }
-
-
-
-
-        private void ClearForm()
-        {
-            this.idplanTextBox.Text = string.Empty;
-            this.descplanTextBox.Text = string.Empty;
-
-        }
-
-
         /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
-        {
-            this.LoadGrid();
-        }*/ //preguntar si este evento es así
-
+            {
+                this.LoadGrid();
+            }*/
+        //preguntar si este evento es así
+        #endregion
     }
 }

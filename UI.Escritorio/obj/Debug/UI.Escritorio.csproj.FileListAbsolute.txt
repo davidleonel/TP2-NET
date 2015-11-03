@@ -261,3 +261,36 @@ C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Pla
 C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteEscritorio.resources
 C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.CursosEscritorio.resources
 C:\Users\ara--_000\Desktop\NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocentesEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\UI.Escritorio.exe
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\UI.Escritorio.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\Entidades.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\Negocios.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\Data.Database.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\Entidades.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\Negocios.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\bin\Debug\Data.Database.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.csprojResolveAssemblyReference.cache
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ApplicationForm.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionesEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.alumnoInscripcionEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteCursoEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnosEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnoEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.alumnosInscripcionesEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadEscritorio_.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadesEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.CursoEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.MateriaEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.DocentesCursosEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.MateriasEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.Menu.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.PlanEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.PlanesEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.UsuarioEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.CursosEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.DocentesEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.UsuariosEscritorio.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.Properties.Resources.resources
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\UI.Escritorio\obj\Debug\UI.Escritorio.csproj.GenerateResource.Cache

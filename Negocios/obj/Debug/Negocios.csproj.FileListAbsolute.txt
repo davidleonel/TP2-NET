@@ -79,3 +79,12 @@ C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Negocios\bin\Debug\Entidades.pdb
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Negocios\obj\Debug\Negocios.dll
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\bin\Debug\Negocios.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\bin\Debug\Data.Database.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\bin\Debug\Entidades.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\bin\Debug\Data.Database.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\obj\Debug\Negocios.dll
+C:\Users\Computadora\Dropbox\5to\.NET\TP2- Ultima Version\Tp 2- Academia - copia\Negocios\obj\Debug\Negocios.pdb

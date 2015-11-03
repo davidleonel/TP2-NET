@@ -33,11 +33,11 @@
         <asp:TextBox ID="idCursoTextBox" runat="server" Text="" Enabled="false"></asp:TextBox> 
         <br />
 
-        <asp:Label ID="idMateriaLabel" runat="server" Text="ID Materia: "></asp:Label>
+        <asp:Label ID="idMateriaLabel" runat="server" Text="Materia: "></asp:Label>
         <asp:DropDownList ID="MateriaDropDownList" runat="server" Height="17px" Width="165px">
         </asp:DropDownList>
         
-        <asp:Label ID="idComisionLabel" runat="server" Text="ID Comision: "></asp:Label>
+        <asp:Label ID="idComisionLabel" runat="server" Text="Comision: "></asp:Label>
         <asp:DropDownList ID="ComisionDropDownList" runat="server" Width="165px">
         </asp:DropDownList>
      

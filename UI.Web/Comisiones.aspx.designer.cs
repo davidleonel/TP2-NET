@@ -10,25 +10,25 @@
 namespace UI.Web {
     
     
-    public partial class Materias {
+    public partial class Comisiones {
         
         /// <summary>
-        /// MateriasgridPanel control.
+        /// ComisionesgridPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MateriasgridPanel;
+        protected global::System.Web.UI.WebControls.Panel ComisionesgridPanel;
         
         /// <summary>
-        /// MateriasgridView control.
+        /// ComisionesgridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView MateriasgridView;
+        protected global::System.Web.UI.WebControls.GridView ComisionesgridView;
         
         /// <summary>
         /// gridActionsPanel control.
@@ -67,49 +67,49 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.LinkButton eliminarLinkButton;
         
         /// <summary>
-        /// MateriaPanel control.
+        /// ComisionPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MateriaPanel;
+        protected global::System.Web.UI.WebControls.Panel ComisionPanel;
         
         /// <summary>
-        /// idMateriaLabel control.
+        /// idComisionLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label idMateriaLabel;
+        protected global::System.Web.UI.WebControls.Label idComisionLabel;
         
         /// <summary>
-        /// idMateriaTextBox control.
+        /// idComisionTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox idMateriaTextBox;
+        protected global::System.Web.UI.WebControls.TextBox idComisionTextBox;
         
         /// <summary>
-        /// descMateriaLabel control.
+        /// descComisionLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label descMateriaLabel;
+        protected global::System.Web.UI.WebControls.Label descComisionLabel;
         
         /// <summary>
-        /// descMateriaTextBox control.
+        /// descComisionTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descMateriaTextBox;
+        protected global::System.Web.UI.WebControls.TextBox descComisionTextBox;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -121,22 +121,22 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// hsSemanalesLabel control.
+        /// anioLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hsSemanalesLabel;
+        protected global::System.Web.UI.WebControls.Label anioLabel;
         
         /// <summary>
-        /// hsSemanalesTextBox control.
+        /// anioTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hsSemanalesTextBox;
+        protected global::System.Web.UI.WebControls.TextBox anioTextBox;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -146,33 +146,6 @@ namespace UI.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
-        /// <summary>
-        /// hsTotalesLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hsTotalesLabel;
-        
-        /// <summary>
-        /// hsTotalesTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hsTotalesTextBox;
-        
-        /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
         /// idPlanLabel control.

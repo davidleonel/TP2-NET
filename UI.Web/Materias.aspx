@@ -51,7 +51,7 @@
             ErrorMessage='Las horas totales no pueden ser nulas.' EnableClientScript="true" SetFocusOnError="true"
             Text="*"></asp:RequiredFieldValidator>
         <br />
-        <asp:Label ID="idPlanLabel" runat="server" Text="ID Plan: "></asp:Label>
+        <asp:Label ID="idPlanLabel" runat="server" Text="Plan: "></asp:Label>
         <asp:DropDownList ID="PlanesDropDownList" runat="server" Width="153px">
         </asp:DropDownList>
 

@@ -10,25 +10,25 @@
 namespace UI.Web {
     
     
-    public partial class Materias {
+    public partial class Especialidades {
         
         /// <summary>
-        /// MateriasgridPanel control.
+        /// EspecialidadesgridPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MateriasgridPanel;
+        protected global::System.Web.UI.WebControls.Panel EspecialidadesgridPanel;
         
         /// <summary>
-        /// MateriasgridView control.
+        /// EspecialidadesgridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView MateriasgridView;
+        protected global::System.Web.UI.WebControls.GridView EspecialidadesgridView;
         
         /// <summary>
         /// gridActionsPanel control.
@@ -67,49 +67,49 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.LinkButton eliminarLinkButton;
         
         /// <summary>
-        /// MateriaPanel control.
+        /// EspecialidadPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MateriaPanel;
+        protected global::System.Web.UI.WebControls.Panel EspecialidadPanel;
         
         /// <summary>
-        /// idMateriaLabel control.
+        /// idEspecialidadLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label idMateriaLabel;
+        protected global::System.Web.UI.WebControls.Label idEspecialidadLabel;
         
         /// <summary>
-        /// idMateriaTextBox control.
+        /// idEspecialidadTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox idMateriaTextBox;
+        protected global::System.Web.UI.WebControls.TextBox idEspecialidadTextBox;
         
         /// <summary>
-        /// descMateriaLabel control.
+        /// descEspecialidadLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label descMateriaLabel;
+        protected global::System.Web.UI.WebControls.Label descEspecialidadLabel;
         
         /// <summary>
-        /// descMateriaTextBox control.
+        /// descEspecialidadTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descMateriaTextBox;
+        protected global::System.Web.UI.WebControls.TextBox descEspecialidadTextBox;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -119,78 +119,6 @@ namespace UI.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
-        
-        /// <summary>
-        /// hsSemanalesLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hsSemanalesLabel;
-        
-        /// <summary>
-        /// hsSemanalesTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hsSemanalesTextBox;
-        
-        /// <summary>
-        /// RequiredFieldValidator2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
-        /// <summary>
-        /// hsTotalesLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hsTotalesLabel;
-        
-        /// <summary>
-        /// hsTotalesTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hsTotalesTextBox;
-        
-        /// <summary>
-        /// RequiredFieldValidator3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
-        
-        /// <summary>
-        /// idPlanLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label idPlanLabel;
-        
-        /// <summary>
-        /// PlanesDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList PlanesDropDownList;
         
         /// <summary>
         /// formActionsPanel control.
