@@ -8,7 +8,7 @@ using Data.Database;
 
 namespace Negocios
 {
-    public class alumnoInscripcionNegocio
+    public class AlumnoInscripcionNegocio
     {
         #region Propiedades
 
@@ -25,7 +25,7 @@ namespace Negocios
 
         #region Constructor
 
-        public alumnoInscripcionNegocio()
+        public AlumnoInscripcionNegocio()
         {
             this.alumnoInscripcionDatos = new AlumnoInscripcionAdapter();
         }

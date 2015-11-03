@@ -44,7 +44,7 @@ namespace UI.Escritorio
         public alumnoInscripcionEscritorio(int ID, ModoForm modo):this()
         {
             Modo = modo;
-            alumnoInscripcionNegocio aluInsEsc  = new alumnoInscripcionNegocio();
+            AlumnoInscripcionNegocio aluInsEsc  = new AlumnoInscripcionNegocio();
             alumnoInscripcionActual = aluInsEsc.GetOne(ID);
             MapearDeDatos();
             this.cargarCbCurso();
@@ -141,7 +141,7 @@ namespace UI.Escritorio
         public override void GuardarCambios() 
         {
             this.MapearADatos();
-            alumnoInscripcionNegocio ain = new alumnoInscripcionNegocio();
+            AlumnoInscripcionNegocio ain = new AlumnoInscripcionNegocio();
             ain.Save(alumnoInscripcionActual);
             
         }

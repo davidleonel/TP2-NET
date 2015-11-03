@@ -160,6 +160,8 @@
     <Content Include="Especialidades.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Cursos.aspx" />
+    <Content Include="InscribirDocente.aspx" />
+    <Content Include="InscribirAlumno.aspx" />
     <Content Include="Planes.aspx" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -298,6 +300,20 @@
     </Compile>
     <Compile Include="Cursos.aspx.designer.cs">
       <DependentUpon>Cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InscribirDocente.aspx.cs">
+      <DependentUpon>InscribirDocente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InscribirDocente.aspx.designer.cs">
+      <DependentUpon>InscribirDocente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InscribirAlumno.aspx.cs">
+      <DependentUpon>InscribirAlumno.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InscribirAlumno.aspx.designer.cs">
+      <DependentUpon>InscribirAlumno.aspx</DependentUpon>
     </Compile>
     <Compile Include="Planes.aspx.cs">
       <DependentUpon>Planes.aspx</DependentUpon>

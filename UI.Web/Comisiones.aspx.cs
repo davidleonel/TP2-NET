@@ -88,8 +88,7 @@ namespace UI.Web
             this.ComActual = this.ComNeg.GetOne(id);
             this.idComisionTextBox.Text = this.ComActual.Id.ToString();
             this.descComisionTextBox.Text = this.ComActual.DescripcionComision;
-            this.anioTextBox.Text = this.ComActual.AnioEspecialidad.ToString();
-            this.PlanesDropDownList.Items.Insert(0, new ListItem(this.ComActual.IdPlan.ToString(), "0"));
+            this.anioTextBox.Text = this.ComActual.AnioEspecialidad.ToString();          
             this.PlanesDropDownList.SelectedValue = this.ComActual.IdPlan.ToString();
         }
         private void LoadEntity(Comision comision)

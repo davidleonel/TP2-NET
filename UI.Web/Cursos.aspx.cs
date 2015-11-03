@@ -86,9 +86,7 @@ namespace UI.Web
         {
             this.CursoActual = this.CurNeg.GetOne(id);
             this.idCursoTextBox.Text = this.CursoActual.Id.ToString();
-            this.MateriaDropDownList.Items.Insert(0, new ListItem(this.CursoActual.IdMateria.ToString(), "0"));
             this.MateriaDropDownList.SelectedValue = this.CursoActual.IdMateria.ToString();
-            this.ComisionDropDownList.Items.Insert(0, new ListItem(this.CursoActual.IdComision.ToString(), "0"));
             this.ComisionDropDownList.SelectedValue = this.CursoActual.IdComision.ToString();
             this.anioCalendarioTextBox.Text = this.CursoActual.AnioCalendario.ToString();
             this.cupoTextBox.Text = this.CursoActual.Cupo.ToString();

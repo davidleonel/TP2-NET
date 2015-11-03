@@ -25,7 +25,7 @@ namespace UI.Escritorio
         #region Metodos
         public void Listar()
         {
-            alumnoInscripcionNegocio ain = new alumnoInscripcionNegocio();
+            AlumnoInscripcionNegocio ain = new AlumnoInscripcionNegocio();
             this.dgvalumnosInscripciones.DataSource = ain.GetAll();
  
         }

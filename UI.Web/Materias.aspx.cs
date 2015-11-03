@@ -89,7 +89,6 @@ namespace UI.Web
             this.descMateriaTextBox.Text = this.MateriaActual.DescripcionMateria;
             this.hsSemanalesTextBox.Text = this.MateriaActual.HsSemanales.ToString();
             this.hsTotalesTextBox.Text = this.MateriaActual.HsTotales.ToString();
-            this.PlanesDropDownList.Items.Insert(0, new ListItem(this.MateriaActual.IdPlan.ToString(), "0"));
             this.PlanesDropDownList.SelectedValue = this.MateriaActual.IdPlan.ToString();
         }
 

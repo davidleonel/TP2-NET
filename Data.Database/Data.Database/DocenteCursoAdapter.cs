@@ -170,7 +170,7 @@ namespace Data.Database
 
                 cmdSave.Parameters.Add("@id_curso", SqlDbType.VarChar, 50).Value = docCurso.IdCurso;
                 cmdSave.Parameters.Add("@id_docente", SqlDbType.VarChar, 50).Value = docCurso.IdDocente;
-                cmdSave.Parameters.Add("@cargo", SqlDbType.Bit).Value = docCurso.Cargo;
+                cmdSave.Parameters.Add("@cargo", SqlDbType.Int).Value = docCurso.Cargo;
 
                 docCurso.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
 

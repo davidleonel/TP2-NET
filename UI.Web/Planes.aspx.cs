@@ -82,7 +82,6 @@ namespace UI.Web
             this.planActual = this.PlanNeg.GetOne(id);
             this.idplanTextBox.Text = this.planActual.Id.ToString();
             this.descplanTextBox.Text = this.planActual.DescripcionPlan;
-            this.EspecialidadesDropDownList.Items.Insert(0, new ListItem(this.planActual.IdEspecialidad.ToString(), "0"));
             this.EspecialidadesDropDownList.SelectedValue = this.planActual.IdEspecialidad.ToString();
 
         }
