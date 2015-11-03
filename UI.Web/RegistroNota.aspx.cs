@@ -10,18 +10,18 @@ using Entidades;
 
 namespace UI.Web
 {
-    public partial class AlumnoInscipcion : System.Web.UI.Page
+    public partial class RegNotaInscipcion : System.Web.UI.Page
     {
         #region Propiedades
-        AlumnoInscripcionNegocio _AluInscNeg;
+        RegNotaInscripcionNegocio _AluInscNeg;
         
-        private AlumnoInscripcionNegocio AluInscNeg
+        private RegNotaInscripcionNegocio AluInscNeg
         {
             get
             {
                 if (_AluInscNeg == null)
                 {
-                    _AluInscNeg = new AlumnoInscripcionNegocio();
+                    _AluInscNeg = new RegNotaInscripcionNegocio();
                 }
                 return _AluInscNeg;
             }
@@ -57,19 +57,19 @@ namespace UI.Web
        
         }
         
-        private AlumnoInscripcion AlumnoInscipcionActual
+        private RegNotaInscripcion RegNotaInscipcionActual
         {
             get;
             set;
         }
 
-        private int SelectedIDAlumno
+        private int SelectedIDRegNota
         {
             get
             {
-                if (this.ViewState["SelectedIDAlumno"] != null)
+                if (this.ViewState["SelectedIDRegNota"] != null)
                 {
-                    return (int)this.ViewState["SelectedIDAlumno"];
+                    return (int)this.ViewState["SelectedIDRegNota"];
                 }
                 else
                 {
@@ -78,7 +78,7 @@ namespace UI.Web
             }
             set
             {
-                this.ViewState["SelectedIDAlumno"] = value;
+                this.ViewState["SelectedIDRegNota"] = value;
             }
         }
 
@@ -102,11 +102,11 @@ namespace UI.Web
             }
         }
 
-        private bool isAlumnoSelected
+        private bool isRegNotaSelected
         {
             get
             {
-                return (this.SelectedIDAlumno != 0);
+                return (this.SelectedIDRegNota != 0);
             }
         }
 
@@ -123,24 +123,24 @@ namespace UI.Web
         #region Metodos
         private void LoadGrid()
         {
+            this.RegNotaInscipciongridView.DataSource = this.PerNeg.GetAllRegNotas();
+            this.RegNotaInscipciongridView.DataBind();
+
             this.CursoInscipciongridView.DataSource = this.Curneg.GetAll();
             this.CursoInscipciongridView.DataBind();
-
-            this.AlumnoInscipciongridView.DataSource = this.PerNeg.GetAllAlumnos();
-            this.AlumnoInscipciongridView.DataBind();
         }
 
-        private void LoadEntity(AlumnoInscripcion AluInsc, Persona alumSelecccionado, Curso curSeleccionado)
-        {/*
-            AluInsc.IdAlumno = alumSelecccionado.Id;
+        private void LoadEntity(RegNotaInscripcion AluInsc, Persona alumSelecccionado, Curso curSeleccionado)
+        {
+            AluInsc.IdRegNota = alumSelecccionado.Id;
             AluInsc.IdCurso = curSeleccionado.Id;
-            AluInsc.Condicion = this.condicionTextBox.Text;*/
+            AluInsc.Condicion = this.condicionTextBox.Text;
            
         }
 
-        private void SaveEntity(AlumnoInscripcion AlumnoInscipcion)
+        private void SaveEntity(RegNotaInscripcion RegNotaInscipcion)
         {
-            this.AluInscNeg.Save(AlumnoInscipcion);
+            this.AluInscNeg.Save(RegNotaInscipcion);
         }
 
             
@@ -157,9 +157,9 @@ namespace UI.Web
 
         }
 
-        protected void alumno_SelectedIndexChanged(object sender, EventArgs e)
+        protected void RegNota_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.SelectedIDAlumno = (int)this.AlumnoInscipciongridView.SelectedValue;
+            this.SelectedIDRegNota = (int)this.RegNotaInscipciongridView.SelectedValue;
         }
         protected void curso_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -171,15 +171,15 @@ namespace UI.Web
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
         {
 
-            
-            Persona alumSelecccionado = PerNeg.GetOne(SelectedIDAlumno);
+            //this.PerNeg = new PersonaNegocio();
+            Persona alumSelecccionado = PerNeg.GetOne(SelectedIDRegNota);
 
-            
+            //this.Curneg = new CursoNegocio();
             Curso curSeleccionado = Curneg.GetOne(SelectedIDCurso);
                   
-            this.AlumnoInscipcionActual = new AlumnoInscripcion();
-            this.LoadEntity(this.AlumnoInscipcionActual, alumSelecccionado, curSeleccionado);
-            this.SaveEntity(this.AlumnoInscipcionActual);
+            this.RegNotaInscipcionActual = new RegNotaInscripcion();
+            this.LoadEntity(this.RegNotaInscipcionActual, alumSelecccionado, curSeleccionado);
+            this.SaveEntity(this.RegNotaInscipcionActual);
             
         }
 
