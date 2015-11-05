@@ -131,7 +131,7 @@ namespace UI.Escritorio
         {
             this.MapearADatos();
             PersonaNegocio perNeg = new PersonaNegocio();
-            perNeg.Save(1, AlumnoActual);
+            perNeg.Save(AlumnoActual);
             
         }
         public override bool Validar() 

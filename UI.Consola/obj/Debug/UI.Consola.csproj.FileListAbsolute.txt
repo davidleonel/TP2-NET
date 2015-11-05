@@ -22,3 +22,15 @@ C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\UI.Consola\bin\Debug\Entidades
 C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\UI.Consola\bin\Debug\Negocios.pdb
 C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\UI.Consola\bin\Debug\Data.Database.pdb
 C:\Users\Compu\Desktop\TP2\tp2-codigo\tp2Academia\UI.Consola\obj\Debug\UI.Consola.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\obj\Debug\UI.Consola.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\obj\Debug\UI.Consola.exe
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\UI.Consola.exe.config
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\UI.Consola.exe
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\UI.Consola.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\UI.Consola\obj\Debug\UI.Consola.pdb

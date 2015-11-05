@@ -57,9 +57,9 @@ namespace Negocios
         {
             PersonaDatos.Delete(Id);
         }
-        public void Save(int tipo, Persona per) 
+        public void Save(Persona per) 
         {
-            PersonaDatos.Save(tipo, per);
+            PersonaDatos.Save(per);
 
         }
 

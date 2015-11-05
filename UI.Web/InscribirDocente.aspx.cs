@@ -123,7 +123,7 @@ namespace UI.Web
         #region Metodos
         private void LoadGrid()
         {
-            this.DocenteInscipciongridView.DataSource = this.PerNeg.GetAllDocentes();
+            this.DocenteInscipciongridView.DataSource = this.PerNeg.GetAll();
             this.DocenteInscipciongridView.DataBind();
 
             this.CursoInscipciongridView.DataSource = this.Curneg.GetAll();

@@ -105,11 +105,8 @@ namespace UI.Consola
         public void MostrarDatos(Usuario usu)
         {
             Console.WriteLine("Usuario ID: {0}", usu.Id);
-            Console.WriteLine("\t\tNombre: {0}", usu.Nombre);
-            Console.WriteLine("\t\tApellido: {0}", usu.Apellido);
             Console.WriteLine("\t\tNombre de Usuario: {0}", usu.NombreUsuario);
             Console.WriteLine("\t\tClave: {0}", usu.Clave);
-            Console.WriteLine("\t\tEmail: {0}", usu.Email);
             Console.WriteLine("\t\tHabilitado: {0}", usu.Habilitado);
             Console.WriteLine();
 
@@ -146,16 +143,10 @@ namespace UI.Consola
         {
             Console.Clear();
             Usuario usu = new Usuario();
-            Console.WriteLine("Nombre: ");
-            usu.Nombre = Console.ReadLine();
-            Console.WriteLine("Apellido: ");
-            usu.Apellido = Console.ReadLine();
             Console.WriteLine("Nombre de Usuario: ");
             usu.NombreUsuario = Console.ReadLine();
             Console.WriteLine("Clave: ");
-            usu.Clave = Console.ReadLine();
-            Console.WriteLine("Email: ");
-            usu.Email = Console.ReadLine();
+            usu.Clave = Console.ReadLine();    
             usu.Estado = Entidad.Estados.Nuevo;
             Console.WriteLine("Habilitado? 1-SI / 2-NO ");
             usu.Habilitado = (Console.ReadLine() == "1"); //no se que estado tiene un usuario cuando se le da el alta, capaz 1       
@@ -174,16 +165,10 @@ namespace UI.Consola
                 int Identif = Int32.Parse(Console.ReadLine());
                 Usuario usu = UsuarioNegocio.GetOne(Identif);
                 this.MostrarDatos(usu);
-                Console.WriteLine("Nuevo Nombre: ");
-                usu.Nombre = Console.ReadLine();
-                Console.WriteLine("Nuevo Apellido: ");
-                usu.Apellido= Console.ReadLine();
                 Console.WriteLine("Nuevo Nombre de Usuario: ");
                 usu.NombreUsuario = Console.ReadLine();
                 Console.WriteLine("Nueva Clave: ");
                 usu.Clave = Console.ReadLine();
-                Console.WriteLine("Nuevo Email: ");
-                usu.Email = Console.ReadLine();
                 usu.Estado= Entidad.Estados.Modificado;
                 Console.WriteLine("Habilitado? 1-SI / 2-NO ");
                 usu.Habilitado = (Console.ReadLine() == "1"); //POR QUE????

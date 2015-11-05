@@ -60,8 +60,8 @@ namespace Entidades
             set { _Legajo = value; }
         }
 
-        private int _TipoPersona;
-        public int TipoPersona
+        private TiposPersona _TipoPersona;
+        public TiposPersona TipoPersona
         {
             get { return _TipoPersona; }
             set { _TipoPersona = value; }

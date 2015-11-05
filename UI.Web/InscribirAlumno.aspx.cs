@@ -126,7 +126,7 @@ namespace UI.Web
             this.CursoInscipciongridView.DataSource = this.Curneg.GetAll();
             this.CursoInscipciongridView.DataBind();
 
-            this.AlumnoInscipciongridView.DataSource = this.PerNeg.GetAllAlumnos();
+            this.AlumnoInscipciongridView.DataSource = this.PerNeg.GetAll();
             this.AlumnoInscipciongridView.DataBind();
         }
 

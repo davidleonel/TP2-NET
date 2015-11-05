@@ -21,7 +21,7 @@
         <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click" >Nuevo</asp:LinkButton>
     </asp:Panel>
 
-       <asp:Panel ID="PersonaDropDown" Visible="false" runat="server">                  
+       <!--<asp:Panel ID="PersonaDropDown" Visible="false" runat="server">                  
         <asp:Label ID="personasLabel" runat="server" Text="Elija una persona: "></asp:Label>
         <asp:DropDownList ID="personaDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="personaDropDownList_SelectedIndexChanged"></asp:DropDownList>
        </asp:Panel>
@@ -54,10 +54,9 @@
             ErrorMessage='La direccion no puede estar vacia' EnableClientScript="true" SetFocusOnError="true"
             Text="*"></asp:RequiredFieldValidator>
         <br />
+    </asp:Panel>-->
 
 
-
-    </asp:Panel>
       <asp:Panel ID="formPanel" Visible="false" runat="server">
         
         <asp:Label ID="habilitadoLabel" runat="server" Text="Habilitado: "></asp:Label>

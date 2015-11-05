@@ -37,7 +37,7 @@ namespace Data.Database
                     per.Telefono = (string)drPersonas["telefono"];
                     per.FechaNacimiento = (DateTime)drPersonas["fecha_nac"];
                     per.Legajo = (int)drPersonas["legajo"];
-                    //per.TipoPersona = (int)drPersonas["tipo_persona"];
+                    per.TipoPersona = (Persona.TiposPersona)drPersonas["tipo_persona"];
                     per.IdPlan = (int)drPersonas["id_plan"];
 
                     Personas.Add(per);
@@ -84,7 +84,7 @@ namespace Data.Database
                     per.Telefono = (string)drPersonas["telefono"];
                     per.FechaNacimiento = (DateTime)drPersonas["fecha_nac"];
                     per.Legajo = (int)drPersonas["legajo"];
-                    //per.TipoPersona = (int)drPersonas["tipo_persona"];
+                    per.TipoPersona = (Persona.TiposPersona)drPersonas["tipo_persona"];
                     per.IdPlan = (int)drPersonas["id_plan"];
 
                     Personas.Add(per);
@@ -131,7 +131,7 @@ namespace Data.Database
                     per.Telefono = (string)drPersonas["telefono"];
                     per.FechaNacimiento = (DateTime)drPersonas["fecha_nac"];
                     per.Legajo = (int)drPersonas["legajo"];
-                    //per.TipoPersona = (int)drPersonas["tipo_persona"];
+                    per.TipoPersona = (Persona.TiposPersona)drPersonas["tipo_persona"];
                     per.IdPlan = (int)drPersonas["id_plan"];
 
                     Personas.Add(per);
@@ -176,7 +176,7 @@ namespace Data.Database
                         per.Telefono = (string)drPersonas["telefono"];
                         per.FechaNacimiento = (DateTime)drPersonas["fecha_nac"];
                         per.Legajo = (int)drPersonas["legajo"];
-                        per.TipoPersona = (int)drPersonas["tipo_persona"];
+                        per.TipoPersona = (Persona.TiposPersona)drPersonas["tipo_persona"];
                         per.IdPlan = (int)drPersonas["id_plan"];
 
                         
@@ -226,7 +226,7 @@ namespace Data.Database
             }
         }
 
-        protected void Update(Persona Persona)
+        protected void Update(Persona Persona, int tipo_persona)
         {
             try
             {
@@ -246,7 +246,7 @@ namespace Data.Database
                 cmdSave.Parameters.Add("@telefono", SqlDbType.VarChar, 50).Value = Persona.Telefono;
                 cmdSave.Parameters.Add("@fecha_nac", SqlDbType.DateTime).Value = Persona.FechaNacimiento;
                 cmdSave.Parameters.Add("@legajo", SqlDbType.Int).Value = Persona.Legajo;
-                cmdSave.Parameters.Add("@tipo_persona", SqlDbType.Int).Value = Persona.TipoPersona;
+                cmdSave.Parameters.Add("@tipo_persona", SqlDbType.Int).Value = tipo_persona;
                 cmdSave.Parameters.Add("@id_plan", SqlDbType.Int).Value = Persona.IdPlan;
 
                 cmdSave.ExecuteNonQuery();
@@ -265,7 +265,7 @@ namespace Data.Database
             }
         }
 
-        protected void Insert(Persona Persona)
+        protected void Insert(Persona Persona, int tipo_persona)
         {
             try
             {
@@ -285,13 +285,10 @@ namespace Data.Database
                 cmdSave.Parameters.Add("@telefono", SqlDbType.VarChar, 50).Value = Persona.Telefono;
                 cmdSave.Parameters.Add("@fecha_nac", SqlDbType.DateTime).Value = Persona.FechaNacimiento;
                 cmdSave.Parameters.Add("@legajo", SqlDbType.Int).Value = Persona.Legajo;
-                cmdSave.Parameters.Add("@tipo_persona", SqlDbType.Int).Value = Persona.TipoPersona;
+                cmdSave.Parameters.Add("@tipo_persona", SqlDbType.Int).Value = tipo_persona;
                 cmdSave.Parameters.Add("@id_plan", SqlDbType.Int).Value = Persona.IdPlan;
                 
                 Persona.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
-
-
-
             }
 
             catch (Exception Ex)
@@ -308,7 +305,7 @@ namespace Data.Database
 
         }
         
-        protected void InsertAlumno(Persona Persona)
+        /*protected void InsertAlumno(Persona Persona)
         {
             try
             {
@@ -392,29 +389,38 @@ namespace Data.Database
                 this.CloseConnection();
             }
 
-        }
+        }*/
         
-        public void Save(int tipo, Persona Persona)
+        public void Save(Persona Persona)
         {
+            int tipo;
+            switch (Persona.TipoPersona)
+            {
+                case Persona.TiposPersona.Administrador:
+                    tipo = 0;
+                    break;
+                case Persona.TiposPersona.Alumno:
+                    tipo = 1;
+                    break;
+                case Persona.TiposPersona.Docente:
+                    tipo = 2;
+                    break;
+                default:
+                    tipo = 0;
+                    break;
+            }
             if (Persona.Estado == Entidad.Estados.Eliminado)
             {
                 this.Delete(Persona.Id);
             }
             else if (Persona.Estado == Entidad.Estados.Nuevo)
             {
-                if (tipo == 1)
-                {
-                    this.InsertAlumno(Persona);
-                }
-                else if(tipo == 2)
-                {
-                    this.InsertDocente(Persona);
-                }
+                this.Insert(Persona, tipo);
                 
             }
             else if (Persona.Estado == Entidad.Estados.Modificado)
             {
-                this.Update(Persona);
+                this.Update(Persona, tipo);
             }
             Persona.Estado = Entidad.Estados.NoModificado;
         }

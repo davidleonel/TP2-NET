@@ -10,25 +10,25 @@
 namespace UI.Web {
     
     
-    public partial class Usuarios {
+    public partial class Personas {
         
         /// <summary>
-        /// gridPanel control.
+        /// PersonasgridPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel gridPanel;
+        protected global::System.Web.UI.WebControls.Panel PersonasgridPanel;
         
         /// <summary>
-        /// gridView control.
+        /// PersonasgridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gridView;
+        protected global::System.Web.UI.WebControls.GridView PersonasgridView;
         
         /// <summary>
         /// gridActionsPanel control.
@@ -38,6 +38,15 @@ namespace UI.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel gridActionsPanel;
+        
+        /// <summary>
+        /// nuevoLinkButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton nuevoLinkButton;
         
         /// <summary>
         /// editarLinkButton control.
@@ -58,76 +67,31 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.LinkButton eliminarLinkButton;
         
         /// <summary>
-        /// nuevoLinkButton control.
+        /// PersonaPanel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton nuevoLinkButton;
+        protected global::System.Web.UI.WebControls.Panel PersonaPanel;
         
         /// <summary>
-        /// PersonaDropDown control.
+        /// idPersonaLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PersonaDropDown;
+        protected global::System.Web.UI.WebControls.Label idPersonaLabel;
         
         /// <summary>
-        /// personasLabel control.
+        /// idPersonaTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label personasLabel;
-        
-        /// <summary>
-        /// personaDropDownList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList personaDropDownList;
-        
-        /// <summary>
-        /// personaPanel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel personaPanel;
-        
-        /// <summary>
-        /// tipoLabel control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label tipoLabel;
-        
-        /// <summary>
-        /// tipoTextBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tipoTextBox;
-        
-        /// <summary>
-        /// RequiredFieldValidator7 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+        protected global::System.Web.UI.WebControls.TextBox idPersonaTextBox;
         
         /// <summary>
         /// nombreLabel control.
@@ -148,13 +112,13 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox nombreTextBox;
         
         /// <summary>
-        /// RequiredFieldValidator1 control.
+        /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
         /// apellidoLabel control.
@@ -175,22 +139,22 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox apellidoTextBox;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// direccion control.
+        /// direccionLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label direccion;
+        protected global::System.Web.UI.WebControls.Label direccionLabel;
         
         /// <summary>
         /// direccionTextBox control.
@@ -202,121 +166,112 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.TextBox direccionTextBox;
         
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// emailLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.Label emailLabel;
         
         /// <summary>
-        /// formPanel control.
+        /// emailTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel formPanel;
+        protected global::System.Web.UI.WebControls.TextBox emailTextBox;
         
         /// <summary>
-        /// habilitadoLabel control.
+        /// telefonoLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label habilitadoLabel;
+        protected global::System.Web.UI.WebControls.Label telefonoLabel;
         
         /// <summary>
-        /// habilitadoCheckBox control.
+        /// telefonoTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox habilitadoCheckBox;
+        protected global::System.Web.UI.WebControls.TextBox telefonoTextBox;
         
         /// <summary>
-        /// nombreUsuarioLabel control.
+        /// fechaNacLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label nombreUsuarioLabel;
+        protected global::System.Web.UI.WebControls.Label fechaNacLabel;
         
         /// <summary>
-        /// nombreUsuarioTextBox control.
+        /// fechaNacimientoCalendar control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombreUsuarioTextBox;
+        protected global::System.Web.UI.WebControls.Calendar fechaNacimientoCalendar;
         
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// legajoLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.Label legajoLabel;
         
         /// <summary>
-        /// claveLabel control.
+        /// legajoTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label claveLabel;
+        protected global::System.Web.UI.WebControls.TextBox legajoTextBox;
         
         /// <summary>
-        /// claveTextBox control.
+        /// tipoPersonaLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox claveTextBox;
+        protected global::System.Web.UI.WebControls.Label tipoPersonaLabel;
         
         /// <summary>
-        /// RequiredFieldValidator5 control.
+        /// TipoPersonaDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.DropDownList TipoPersonaDropDownList;
         
         /// <summary>
-        /// repetirClaveLabel control.
+        /// idPlanLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label repetirClaveLabel;
+        protected global::System.Web.UI.WebControls.Label idPlanLabel;
         
         /// <summary>
-        /// repetirClaveTextBox control.
+        /// PlanDropDownList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox repetirClaveTextBox;
-        
-        /// <summary>
-        /// RequiredFieldValidator6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+        protected global::System.Web.UI.WebControls.DropDownList PlanDropDownList;
         
         /// <summary>
         /// formActionsPanel control.

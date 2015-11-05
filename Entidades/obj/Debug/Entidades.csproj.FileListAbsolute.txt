@@ -23,3 +23,8 @@ C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\bin\Debug\Entidades.pd
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\obj\Debug\Entidades.dll
 C:\Users\Computadora\Desktop\TP2 Github\TP2-NET\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\obj\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\obj\Debug\Entidades.pdb
