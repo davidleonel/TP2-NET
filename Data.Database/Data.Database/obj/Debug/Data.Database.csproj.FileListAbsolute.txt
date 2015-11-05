@@ -82,3 +82,10 @@ C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Data.Database\Data
 C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
 C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.dll
 C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Data.Database\Data.Database\obj\Debug\Data.Database.pdb

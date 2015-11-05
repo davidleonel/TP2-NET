@@ -82,12 +82,14 @@ namespace UI.Web
             this.Entity = this.LogicUsuario.GetOne(id);
             this.habilitadoCheckBox.Checked = this.Entity.Habilitado;
             this.nombreUsuarioTextBox.Text = this.Entity.NombreUsuario;
+            this.PersonaDropDownList.SelectedValue = this.Entity.IdPersona.ToString();
         }
         private void LoadEntity(Usuario usuario)
         {
             usuario.NombreUsuario = this.nombreUsuarioTextBox.Text;
             usuario.Clave = this.claveTextBox.Text;
             usuario.Habilitado = this.habilitadoCheckBox.Checked;
+            usuario.IdPersona = Convert.ToInt32(this.PersonaDropDownList.SelectedValue);
         }
         private void SaveEntity(Usuario usuario)
         {
@@ -110,6 +112,18 @@ namespace UI.Web
         {
             this.habilitadoCheckBox.Checked = false;
             this.nombreUsuarioTextBox.Text = string.Empty;
+        }
+        public void CargaDropDownList()
+        {
+            PersonaNegocio pn = new PersonaNegocio();
+
+            this.PersonaDropDownList.DataSource = pn.GetAll();
+            this.PersonaDropDownList.DataValueField = "Id";
+            this.PersonaDropDownList.DataTextField = "NombreApe";
+            this.PersonaDropDownList.DataBind();
+            this.PersonaDropDownList.Items.Insert(0, new ListItem("Seleccione su nombre y apellido", "0"));
+
+
         }
         #endregion 
 
@@ -144,11 +158,12 @@ namespace UI.Web
                     break;
 
                 case FormModes.Alta:
-
+                    this.formPersona.Visible = false;
                     this.Entity = new Usuario();
                     this.LoadEntity(this.Entity);
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();
+
                     break;
 
                 default:
@@ -179,51 +194,32 @@ namespace UI.Web
         }
         protected void nuevoLinkButton_Click(object sender, EventArgs e)
         {
-
-            this.PersonaDropDown.Visible = true;
-            //this.FormMode = FormModes.Alta;
-            this.ClearForm();
-            //this.EnableForm(true);
-            //this.CargaDropDownList();
+            this.formPersona.Visible = true;
+            
 
         }
-        protected void cancelarLinkButton_Click(object sender, EventArgs e)
+        protected void siButton_Click(object sender, EventArgs e) // si el usuario presiona este boton quiere decir que ya se dió de alta como persona
+                                                                     // solo se va a dar de alta como nuevo usuario
+        {
+            this.formPersona.Visible = false;
+            this.FormMode = FormModes.Alta;
+            this.formPanel.Visible = true;
+            this.ClearForm();
+            this.EnableForm(true);
+            this.CargaDropDownList();
+
+        }
+        /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
         {
             this.LoadGrid();
-        } //preguntar si este evento es así
+        }*/
 
+        protected void noButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("http://localhost:7057/Personas");
+        }
         #endregion
 
-
-        /*public void CargaDropDownList()
-        {
-            PersonaNegocio pn = new PersonaNegocio();
-
-            this.personaDropDownList.DataSource = pn.GetAll();
-            this.personaDropDownList.DataValueField = "Id";
-            this.personaDropDownList.DataTextField = "Nombre";
-            this.personaDropDownList.DataBind();
-            this.personaDropDownList.Items.Insert(0, new ListItem("Nunca me registre...", "0"));
-
-        }
-
-        protected void personaDropDownList_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (personaDropDownList.SelectedIndex != 0)
-
-            {
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = false;  
-                this.FormMode = FormModes.AltaU;
-                this.EnableForm(true);
-            }
-            else if (personaDropDownList.SelectedIndex == 0)
-            {
-                this.FormMode = FormModes.AltaP;
-                this.formPanel.Visible = true;
-                this.personaPanel.Visible = true;  
-            }
-        }*/
 
 
 

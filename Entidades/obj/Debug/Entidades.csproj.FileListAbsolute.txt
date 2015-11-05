@@ -28,3 +28,8 @@ C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\bin\Debu
 C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
 C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\obj\Debug\Entidades.dll
 C:\Users\ara--_000\Dropbox\.NET (1)\GITHUB NET - Copy\TP2-NET\Entidades\obj\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Entidades\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Entidades\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Entidades\obj\Debug\Entidades.dll
+C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Entidades\obj\Debug\Entidades.pdb

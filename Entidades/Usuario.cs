@@ -33,6 +33,15 @@ namespace Entidades
             get { return _Habilitado; }
             set { _Habilitado = value; }
         }
+
+        private int _IdPersona;
+
+        public int IdPersona
+        {
+            get { return _IdPersona; }
+            set { _IdPersona = value; }
+        }
+        
         #endregion
 
     }

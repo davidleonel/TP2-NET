@@ -84,6 +84,7 @@ namespace Data.Database
                     usr.NombreUsuario = (string)drUsuarios["nombre_usuario"];
                     usr.Clave = (string)drUsuarios["clave"];
                     usr.Habilitado = (bool)drUsuarios["habilitado"];
+                    usr.IdPersona = (int)drUsuarios["id_persona"];
                    /* usr.Nombre = (string)drUsuarios["nombre"];
                     usr.Apellido = (string)drUsuarios["apellido"];
                     usr.Email = (string)drUsuarios["email"];*/
@@ -126,6 +127,7 @@ namespace Data.Database
                         usr.NombreUsuario = (string)drUsuarios["nombre_usuario"];
                         usr.Clave = (string)drUsuarios["clave"];
                         usr.Habilitado = (bool)drUsuarios["habilitado"];
+                        usr.IdPersona = (int)drUsuarios["id_persona"];
                        /* usr.Nombre = (string)drUsuarios["nombre"];
                         usr.Apellido = (string)drUsuarios["apellido"];
                         usr.Email = (string)drUsuarios["email"];*/
@@ -221,12 +223,13 @@ namespace Data.Database
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
                     "insert into usuarios(nombre_usuario,clave,habilitado, id_persona)" +
-                    "values( @nombre_usuario,@clave,@habilitado, 3)" +
+                    "values( @nombre_usuario,@clave,@habilitado, @id_persona)" +
                     " select @@identity AS id_usuario", SqlConn);
 
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
+                cmdSave.Parameters.Add("@id_persona", SqlDbType.Int).Value = usuario.IdPersona;
                 usuario.Id = Decimal.ToInt32((decimal)cmdSave.ExecuteScalar());
                
             }

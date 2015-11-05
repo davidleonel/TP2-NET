@@ -25,6 +25,14 @@ namespace Entidades
             set { _Apellido = value; }
         }
 
+        private string _NombreApe;
+
+        public string NombreApe
+        {
+            get { return Nombre +" "+ Apellido; }
+        }
+        
+
         private string _Direccion;
         public string Direccion
         {

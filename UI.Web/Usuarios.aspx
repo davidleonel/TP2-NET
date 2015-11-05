@@ -16,45 +16,17 @@
     </asp:Panel>
 
     <asp:Panel ID="gridActionsPanel" runat="server">
+        <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click" >Nuevo</asp:LinkButton>
         <asp:LinkButton ID="editarLinkButton" runat="server" OnClick="editarLinkButton_Click">Editar</asp:LinkButton>
         <asp:LinkButton ID="eliminarLinkButton" runat="server" OnClick="eliminarLinkButton_Click">Eliminar</asp:LinkButton>
-        <asp:LinkButton ID="nuevoLinkButton" runat="server" OnClick="nuevoLinkButton_Click" >Nuevo</asp:LinkButton>
     </asp:Panel>
 
-       <!--<asp:Panel ID="PersonaDropDown" Visible="false" runat="server">                  
-        <asp:Label ID="personasLabel" runat="server" Text="Elija una persona: "></asp:Label>
-        <asp:DropDownList ID="personaDropDownList" runat="server" AutoPostBack="True" OnSelectedIndexChanged="personaDropDownList_SelectedIndexChanged"></asp:DropDownList>
-       </asp:Panel>
-        
-
-        <asp:Panel ID="personaPanel" Visible="false" runat="server">
-        
-        <asp:Label ID="tipoLabel" runat="server" Text="Tipo: "></asp:Label>
-        <asp:TextBox ID="tipoTextBox" runat="server" Text=""></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="tipoTextBox"
-            ErrorMessage='El tipo no puede estar vacío' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
-
-        <asp:Label ID="nombreLabel" runat="server" Text="Nombre: "></asp:Label>
-        <asp:TextBox ID="nombreTextBox" runat="server" Text=""></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="nombreTextBox"
-            ErrorMessage='El nombre no puede estar vacío' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
-        <asp:Label ID="apellidoLabel" runat="server" Text="Apellido: "></asp:Label>
-        <asp:TextBox ID="apellidoTextBox" runat="server" Text=""></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="apellidoTextBox"
-            ErrorMessage='El apellido no puede estar vacío' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
-        <asp:Label ID="direccion" runat="server" Text="Direccion: "></asp:Label>
-        <asp:TextBox ID="direccionTextBox" runat="server" Text=""></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="direccionTextBox"
-            ErrorMessage='La direccion no puede estar vacia' EnableClientScript="true" SetFocusOnError="true"
-            Text="*"></asp:RequiredFieldValidator>
-        <br />
-    </asp:Panel>-->
+    <asp:Panel ID="formPersona" runat="server" Visible="false">
+        <asp:Label ID="personaLabel" runat="server" Text="Ya cargó sus datos personales alguna vez en este sistema?"></asp:Label><br />
+        <asp:Button ID="siButton" runat="server" Text="SI" OnClick="siButton_Click" /> 
+        <asp:Button ID="noButton" runat="server" Text="NO" OnClick="noButton_Click"/>
+    </asp:Panel>
+      
 
 
       <asp:Panel ID="formPanel" Visible="false" runat="server">
@@ -79,6 +51,11 @@
         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="repetirClaveTextBox"
             ErrorMessage='Las claves no coinciden' EnableClientScript="true" SetFocusOnError="true"
             Text="*"></asp:RequiredFieldValidator>
+        <br />
+
+        <asp:Label ID="idPersonaLabel" runat="server" Text="Persona: "></asp:Label>
+        <asp:DropDownList ID="PersonaDropDownList" runat="server" Width="165px">
+        </asp:DropDownList>
         <br />
     </asp:Panel>
        
