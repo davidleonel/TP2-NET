@@ -48,11 +48,29 @@ namespace UI.Escritorio
         #endregion
 
         #region Metodos
+        private void cargaTipoPersonas()
+        {
+            cbTipoPersonas.Items.Clear();
+
+            cbTipoPersonas.Items.Add(new KeyValuePair<int, string>(0, "Administrador"));
+            cbTipoPersonas.Items.Add(new KeyValuePair<int, string>(1, "Alumno"));
+            cbTipoPersonas.Items.Add(new KeyValuePair<int, string>(2, "Docente"));
+ 
+        }
+        private void cargarCbPersonas()
+        {
+            EspecialidadNegocio en = new EspecialidadNegocio();
+            cbPersonas.DataSource = en.GetAll();
+            cbPersonas.DisplayMember = "NombreApe";
+            cbPersonas.ValueMember = "Id";
+        }
+
+
         public override void MapearDeDatos() 
         {
             this.txtID.Text = this.UsuarioActual.Id.ToString();
             this.chkHabilitado.Checked = this.UsuarioActual.Habilitado;
-            //faltan los datos de persona
+            this.cbPersonas.SelectedValue = this.UsuarioActual.IdPersona;
             this.txtUsuario.Text = this.UsuarioActual.NombreUsuario.ToString();
             this.txtClave.Text = this.UsuarioActual.Clave.ToString();
             this.txtConfirmarClave.Text = this.UsuarioActual.Clave.ToString();
@@ -82,23 +100,20 @@ namespace UI.Escritorio
                 UsuarioActual = new Usuario();
 
                 this.UsuarioActual.Habilitado = this.chkHabilitado.Checked;
-               // this.UsuarioActual.Nombre = this.txtNombre.Text;
-               // this.UsuarioActual.Apellido = this.txtApellido.Text;
                 this.UsuarioActual.NombreUsuario = this.txtUsuario.Text;
-               // this.UsuarioActual.Email =  this.txtEmail.Text;
                 this.UsuarioActual.Clave = this.txtClave.Text;
                 this.UsuarioActual.Clave = this.txtConfirmarClave.Text;
+                this.UsuarioActual.IdPersona = Convert.ToInt32(this.cbPersonas.SelectedValue);
             }
             else if (Modo == ModoForm.Modificacion)
             {
                 this.UsuarioActual.Id = Convert.ToInt32(this.txtID.Text);
                 this.UsuarioActual.Habilitado = this.chkHabilitado.Checked;
-             //   this.UsuarioActual.Nombre = this.txtNombre.Text;
-              //  this.UsuarioActual.Apellido = this.txtApellido.Text;
                 this.UsuarioActual.NombreUsuario = this.txtUsuario.Text;
-              //  this.UsuarioActual.Email = this.txtEmail.Text;
                 this.UsuarioActual.Clave = this.txtClave.Text;
                 this.UsuarioActual.Clave = this.txtConfirmarClave.Text;
+                this.UsuarioActual.IdPersona = Convert.ToInt32(this.cbPersonas.SelectedValue);
+
             }
 
             switch (Modo)

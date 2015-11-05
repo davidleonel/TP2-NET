@@ -34,8 +34,8 @@
             this.lblPersona = new System.Windows.Forms.Label();
             this.chkHabilitado = new System.Windows.Forms.CheckBox();
             this.txtID = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cbTipoPersonas = new System.Windows.Forms.ComboBox();
+            this.cbPersonas = new System.Windows.Forms.ComboBox();
             this.lblClave = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -58,8 +58,8 @@
             this.tableLayoutPanel1.Controls.Add(this.lblPersona, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.chkHabilitado, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtID, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.comboBox2, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.cbTipoPersonas, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.cbPersonas, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.lblClave, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtClave, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.lblUsuario, 0, 3);
@@ -129,23 +129,23 @@
             this.txtID.Size = new System.Drawing.Size(268, 20);
             this.txtID.TabIndex = 8;
             // 
-            // comboBox1
+            // cbTipoPersonas
             // 
-            this.comboBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(185, 48);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(268, 21);
-            this.comboBox1.TabIndex = 17;
+            this.cbTipoPersonas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbTipoPersonas.FormattingEnabled = true;
+            this.cbTipoPersonas.Location = new System.Drawing.Point(185, 48);
+            this.cbTipoPersonas.Name = "cbTipoPersonas";
+            this.cbTipoPersonas.Size = new System.Drawing.Size(268, 21);
+            this.cbTipoPersonas.TabIndex = 17;
             // 
-            // comboBox2
+            // cbPersonas
             // 
-            this.comboBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(185, 93);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(268, 21);
-            this.comboBox2.TabIndex = 18;
+            this.cbPersonas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbPersonas.FormattingEnabled = true;
+            this.cbPersonas.Location = new System.Drawing.Point(185, 93);
+            this.cbPersonas.Name = "cbPersonas";
+            this.cbPersonas.Size = new System.Drawing.Size(268, 21);
+            this.cbPersonas.TabIndex = 18;
             // 
             // lblClave
             // 
@@ -254,7 +254,7 @@
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cbTipoPersonas;
+        private System.Windows.Forms.ComboBox cbPersonas;
     }
 }
