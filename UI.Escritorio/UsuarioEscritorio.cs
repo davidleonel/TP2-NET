@@ -33,7 +33,9 @@ namespace UI.Escritorio
 
         public UsuarioEscritorio(ModoForm modo) : this() 
         {
-            Modo = modo;   
+            Modo = modo;
+            this.cargarCbPersonas();
+            //this.cargaTipoPersonas();
 
         }
 
@@ -48,24 +50,26 @@ namespace UI.Escritorio
         #endregion
 
         #region Metodos
-        private void cargaTipoPersonas()
+        /*private void cargaTipoPersonas()
         {
-            cbTipoPersonas.Items.Clear();
+            List<ItemsCbTipoPersona> lista = new List<ItemsCbTipoPersona>();
 
-            cbTipoPersonas.Items.Add(new KeyValuePair<int, string>(0, "Administrador"));
-            cbTipoPersonas.Items.Add(new KeyValuePair<int, string>(1, "Alumno"));
-            cbTipoPersonas.Items.Add(new KeyValuePair<int, string>(2, "Docente"));
- 
-        }
+            lista.Add(new ItemsCbTipoPersona("Administrador", 0));
+            lista.Add(new ItemsCbTipoPersona("Alumno", 1));
+            lista.Add(new ItemsCbTipoPersona("Docente", 2));
+
+            cbTipoPersonas.DisplayMember = "Name";
+            cbTipoPersonas.ValueMember = "Value";
+            cbTipoPersonas.DataSource = lista;
+
+        }*/
         private void cargarCbPersonas()
         {
-            EspecialidadNegocio en = new EspecialidadNegocio();
-            cbPersonas.DataSource = en.GetAll();
+            PersonaNegocio pn = new PersonaNegocio();
+            cbPersonas.DataSource = pn.GetAll();
             cbPersonas.DisplayMember = "NombreApe";
             cbPersonas.ValueMember = "Id";
         }
-
-
         public override void MapearDeDatos() 
         {
             this.txtID.Text = this.UsuarioActual.Id.ToString();
@@ -95,8 +99,7 @@ namespace UI.Escritorio
         public override void MapearADatos() 
         {
             if (this.Modo == ModoForm.Alta)
-            {
-                
+            {               
                 UsuarioActual = new Usuario();
 
                 this.UsuarioActual.Habilitado = this.chkHabilitado.Checked;
@@ -145,7 +148,7 @@ namespace UI.Escritorio
             if (string.IsNullOrEmpty(this.txtUsuario.Text) ||
                 string.IsNullOrEmpty(this.txtClave.Text) ||string.IsNullOrEmpty(this.txtConfirmarClave.Text) ) 
             {
-                // string.IsNullOrEmpty(this.txtNombre.Text) || string.IsNullOrEmpty(this.txtApellido.Text) ||string.IsNullOrEmpty(this.txtEmail.Text
+                // falta validar que se seleccione una opcion en los combos
                 Notificar("Campos vacíos", "No puede haber campos sin contenido", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 bandera = false;
             }

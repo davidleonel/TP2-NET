@@ -115,3 +115,12 @@ C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Negocios\
 C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
 C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Negocios\obj\Debug\Negocios.dll
 C:\Users\ara--_000\Dropbox\.NET (1)\Usuario - Persona NO SUBIR\TP2-NET\Negocios\obj\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\bin\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\bin\Debug\Negocios.pdb
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\bin\Debug\Data.Database.dll
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\bin\Debug\Entidades.dll
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\bin\Debug\Entidades.pdb
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\obj\Debug\Negocios.dll
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\Negocios\obj\Debug\Negocios.pdb

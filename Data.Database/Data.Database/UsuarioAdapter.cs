@@ -85,9 +85,6 @@ namespace Data.Database
                     usr.Clave = (string)drUsuarios["clave"];
                     usr.Habilitado = (bool)drUsuarios["habilitado"];
                     usr.IdPersona = (int)drUsuarios["id_persona"];
-                   /* usr.Nombre = (string)drUsuarios["nombre"];
-                    usr.Apellido = (string)drUsuarios["apellido"];
-                    usr.Email = (string)drUsuarios["email"];*/
 
                     usuarios.Add(usr);
                 }
@@ -128,11 +125,7 @@ namespace Data.Database
                         usr.Clave = (string)drUsuarios["clave"];
                         usr.Habilitado = (bool)drUsuarios["habilitado"];
                         usr.IdPersona = (int)drUsuarios["id_persona"];
-                       /* usr.Nombre = (string)drUsuarios["nombre"];
-                        usr.Apellido = (string)drUsuarios["apellido"];
-                        usr.Email = (string)drUsuarios["email"];*/
-
-                        
+  
                     }
 
                     drUsuarios.Close();
@@ -189,15 +182,12 @@ namespace Data.Database
                      "UPDATE usuarios set nombre_usuario= @nombre_usuario, clave= @clave,"+
                     "habilitado=@habilitado WHERE id_usuario=@id", SqlConn);
 
-                //nombre=@nombre, apellido=@apellido, email=@email
 
                 cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = usuario.Id;
                 cmdSave.Parameters.Add("@nombre_usuario", SqlDbType.VarChar, 50).Value = usuario.NombreUsuario;
                 cmdSave.Parameters.Add("@clave", SqlDbType.VarChar, 50).Value = usuario.Clave;
                 cmdSave.Parameters.Add("@habilitado", SqlDbType.Bit).Value = usuario.Habilitado;
-              /*  cmdSave.Parameters.Add("@nombre", SqlDbType.VarChar, 50).Value = usuario.Nombre;
-                cmdSave.Parameters.Add("@apellido", SqlDbType.VarChar, 50).Value = usuario.Apellido;
-                cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = usuario.Email;*/
+
                 cmdSave.ExecuteNonQuery();
             }
 
