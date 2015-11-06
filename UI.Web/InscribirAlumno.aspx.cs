@@ -150,9 +150,27 @@ namespace UI.Web
         #region Eventos
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!this.IsPostBack)
+            Usuario UsuarioActual = (Usuario)(Session["UsuarioActual"]);
+
+            if (UsuarioActual == null)
             {
-                this.LoadGrid();
+                this.Page.Response.Redirect("~/Login.aspx");
+            }
+            else
+            {
+                if (UsuarioActual.IdPersona == null)
+                {
+                    this.gridActionsPanel.Visible = false;
+                    this.incorrectoLabel.Visible = true;
+                }
+
+                else
+                {
+                    if (!this.IsPostBack)
+                    {
+                        this.LoadGrid();
+                    }
+                }
             }
 
         }

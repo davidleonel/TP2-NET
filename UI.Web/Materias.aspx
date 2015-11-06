@@ -5,6 +5,7 @@
     
     <div>
        <asp:Panel ID="MateriasgridPanel" runat="server">
+        <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
         <asp:GridView ID="MateriasgridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
             SelectedRowStyle-ForeColor="White" DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>

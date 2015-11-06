@@ -217,20 +217,7 @@
             this.btnABMProfesores.Text = "ABM Docentes";
             this.btnABMProfesores.UseVisualStyleBackColor = true;
             this.btnABMProfesores.Click += new System.EventHandler(this.btnABMProfesores_Click);
-            // 
-            // docenteACursoToolStripMenuItem
-            // 
-            this.docenteACursoToolStripMenuItem.Name = "docenteACursoToolStripMenuItem";
-            this.docenteACursoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.docenteACursoToolStripMenuItem.Text = "Docente a Curso";
-            this.docenteACursoToolStripMenuItem.Click += new System.EventHandler(this.docenteACursoToolStripMenuItem_Click);
-            // 
-            // alumnoACursoToolStripMenuItem
-            // 
-            this.alumnoACursoToolStripMenuItem.Name = "alumnoACursoToolStripMenuItem";
-            this.alumnoACursoToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
-            this.alumnoACursoToolStripMenuItem.Text = "Alumno a Curso";
-            this.alumnoACursoToolStripMenuItem.Click += new System.EventHandler(this.alumnoACursoToolStripMenuItem_Click);
+           
             // 
             // Menu
             // 

@@ -67,17 +67,5 @@ namespace UI.Escritorio
 
         }
 
-        private void docenteACursoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DocentesCursosEscritorio docCurEsc = new DocentesCursosEscritorio();
-            docCurEsc.ShowDialog();
-
-        }
-
-        private void alumnoACursoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            alumnosInscripcionesEscritorio aluInsEsc = new alumnosInscripcionesEscritorio();
-            aluInsEsc.ShowDialog();
-        }
     }
 }

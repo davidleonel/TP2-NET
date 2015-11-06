@@ -10,222 +10,186 @@
 namespace UI.Web {
     
     
-    public partial class Materias {
+    public partial class Menu {
         
         /// <summary>
-        /// Control MateriasgridPanel.
+        /// Control menuAdminPanel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MateriasgridPanel;
+        protected global::System.Web.UI.WebControls.Panel menuAdminPanel;
         
         /// <summary>
-        /// Control incorrectoLabel.
+        /// Control ABMPersonas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label incorrectoLabel;
+        protected global::System.Web.UI.WebControls.LinkButton ABMPersonas;
         
         /// <summary>
-        /// Control MateriasgridView.
+        /// Control ABMUsuarios.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView MateriasgridView;
+        protected global::System.Web.UI.WebControls.LinkButton ABMUsuarios;
         
         /// <summary>
-        /// Control gridActionsPanel.
+        /// Control ABMEspecialidades.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel gridActionsPanel;
+        protected global::System.Web.UI.WebControls.LinkButton ABMEspecialidades;
         
         /// <summary>
-        /// Control nuevoLinkButton.
+        /// Control ABMCursos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton nuevoLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton ABMCursos;
         
         /// <summary>
-        /// Control editarLinkButton.
+        /// Control ABMComisiones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton editarLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton ABMComisiones;
         
         /// <summary>
-        /// Control eliminarLinkButton.
+        /// Control ABMMaterias.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton eliminarLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton ABMMaterias;
         
         /// <summary>
-        /// Control MateriaPanel.
+        /// Control ABMPlanes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel MateriaPanel;
+        protected global::System.Web.UI.WebControls.LinkButton ABMPlanes;
         
         /// <summary>
-        /// Control idMateriaLabel.
+        /// Control InscripcionAlumnos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label idMateriaLabel;
+        protected global::System.Web.UI.WebControls.LinkButton InscripcionAlumnos;
         
         /// <summary>
-        /// Control idMateriaTextBox.
+        /// Control InscripcionDocentes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox idMateriaTextBox;
+        protected global::System.Web.UI.WebControls.LinkButton InscripcionDocentes;
         
         /// <summary>
-        /// Control descMateriaLabel.
+        /// Control RegistroNotas.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label descMateriaLabel;
+        protected global::System.Web.UI.WebControls.LinkButton RegistroNotas;
         
         /// <summary>
-        /// Control descMateriaTextBox.
+        /// Control ReporteCursos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descMateriaTextBox;
+        protected global::System.Web.UI.WebControls.LinkButton ReporteCursos;
         
         /// <summary>
-        /// Control RequiredFieldValidator1.
+        /// Control ReportePlanes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.LinkButton ReportePlanes;
         
         /// <summary>
-        /// Control hsSemanalesLabel.
+        /// Control menuDocentePanel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hsSemanalesLabel;
+        protected global::System.Web.UI.WebControls.Panel menuDocentePanel;
         
         /// <summary>
-        /// Control hsSemanalesTextBox.
+        /// Control InscripcionDocente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hsSemanalesTextBox;
+        protected global::System.Web.UI.WebControls.LinkButton InscripcionDocente;
         
         /// <summary>
-        /// Control RequiredFieldValidator2.
+        /// Control RegistroNotasDocente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.LinkButton RegistroNotasDocente;
         
         /// <summary>
-        /// Control hsTotalesLabel.
+        /// Control ReporteCursosDocente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label hsTotalesLabel;
+        protected global::System.Web.UI.WebControls.LinkButton ReporteCursosDocente;
         
         /// <summary>
-        /// Control hsTotalesTextBox.
+        /// Control ReportePlanesDocente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox hsTotalesTextBox;
+        protected global::System.Web.UI.WebControls.LinkButton ReportePlanesDocente;
         
         /// <summary>
-        /// Control RequiredFieldValidator3.
+        /// Control menuAlumnoPanel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.Panel menuAlumnoPanel;
         
         /// <summary>
-        /// Control idPlanLabel.
+        /// Control InscripcionAlumno.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label idPlanLabel;
-        
-        /// <summary>
-        /// Control PlanesDropDownList.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList PlanesDropDownList;
-        
-        /// <summary>
-        /// Control formActionsPanel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel formActionsPanel;
-        
-        /// <summary>
-        /// Control aceptarLinkButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton aceptarLinkButton;
-        
-        /// <summary>
-        /// Control cancelarLinkButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton cancelarLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton InscripcionAlumno;
     }
 }

@@ -40,6 +40,12 @@ namespace Negocios
             return Usu;
         }
 
+        public Usuario GetOne(string usu, string pass)
+        {
+            Usuario Usu = UsuarioDatos.GetOne(usu, pass);
+            return Usu;
+        }
+
         public void Delete(int Id)
         {
             UsuarioDatos.Delete(Id);

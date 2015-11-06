@@ -160,6 +160,8 @@
     <Content Include="Especialidades.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Cursos.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Menu.aspx" />
     <Content Include="Personas.aspx" />
     <Content Include="InscribirDocente.aspx" />
     <Content Include="InscribirAlumno.aspx" />
@@ -301,6 +303,20 @@
     </Compile>
     <Compile Include="Cursos.aspx.designer.cs">
       <DependentUpon>Cursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Personas.aspx.cs">
       <DependentUpon>Personas.aspx</DependentUpon>

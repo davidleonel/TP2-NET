@@ -10,132 +10,105 @@
 namespace UI.Web {
     
     
-    public partial class AlumnoInscipcion {
+    public partial class Login {
         
         /// <summary>
-        /// Control AlumnoInscipcionsgridPanel.
+        /// Control usuarioPanel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel AlumnoInscipcionsgridPanel;
+        protected global::System.Web.UI.WebControls.Panel usuarioPanel;
         
         /// <summary>
-        /// Control incorrectoLabel.
+        /// Control usuarioLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label incorrectoLabel;
+        protected global::System.Web.UI.WebControls.Label usuarioLabel;
         
         /// <summary>
-        /// Control aluInscLabel.
+        /// Control usuarioTextBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label aluInscLabel;
+        protected global::System.Web.UI.WebControls.TextBox usuarioTextBox;
         
         /// <summary>
-        /// Control AlumnoInscipciongridView.
+        /// Control RequiredFieldValidator2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView AlumnoInscipciongridView;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// Control gridActionsPanel.
+        /// Control noEncontradoLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel gridActionsPanel;
+        protected global::System.Web.UI.WebControls.Label noEncontradoLabel;
         
         /// <summary>
-        /// Control inscribirLinkButton.
+        /// Control passLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton inscribirLinkButton;
+        protected global::System.Web.UI.WebControls.Label passLabel;
         
         /// <summary>
-        /// Control CursoInscipciongridPanel.
+        /// Control passTextBox.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel CursoInscipciongridPanel;
+        protected global::System.Web.UI.WebControls.TextBox passTextBox;
         
         /// <summary>
-        /// Control curInscLabel.
+        /// Control RequiredFieldValidator1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label curInscLabel;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// Control CursoInscipciongridView.
+        /// Control claveIncorrectaLabel.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView CursoInscipciongridView;
+        protected global::System.Web.UI.WebControls.Label claveIncorrectaLabel;
         
         /// <summary>
-        /// Control condicionLabel.
+        /// Control aceptarButton.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label condicionLabel;
+        protected global::System.Web.UI.WebControls.Button aceptarButton;
         
         /// <summary>
-        /// Control condicionTextBox.
+        /// Control passOlvidadaHyperLink.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox condicionTextBox;
-        
-        /// <summary>
-        /// Control formActionsPanel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel formActionsPanel;
-        
-        /// <summary>
-        /// Control aceptarLinkButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton aceptarLinkButton;
-        
-        /// <summary>
-        /// Control cancelarLinkButton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton cancelarLinkButton;
+        protected global::System.Web.UI.WebControls.LinkButton passOlvidadaHyperLink;
     }
 }
