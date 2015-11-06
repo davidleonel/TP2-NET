@@ -5,9 +5,12 @@
     
     <div>
      
-        
+        <asp:Label ID="bienvenidolabel" runat="server" Text="" Visible="false"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="MenuLabel" runat="server" Text="MENU"></asp:Label> <br />
         <asp:Panel ID="menuAdminPanel" Visible="false" runat="server">
-           
+
             <asp:LinkButton ID="ABMPersonas" runat="server" OnClick="ABMPersonas_Click">ABM Personas</asp:LinkButton> <br />
             <asp:LinkButton ID="ABMUsuarios" runat="server" OnClick="ABMUsuarios_Click">ABM Usuarios</asp:LinkButton> <br />
             <asp:LinkButton ID="ABMEspecialidades" runat="server" OnClick="ABMEspecialidades_Click">ABM Especialidades</asp:LinkButton> <br />

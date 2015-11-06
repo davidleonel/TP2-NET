@@ -13,6 +13,24 @@ namespace UI.Web {
     public partial class Menu {
         
         /// <summary>
+        /// Control bienvenidolabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label bienvenidolabel;
+        
+        /// <summary>
+        /// Control MenuLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label MenuLabel;
+        
+        /// <summary>
         /// Control menuAdminPanel.
         /// </summary>
         /// <remarks>

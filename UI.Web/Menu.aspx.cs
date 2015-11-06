@@ -44,17 +44,21 @@ namespace UI.Web
             else
             {
                 Persona p = PersonaNegActual.GetOne(UsuarioActual.IdPersona);
-
+                this.bienvenidolabel.Visible = true;
+                this.bienvenidolabel.Text = ("Bienvenido: " + p.Nombre + " " + p.Apellido);
                 switch (p.TipoPersona)
                 {
                     case Persona.TiposPersona.Administrador:
                         this.menuAdminPanel.Visible = true;
+                       
                         break;
                     case Persona.TiposPersona.Alumno:
                         this.menuAlumnoPanel.Visible = true;
+
                         break;
                     case Persona.TiposPersona.Docente:
                         this.menuDocentePanel.Visible = true;
+
                         break;
                     default:
                         break;
@@ -140,7 +144,7 @@ namespace UI.Web
         protected void InscripcionDocente_Click(object sender, EventArgs e)
         {
 
-            //Page.Response.Redirect("~/InscripcionDocente.aspx");
+            Page.Response.Redirect("~/InscripcionDocente.aspx");
         }
 
         protected void RegistroNotasDocente_Click(object sender, EventArgs e)
@@ -160,7 +164,7 @@ namespace UI.Web
 
         protected void InscripcionAlumno_Click(object sender, EventArgs e)
         {
-            //Page.Response.Redirect("~/InscripcionAlumno.aspx");
+            Page.Response.Redirect("~/InscripcionAlumno.aspx");
         }
     }
 }
