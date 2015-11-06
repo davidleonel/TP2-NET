@@ -35,7 +35,6 @@ namespace UI.Escritorio
         {
             Modo = modo;
             this.cargarCbPersonas();
-            //this.cargaTipoPersonas();
 
         }
 
@@ -50,19 +49,6 @@ namespace UI.Escritorio
         #endregion
 
         #region Metodos
-        /*private void cargaTipoPersonas()
-        {
-            List<ItemsCbTipoPersona> lista = new List<ItemsCbTipoPersona>();
-
-            lista.Add(new ItemsCbTipoPersona("Administrador", 0));
-            lista.Add(new ItemsCbTipoPersona("Alumno", 1));
-            lista.Add(new ItemsCbTipoPersona("Docente", 2));
-
-            cbTipoPersonas.DisplayMember = "Name";
-            cbTipoPersonas.ValueMember = "Value";
-            cbTipoPersonas.DataSource = lista;
-
-        }*/
         private void cargarCbPersonas()
         {
             PersonaNegocio pn = new PersonaNegocio();
