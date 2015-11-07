@@ -183,10 +183,13 @@ namespace UI.Web
             }
             else
             {
-                if (UsuarioActual.IdPersona == null)
+                Persona p = PerNeg.GetOne(UsuarioActual.IdPersona);
+
+                if (p.TipoPersona != 0)
                 {
                     this.gridActionsPanel.Visible = false;
                     this.incorrectoLabel.Visible = true;
+                    this.aceptarLinkButton.Visible = false;
                 }
 
                 else

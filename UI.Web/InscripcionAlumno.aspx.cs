@@ -135,10 +135,13 @@ namespace UI.Web
             }
             else
             {
-                if (UsuAct.IdPersona == null)
+                Persona p = PersonaActNeg.GetOne(UsuAct.IdPersona);
+
+                if (Convert.ToInt32(p.TipoPersona) != 1)
                 {
-                    this.formActionsPanel.Visible = false;
+                    this.InscripcionAlumnogridView.Visible = false;
                     this.incorrectoLabel.Visible = true;
+                    this.aceptarLinkButton.Visible = false;
                 }
 
                 else

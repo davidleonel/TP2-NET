@@ -13,6 +13,8 @@ namespace UI.Web
     public partial class AlumnoInscipcion : System.Web.UI.Page
     {
         #region Propiedades
+
+
         AlumnoInscripcionNegocio _AluInscNeg;
         
         private AlumnoInscripcionNegocio AluInscNeg
@@ -158,10 +160,13 @@ namespace UI.Web
             }
             else
             {
-                if (UsuarioActual.IdPersona == null)
+                Persona p = PerNeg.GetOne(UsuarioActual.IdPersona);
+
+                if (p.TipoPersona != 0)
                 {
                     this.gridActionsPanel.Visible = false;
                     this.incorrectoLabel.Visible = true;
+                    this.aceptarLinkButton.Visible = false;
                 }
 
                 else

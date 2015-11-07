@@ -13,6 +13,21 @@ namespace UI.Web
     public partial class Usuarios : System.Web.UI.Page
     {
         #region  Propiedades
+
+        PersonaNegocio _PerNeg;
+        private PersonaNegocio PerNeg
+        {
+            get
+            {
+                if (_PerNeg == null)
+                {
+                    _PerNeg = new PersonaNegocio();
+                }
+                return _PerNeg;
+            }
+        }
+
+
         UsuarioNegocio _logicUsuario;
         private UsuarioNegocio LogicUsuario
         {
@@ -138,10 +153,13 @@ namespace UI.Web
             }
             else
             {
-                if (UsuarioActual.IdPersona == null)
+                Persona p = PerNeg.GetOne(UsuarioActual.IdPersona);
+
+                if (p.TipoPersona != 0)
                 {
                     this.gridActionsPanel.Visible = false;
                     this.incorrectoLabel.Visible = true;
+                    this.aceptarLinkButton.Visible = false;
                 }
 
                 else
