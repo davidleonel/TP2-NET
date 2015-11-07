@@ -227,10 +227,7 @@ namespace UI.Web
             this.CargaDropDownList();
 
         }
-        /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
-        {
-            this.LoadGrid();
-        }*/
+
 
         protected void noButton_Click(object sender, EventArgs e)
         {

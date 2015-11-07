@@ -8,7 +8,7 @@
          <asp:Panel ID="DocenteInscipcionsgridPanel" runat="server">
            <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
            <asp:Label ID="docInscLabel" runat="server" Text="Selecione Docente a inscribir:"></asp:Label>
-                <asp:GridView ID="DocenteInscipciongridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
+                <asp:GridView ID="DocenteInscipciongridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Turquoise"
                     SelectedRowStyle-ForeColor="White" DataKeyNames="ID" OnSelectedIndexChanged="Docente_SelectedIndexChanged" Width="488px">
                     <Columns>
                         <asp:BoundField HeaderText="ID Docente" DataField="Id" />
@@ -30,7 +30,7 @@
        
     <asp:Panel ID="CursoInscipciongridPanel" runat="server" Visible="false">
            <asp:Label ID="curInscLabel" runat="server" Text="Selecione Curso a inscribir el Docente:"></asp:Label>
-        <asp:GridView ID="CursoInscipciongridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
+        <asp:GridView ID="CursoInscipciongridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Turquoise"
             SelectedRowStyle-ForeColor="White" DataKeyNames="ID" OnSelectedIndexChanged="curso_SelectedIndexChanged" Width="554px">
             <Columns>
                 <asp:BoundField HeaderText="ID Curso" DataField="Id" />

@@ -13,6 +13,15 @@ namespace UI.Web {
     public partial class Login {
         
         /// <summary>
+        /// Control tituloLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label tituloLabel;
+        
+        /// <summary>
         /// Control usuarioPanel.
         /// </summary>
         /// <remarks>
@@ -49,15 +58,6 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// Control noEncontradoLabel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label noEncontradoLabel;
-        
-        /// <summary>
         /// Control passLabel.
         /// </summary>
         /// <remarks>
@@ -85,15 +85,6 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// Control claveIncorrectaLabel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label claveIncorrectaLabel;
-        
-        /// <summary>
         /// Control aceptarButton.
         /// </summary>
         /// <remarks>
@@ -110,5 +101,23 @@ namespace UI.Web {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton passOlvidadaHyperLink;
+        
+        /// <summary>
+        /// Control noEncontradoLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label noEncontradoLabel;
+        
+        /// <summary>
+        /// Control claveIncorrectaLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label claveIncorrectaLabel;
     }
 }

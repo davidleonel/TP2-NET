@@ -1,0 +1,118 @@
+﻿/*
+    TEXTO ROJO Y GRIS
+    body{
+	background:#2F3238;
+	color:#7F8289;
+	font-weight:300;
+	font-size:16px;
+	font-family: 'Titillium Web', sans-serif;
+	line-height:28px;
+}
+
+
+a{
+	color:#DE5E60;
+	text-decoration: none;
+	cursor: pointer;
+	
+	-webkit-transition: color 0.1s linear 0s;	
+	   -moz-transition: color 0.1s linear 0s;
+		 -o-transition: color 0.1s linear 0s;
+		    transition: color 0.1s linear 0s;
+}
+
+a:hover,
+a:active,
+a:focus{
+	outline: 0;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+*/
+
+
+/*  MAS DELICADO AZUL Y BLANCO
+body {	color:#666;	font:300 15px/15px Roboto,Arial,Helvetica;background-color:#fff;-webkit-font-smoothing:antialiased;}
+
+a{color:#00a9c6; text-decoration:none;}
+a:hover{color:#666;}
+.btn,a,.btn:hover,a:hover {
+-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+outline: none !important;
+}
+
+   */
+
+body {
+    background-color:aliceblue;
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato',sans-serif;
+	font-weight: 300;
+    color: #666;
+    text-align:center;
+
+}
+
+
+a {
+    color: #28c3ab;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #176e61;
+}
+table{
+    margin-left:auto;
+    margin-right:auto;
+}
+.container {
+  background-color:azure;
+  margin: 80px auto;
+  width: 640px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.loginPanel {
+  position: relative;
+  margin: 0 auto;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 20px 20px 20px;
+  width: 310px;
+  background: white;
+  border-color:black;
+  border-width:5px;
+  border-radius: 3px;
+  
+
+  }
+#usuarioTextBox{
+    position:relative;
+    float:right;
+}
+
+#passTextBox{
+    position:relative;
+    float:right;
+}
+
+#usuarioLabel{
+    position:relative;
+    float:left;
+}
+
+#passLabel{
+    position:relative;
+    float:left;
+}

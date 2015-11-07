@@ -6,7 +6,7 @@
     <div>
        <asp:Panel ID="InscripcionDocentegridPanel" runat="server">
             <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
-        <asp:GridView ID="InscripcionDocentegridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Black"
+        <asp:GridView ID="InscripcionDocentegridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Turquoise"
             SelectedRowStyle-ForeColor="White" DataKeyNames="ID" OnSelectedIndexChanged="gridView_SelectedIndexChanged">
             <Columns>
                 <asp:BoundField HeaderText="ID Curso" DataField="Id" />
