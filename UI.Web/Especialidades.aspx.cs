@@ -216,11 +216,12 @@ namespace UI.Web
              }
          }
 
-        /*protected void cancelarLinkButton_Click(object sender, EventArgs e)
-            {
-                this.LoadGrid();
-            }*/
-        //preguntar si este evento es así
+         protected void cancelarLinkButton_Click(object sender, EventArgs e)
+         {
+             this.Page.Response.Redirect("~/Menu.aspx");
+         }
+
+
 
          #endregion
 

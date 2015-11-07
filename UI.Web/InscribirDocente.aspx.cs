@@ -205,7 +205,12 @@ namespace UI.Web
 
         }
         
-        #endregion 
+        
 
+        protected void cancelarLinkButton_Click(object sender, EventArgs e)
+        {
+            this.Page.Response.Redirect("~/Menu.aspx");
+        }
+        #endregion
     }
 }

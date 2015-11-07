@@ -236,7 +236,15 @@ namespace UI.Web
         {
             Response.Redirect("http://localhost:7057/Personas");
         }
+
+        protected void cancelarLinkButton_Click(object sender, EventArgs e)
+        {
+            this.Page.Response.Redirect("~/Menu.aspx");
+        }
+
+
         #endregion
+
 
 
     }
