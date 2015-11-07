@@ -40,10 +40,7 @@ namespace UI.Escritorio
             this.Listar();
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            this.Listar();
-        }
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {

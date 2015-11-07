@@ -32,16 +32,15 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tlComisiones = new System.Windows.Forms.TableLayoutPanel();
             this.dgvComisiones = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.id_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionComision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.anioEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
-            this.id_descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionComision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.anioEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -74,7 +73,6 @@
             this.tlComisiones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlComisiones.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlComisiones.Controls.Add(this.dgvComisiones, 0, 0);
-            this.tlComisiones.Controls.Add(this.btnActualizar, 0, 1);
             this.tlComisiones.Controls.Add(this.btnSalir, 1, 1);
             this.tlComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlComisiones.Location = new System.Drawing.Point(0, 0);
@@ -102,16 +100,37 @@
             this.dgvComisiones.Size = new System.Drawing.Size(602, 218);
             this.dgvComisiones.TabIndex = 0;
             // 
-            // btnActualizar
+            // id_descripcion
             // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(449, 227);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.id_descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_descripcion.DataPropertyName = "Id";
+            this.id_descripcion.HeaderText = "ID";
+            this.id_descripcion.Name = "id_descripcion";
+            this.id_descripcion.ReadOnly = true;
+            // 
+            // descripcionComision
+            // 
+            this.descripcionComision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.descripcionComision.DataPropertyName = "descripcionComision";
+            this.descripcionComision.HeaderText = "Descripcion";
+            this.descripcionComision.Name = "descripcionComision";
+            this.descripcionComision.ReadOnly = true;
+            // 
+            // anioEspecialidad
+            // 
+            this.anioEspecialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.anioEspecialidad.DataPropertyName = "anioEspecialidad";
+            this.anioEspecialidad.HeaderText = "Anio Especialidad";
+            this.anioEspecialidad.Name = "anioEspecialidad";
+            this.anioEspecialidad.ReadOnly = true;
+            // 
+            // idPlan
+            // 
+            this.idPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.idPlan.DataPropertyName = "idPlan";
+            this.idPlan.HeaderText = "ID Plan";
+            this.idPlan.Name = "idPlan";
+            this.idPlan.ReadOnly = true;
             // 
             // btnSalir
             // 
@@ -166,38 +185,6 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // id_descripcion
-            // 
-            this.id_descripcion.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.id_descripcion.DataPropertyName = "Id";
-            this.id_descripcion.HeaderText = "ID";
-            this.id_descripcion.Name = "id_descripcion";
-            this.id_descripcion.ReadOnly = true;
-            // 
-            // descripcionComision
-            // 
-            this.descripcionComision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.descripcionComision.DataPropertyName = "descripcionComision";
-            this.descripcionComision.HeaderText = "Descripcion";
-            this.descripcionComision.Name = "descripcionComision";
-            this.descripcionComision.ReadOnly = true;
-            // 
-            // anioEspecialidad
-            // 
-            this.anioEspecialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.anioEspecialidad.DataPropertyName = "anioEspecialidad";
-            this.anioEspecialidad.HeaderText = "Anio Especialidad";
-            this.anioEspecialidad.Name = "anioEspecialidad";
-            this.anioEspecialidad.ReadOnly = true;
-            // 
-            // idPlan
-            // 
-            this.idPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.idPlan.DataPropertyName = "idPlan";
-            this.idPlan.HeaderText = "ID Plan";
-            this.idPlan.Name = "idPlan";
-            this.idPlan.ReadOnly = true;
-            // 
             // ComisionesEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,7 +212,6 @@
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.TableLayoutPanel tlComisiones;
         private System.Windows.Forms.DataGridView dgvComisiones;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbNuevo;

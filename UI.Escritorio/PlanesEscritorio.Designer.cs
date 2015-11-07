@@ -32,15 +32,14 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tlPlanes = new System.Windows.Forms.TableLayoutPanel();
             this.dgvPlanes = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescripcionPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -74,7 +73,6 @@
             this.tlPlanes.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlPlanes.Controls.Add(this.dgvPlanes, 0, 0);
             this.tlPlanes.Controls.Add(this.btnSalir, 1, 1);
-            this.tlPlanes.Controls.Add(this.btnActualizar, 0, 1);
             this.tlPlanes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlPlanes.Location = new System.Drawing.Point(0, 0);
             this.tlPlanes.Name = "tlPlanes";
@@ -99,6 +97,29 @@
             this.dgvPlanes.Size = new System.Drawing.Size(580, 162);
             this.dgvPlanes.TabIndex = 0;
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "Id Plan";
+            this.Id.Name = "Id";
+            this.Id.ReadOnly = true;
+            // 
+            // DescripcionPlan
+            // 
+            this.DescripcionPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DescripcionPlan.DataPropertyName = "DescripcionPlan";
+            this.DescripcionPlan.FillWeight = 189.6907F;
+            this.DescripcionPlan.HeaderText = "Descripcion";
+            this.DescripcionPlan.Name = "DescripcionPlan";
+            // 
+            // IdEspecialidad
+            // 
+            this.IdEspecialidad.DataPropertyName = "IdEspecialidad";
+            this.IdEspecialidad.FillWeight = 10.30928F;
+            this.IdEspecialidad.HeaderText = "Id Especialidad";
+            this.IdEspecialidad.Name = "IdEspecialidad";
+            this.IdEspecialidad.ReadOnly = true;
+            // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(508, 171);
@@ -108,17 +129,6 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(427, 171);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 2;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // toolStrip1
             // 
@@ -162,29 +172,6 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "Id Plan";
-            this.Id.Name = "Id";
-            this.Id.ReadOnly = true;
-            // 
-            // DescripcionPlan
-            // 
-            this.DescripcionPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DescripcionPlan.DataPropertyName = "DescripcionPlan";
-            this.DescripcionPlan.FillWeight = 189.6907F;
-            this.DescripcionPlan.HeaderText = "Descripcion";
-            this.DescripcionPlan.Name = "DescripcionPlan";
-            // 
-            // IdEspecialidad
-            // 
-            this.IdEspecialidad.DataPropertyName = "IdEspecialidad";
-            this.IdEspecialidad.FillWeight = 10.30928F;
-            this.IdEspecialidad.HeaderText = "Id Especialidad";
-            this.IdEspecialidad.Name = "IdEspecialidad";
-            this.IdEspecialidad.ReadOnly = true;
-            // 
             // PlanesEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -213,7 +200,6 @@
         private System.Windows.Forms.TableLayoutPanel tlPlanes;
         private System.Windows.Forms.DataGridView dgvPlanes;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbEditar;

@@ -32,17 +32,16 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tlpMaterias = new System.Windows.Forms.TableLayoutPanel();
             this.dgvMaterias = new System.Windows.Forms.DataGridView();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
-            this.tsbEditar = new System.Windows.Forms.ToolStripButton();
-            this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DescripcionMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HsSemanales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HsTotales = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdPlan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
+            this.tsbEditar = new System.Windows.Forms.ToolStripButton();
+            this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -76,7 +75,6 @@
             this.tlpMaterias.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlpMaterias.Controls.Add(this.dgvMaterias, 0, 0);
             this.tlpMaterias.Controls.Add(this.btnSalir, 1, 1);
-            this.tlpMaterias.Controls.Add(this.btnActualizar, 0, 1);
             this.tlpMaterias.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpMaterias.Location = new System.Drawing.Point(0, 0);
             this.tlpMaterias.Name = "tlpMaterias";
@@ -102,6 +100,40 @@
             this.dgvMaterias.Size = new System.Drawing.Size(546, 178);
             this.dgvMaterias.TabIndex = 0;
             // 
+            // Id
+            // 
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID Materia";
+            this.Id.Name = "Id";
+            // 
+            // DescripcionMateria
+            // 
+            this.DescripcionMateria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DescripcionMateria.DataPropertyName = "DescripcionMateria";
+            this.DescripcionMateria.HeaderText = "Descripcion";
+            this.DescripcionMateria.Name = "DescripcionMateria";
+            // 
+            // HsSemanales
+            // 
+            this.HsSemanales.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HsSemanales.DataPropertyName = "HsSemanales";
+            this.HsSemanales.HeaderText = "Hs Semanales";
+            this.HsSemanales.Name = "HsSemanales";
+            // 
+            // HsTotales
+            // 
+            this.HsTotales.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HsTotales.DataPropertyName = "HsTotales";
+            this.HsTotales.HeaderText = "Hs Totales";
+            this.HsTotales.Name = "HsTotales";
+            // 
+            // IdPlan
+            // 
+            this.IdPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IdPlan.DataPropertyName = "IdPlan";
+            this.IdPlan.HeaderText = "ID Plan";
+            this.IdPlan.Name = "IdPlan";
+            // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(474, 187);
@@ -111,17 +143,6 @@
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(393, 187);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 2;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // toolStrip1
             // 
@@ -165,40 +186,6 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "ID Materia";
-            this.Id.Name = "Id";
-            // 
-            // DescripcionMateria
-            // 
-            this.DescripcionMateria.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DescripcionMateria.DataPropertyName = "DescripcionMateria";
-            this.DescripcionMateria.HeaderText = "Descripcion";
-            this.DescripcionMateria.Name = "DescripcionMateria";
-            // 
-            // HsSemanales
-            // 
-            this.HsSemanales.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HsSemanales.DataPropertyName = "HsSemanales";
-            this.HsSemanales.HeaderText = "Hs Semanales";
-            this.HsSemanales.Name = "HsSemanales";
-            // 
-            // HsTotales
-            // 
-            this.HsTotales.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HsTotales.DataPropertyName = "HsTotales";
-            this.HsTotales.HeaderText = "Hs Totales";
-            this.HsTotales.Name = "HsTotales";
-            // 
-            // IdPlan
-            // 
-            this.IdPlan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.IdPlan.DataPropertyName = "IdPlan";
-            this.IdPlan.HeaderText = "ID Plan";
-            this.IdPlan.Name = "IdPlan";
-            // 
             // MateriasEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,7 +214,6 @@
         private System.Windows.Forms.TableLayoutPanel tlpMaterias;
         private System.Windows.Forms.DataGridView dgvMaterias;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbNuevo;
         private System.Windows.Forms.ToolStripButton tsbEditar;

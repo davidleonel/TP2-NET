@@ -32,14 +32,13 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tlEspecialidades = new System.Windows.Forms.TableLayoutPanel();
             this.dgvEspecialidades = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DescripcionEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnSalir = new System.Windows.Forms.Button();
             this.tsEspecialidades = new System.Windows.Forms.ToolStrip();
             this.btnNuevo = new System.Windows.Forms.ToolStripButton();
             this.btnEditar = new System.Windows.Forms.ToolStripButton();
             this.bntEliminar = new System.Windows.Forms.ToolStripButton();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DescripcionEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -72,7 +71,6 @@
             this.tlEspecialidades.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlEspecialidades.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlEspecialidades.Controls.Add(this.dgvEspecialidades, 0, 0);
-            this.tlEspecialidades.Controls.Add(this.btnActualizar, 0, 1);
             this.tlEspecialidades.Controls.Add(this.btnSalir, 1, 1);
             this.tlEspecialidades.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlEspecialidades.Location = new System.Drawing.Point(0, 0);
@@ -96,16 +94,18 @@
             this.dgvEspecialidades.Size = new System.Drawing.Size(500, 265);
             this.dgvEspecialidades.TabIndex = 0;
             // 
-            // btnActualizar
+            // Id
             // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(347, 274);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.Id.DataPropertyName = "Id";
+            this.Id.HeaderText = "ID";
+            this.Id.Name = "Id";
+            // 
+            // DescripcionEspecialidad
+            // 
+            this.DescripcionEspecialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DescripcionEspecialidad.DataPropertyName = "DescripcionEspecialidad";
+            this.DescripcionEspecialidad.HeaderText = "Descripcion";
+            this.DescripcionEspecialidad.Name = "DescripcionEspecialidad";
             // 
             // btnSalir
             // 
@@ -159,19 +159,6 @@
             this.bntEliminar.Text = "Eliminar";
             this.bntEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
-            // Id
-            // 
-            this.Id.DataPropertyName = "Id";
-            this.Id.HeaderText = "ID";
-            this.Id.Name = "Id";
-            // 
-            // DescripcionEspecialidad
-            // 
-            this.DescripcionEspecialidad.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DescripcionEspecialidad.DataPropertyName = "DescripcionEspecialidad";
-            this.DescripcionEspecialidad.HeaderText = "Descripcion";
-            this.DescripcionEspecialidad.Name = "DescripcionEspecialidad";
-            // 
             // EspecialidadesEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -199,7 +186,6 @@
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.TableLayoutPanel tlEspecialidades;
         private System.Windows.Forms.DataGridView dgvEspecialidades;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ToolStrip tsEspecialidades;
         private System.Windows.Forms.ToolStripButton btnNuevo;

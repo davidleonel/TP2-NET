@@ -32,17 +32,16 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tlCursos = new System.Windows.Forms.TableLayoutPanel();
             this.dgvCursos = new System.Windows.Forms.DataGridView();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
-            this.tsbEditar = new System.Windows.Forms.ToolStripButton();
-            this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.id_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_materia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_comision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.anio_calendario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cupo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
+            this.tsbEditar = new System.Windows.Forms.ToolStripButton();
+            this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -75,7 +74,6 @@
             this.tlCursos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlCursos.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.tlCursos.Controls.Add(this.dgvCursos, 0, 0);
-            this.tlCursos.Controls.Add(this.btnActualizar, 0, 1);
             this.tlCursos.Controls.Add(this.btnSalir, 1, 1);
             this.tlCursos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlCursos.Location = new System.Drawing.Point(0, 0);
@@ -104,16 +102,40 @@
             this.dgvCursos.Size = new System.Drawing.Size(602, 218);
             this.dgvCursos.TabIndex = 0;
             // 
-            // btnActualizar
+            // id_curso
             // 
-            this.btnActualizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnActualizar.Location = new System.Drawing.Point(449, 227);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            this.id_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_curso.DataPropertyName = "Id";
+            this.id_curso.HeaderText = "ID Curso";
+            this.id_curso.Name = "id_curso";
+            // 
+            // id_materia
+            // 
+            this.id_materia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_materia.DataPropertyName = "IdMateria";
+            this.id_materia.HeaderText = "ID Materia";
+            this.id_materia.Name = "id_materia";
+            // 
+            // id_comision
+            // 
+            this.id_comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.id_comision.DataPropertyName = "IdComision";
+            this.id_comision.HeaderText = "ID Comision";
+            this.id_comision.Name = "id_comision";
+            // 
+            // anio_calendario
+            // 
+            this.anio_calendario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.anio_calendario.DataPropertyName = "AnioCalendario";
+            this.anio_calendario.HeaderText = "Anio Calendario";
+            this.anio_calendario.Name = "anio_calendario";
+            // 
+            // cupo
+            // 
+            this.cupo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.cupo.DataPropertyName = "Cupo";
+            this.cupo.HeaderText = "Cupo";
+            this.cupo.Name = "cupo";
             // 
             // btnSalir
             // 
@@ -168,41 +190,6 @@
             this.tsbEliminar.Text = "Eliminar";
             this.tsbEliminar.Click += new System.EventHandler(this.tsbEliminar_Click);
             // 
-            // id_curso
-            // 
-            this.id_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.id_curso.DataPropertyName = "Id";
-            this.id_curso.HeaderText = "ID Curso";
-            this.id_curso.Name = "id_curso";
-            // 
-            // id_materia
-            // 
-            this.id_materia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.id_materia.DataPropertyName = "IdMateria";
-            this.id_materia.HeaderText = "ID Materia";
-            this.id_materia.Name = "id_materia";
-            // 
-            // id_comision
-            // 
-            this.id_comision.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.id_comision.DataPropertyName = "IdComision";
-            this.id_comision.HeaderText = "ID Comision";
-            this.id_comision.Name = "id_comision";
-            // 
-            // anio_calendario
-            // 
-            this.anio_calendario.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.anio_calendario.DataPropertyName = "AnioCalendario";
-            this.anio_calendario.HeaderText = "Anio Calendario";
-            this.anio_calendario.Name = "anio_calendario";
-            // 
-            // cupo
-            // 
-            this.cupo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.cupo.DataPropertyName = "Cupo";
-            this.cupo.HeaderText = "Cupo";
-            this.cupo.Name = "cupo";
-            // 
             // CursosEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -230,7 +217,6 @@
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.TableLayoutPanel tlCursos;
         private System.Windows.Forms.DataGridView dgvCursos;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton tsbNuevo;
