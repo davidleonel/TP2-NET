@@ -67,5 +67,12 @@ namespace UI.Escritorio
 
         }
 
+        private void btnABMPersona_Click(object sender, EventArgs e)
+        {
+            PersonasEscritorio perEsc = new PersonasEscritorio();
+            perEsc.ShowDialog();
+
+        }
+
     }
 }

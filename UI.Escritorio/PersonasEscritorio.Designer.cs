@@ -32,11 +32,11 @@
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dgvPersonas = new System.Windows.Forms.DataGridView();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tsbNuevo = new System.Windows.Forms.ToolStripButton();
             this.tsbEditar = new System.Windows.Forms.ToolStripButton();
             this.tsbEliminar = new System.Windows.Forms.ToolStripButton();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.toolStripContainer1.ContentPanel.SuspendLayout();
             this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer1.SuspendLayout();
@@ -48,18 +48,18 @@
             // toolStripContainer1
             // 
             // 
-            // toolStripContainer1.cpPersonas
+            // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(310, 235);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(445, 272);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(310, 260);
+            this.toolStripContainer1.Size = new System.Drawing.Size(445, 297);
             this.toolStripContainer1.TabIndex = 0;
             this.toolStripContainer1.Text = "toolStripContainer1";
             // 
-            // toolStripContainer1.tsMenuPersonas
+            // toolStripContainer1.TopToolStripPanel
             // 
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.toolStrip1);
             // 
@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(310, 235);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(445, 272);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // dgvPersonas
@@ -86,8 +86,17 @@
             this.dgvPersonas.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvPersonas.Location = new System.Drawing.Point(3, 3);
             this.dgvPersonas.Name = "dgvPersonas";
-            this.dgvPersonas.Size = new System.Drawing.Size(304, 200);
+            this.dgvPersonas.Size = new System.Drawing.Size(439, 237);
             this.dgvPersonas.TabIndex = 0;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(367, 246);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 1;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // toolStrip1
             // 
@@ -98,7 +107,7 @@
             this.tsbEliminar});
             this.toolStrip1.Location = new System.Drawing.Point(3, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(81, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(112, 25);
             this.toolStrip1.TabIndex = 1;
             // 
             // tsbNuevo
@@ -128,20 +137,11 @@
             this.tsbEliminar.Size = new System.Drawing.Size(23, 22);
             this.tsbEliminar.Text = "Eliminar";
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(232, 209);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(75, 23);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            // 
             // PersonasEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 260);
+            this.ClientSize = new System.Drawing.Size(445, 297);
             this.Controls.Add(this.toolStripContainer1);
             this.Name = "PersonasEscritorio";
             this.Text = "Personas";

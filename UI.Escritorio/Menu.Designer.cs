@@ -33,6 +33,8 @@
             this.btnABMPlanes = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inscripcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.docenteACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnoACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroDeNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,8 +45,7 @@
             this.btnABMEspecialidades = new System.Windows.Forms.Button();
             this.btnABMAlumno = new System.Windows.Forms.Button();
             this.btnABMProfesores = new System.Windows.Forms.Button();
-            this.docenteACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alumnoACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnABMPersona = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -55,19 +56,20 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Controls.Add(this.btnABMUsuario, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMPlanes, 1, 5);
             this.tableLayoutPanel1.Controls.Add(this.menuStrip1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMComisiones, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMCursos, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMMaterias, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMEspecialidades, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMAlumno, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.btnABMProfesores, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMCursos, 1, 9);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMPlanes, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMEspecialidades, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMAlumno, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMMaterias, 1, 7);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMComisiones, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMProfesores, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMUsuario, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnABMPersona, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -78,15 +80,15 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(509, 549);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // btnABMUsuario
             // 
-            this.btnABMUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMUsuario.Location = new System.Drawing.Point(155, 57);
+            this.btnABMUsuario.Location = new System.Drawing.Point(155, 107);
             this.btnABMUsuario.Name = "btnABMUsuario";
-            this.btnABMUsuario.Size = new System.Drawing.Size(197, 48);
+            this.btnABMUsuario.Size = new System.Drawing.Size(197, 46);
             this.btnABMUsuario.TabIndex = 0;
             this.btnABMUsuario.Text = "ABM Usuarios";
             this.btnABMUsuario.UseVisualStyleBackColor = true;
@@ -94,10 +96,9 @@
             // 
             // btnABMPlanes
             // 
-            this.btnABMPlanes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMPlanes.Location = new System.Drawing.Point(155, 273);
+            this.btnABMPlanes.Location = new System.Drawing.Point(155, 315);
             this.btnABMPlanes.Name = "btnABMPlanes";
-            this.btnABMPlanes.Size = new System.Drawing.Size(197, 48);
+            this.btnABMPlanes.Size = new System.Drawing.Size(197, 46);
             this.btnABMPlanes.TabIndex = 4;
             this.btnABMPlanes.Text = "ABM Planes";
             this.btnABMPlanes.UseVisualStyleBackColor = true;
@@ -124,6 +125,16 @@
             this.inscripcionesToolStripMenuItem.Name = "inscripcionesToolStripMenuItem";
             this.inscripcionesToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.inscripcionesToolStripMenuItem.Text = "Inscripciones";
+            // 
+            // docenteACursoToolStripMenuItem
+            // 
+            this.docenteACursoToolStripMenuItem.Name = "docenteACursoToolStripMenuItem";
+            this.docenteACursoToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
+            // 
+            // alumnoACursoToolStripMenuItem
+            // 
+            this.alumnoACursoToolStripMenuItem.Name = "alumnoACursoToolStripMenuItem";
+            this.alumnoACursoToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
             // 
             // registroDeNotasToolStripMenuItem
             // 
@@ -154,10 +165,9 @@
             // 
             // btnABMComisiones
             // 
-            this.btnABMComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMComisiones.Location = new System.Drawing.Point(155, 381);
+            this.btnABMComisiones.Location = new System.Drawing.Point(155, 419);
             this.btnABMComisiones.Name = "btnABMComisiones";
-            this.btnABMComisiones.Size = new System.Drawing.Size(197, 48);
+            this.btnABMComisiones.Size = new System.Drawing.Size(197, 46);
             this.btnABMComisiones.TabIndex = 5;
             this.btnABMComisiones.Text = "ABM Comisiones";
             this.btnABMComisiones.UseVisualStyleBackColor = true;
@@ -165,10 +175,9 @@
             // 
             // btnABMCursos
             // 
-            this.btnABMCursos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMCursos.Location = new System.Drawing.Point(155, 435);
+            this.btnABMCursos.Location = new System.Drawing.Point(155, 471);
             this.btnABMCursos.Name = "btnABMCursos";
-            this.btnABMCursos.Size = new System.Drawing.Size(197, 48);
+            this.btnABMCursos.Size = new System.Drawing.Size(197, 46);
             this.btnABMCursos.TabIndex = 6;
             this.btnABMCursos.Text = "ABM Cursos";
             this.btnABMCursos.UseVisualStyleBackColor = true;
@@ -176,10 +185,9 @@
             // 
             // btnABMMaterias
             // 
-            this.btnABMMaterias.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMMaterias.Location = new System.Drawing.Point(155, 327);
+            this.btnABMMaterias.Location = new System.Drawing.Point(155, 367);
             this.btnABMMaterias.Name = "btnABMMaterias";
-            this.btnABMMaterias.Size = new System.Drawing.Size(197, 48);
+            this.btnABMMaterias.Size = new System.Drawing.Size(197, 46);
             this.btnABMMaterias.TabIndex = 8;
             this.btnABMMaterias.Text = "ABM Materias";
             this.btnABMMaterias.UseVisualStyleBackColor = true;
@@ -187,10 +195,9 @@
             // 
             // btnABMEspecialidades
             // 
-            this.btnABMEspecialidades.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMEspecialidades.Location = new System.Drawing.Point(155, 219);
+            this.btnABMEspecialidades.Location = new System.Drawing.Point(155, 263);
             this.btnABMEspecialidades.Name = "btnABMEspecialidades";
-            this.btnABMEspecialidades.Size = new System.Drawing.Size(197, 48);
+            this.btnABMEspecialidades.Size = new System.Drawing.Size(197, 46);
             this.btnABMEspecialidades.TabIndex = 2;
             this.btnABMEspecialidades.Text = "ABM Especialidades";
             this.btnABMEspecialidades.UseVisualStyleBackColor = true;
@@ -198,10 +205,9 @@
             // 
             // btnABMAlumno
             // 
-            this.btnABMAlumno.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMAlumno.Location = new System.Drawing.Point(155, 165);
+            this.btnABMAlumno.Location = new System.Drawing.Point(155, 211);
             this.btnABMAlumno.Name = "btnABMAlumno";
-            this.btnABMAlumno.Size = new System.Drawing.Size(197, 48);
+            this.btnABMAlumno.Size = new System.Drawing.Size(197, 46);
             this.btnABMAlumno.TabIndex = 1;
             this.btnABMAlumno.Text = "ABM Alumnos";
             this.btnABMAlumno.UseVisualStyleBackColor = true;
@@ -209,15 +215,27 @@
             // 
             // btnABMProfesores
             // 
-            this.btnABMProfesores.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnABMProfesores.Location = new System.Drawing.Point(155, 111);
+            this.btnABMProfesores.Location = new System.Drawing.Point(155, 159);
             this.btnABMProfesores.Name = "btnABMProfesores";
-            this.btnABMProfesores.Size = new System.Drawing.Size(197, 48);
+            this.btnABMProfesores.Size = new System.Drawing.Size(197, 46);
             this.btnABMProfesores.TabIndex = 3;
             this.btnABMProfesores.Text = "ABM Docentes";
             this.btnABMProfesores.UseVisualStyleBackColor = true;
             this.btnABMProfesores.Click += new System.EventHandler(this.btnABMProfesores_Click);
-           
+            // 
+            // btnABMPersona
+            // 
+            this.btnABMPersona.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnABMPersona.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnABMPersona.Location = new System.Drawing.Point(155, 55);
+            this.btnABMPersona.Name = "btnABMPersona";
+            this.btnABMPersona.Size = new System.Drawing.Size(197, 46);
+            this.btnABMPersona.TabIndex = 9;
+            this.btnABMPersona.Text = "ABM Personas";
+            this.btnABMPersona.UseVisualStyleBackColor = false;
+            this.btnABMPersona.Click += new System.EventHandler(this.btnABMPersona_Click);
             // 
             // Menu
             // 
@@ -255,5 +273,6 @@
         private System.Windows.Forms.Button btnABMMaterias;
         private System.Windows.Forms.ToolStripMenuItem docenteACursoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnoACursoToolStripMenuItem;
+        private System.Windows.Forms.Button btnABMPersona;
     }
 }

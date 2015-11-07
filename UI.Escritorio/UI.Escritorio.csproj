@@ -130,6 +130,18 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="PersonaEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonaEscritorio.Designer.cs">
+      <DependentUpon>PersonaEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonasEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersonasEscritorio.Designer.cs">
+      <DependentUpon>PersonasEscritorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlanEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +218,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonaEscritorio.resx">
+      <DependentUpon>PersonaEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonasEscritorio.resx">
+      <DependentUpon>PersonasEscritorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PlanEscritorio.resx">
       <DependentUpon>PlanEscritorio.cs</DependentUpon>
