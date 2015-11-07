@@ -30,7 +30,6 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.lblID = new System.Windows.Forms.Label();
-            this.lblPersona = new System.Windows.Forms.Label();
             this.chkHabilitado = new System.Windows.Forms.CheckBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.cbPersonas = new System.Windows.Forms.ComboBox();
@@ -42,6 +41,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblConfirmarClave = new System.Windows.Forms.Label();
             this.txtConfirmarClave = new System.Windows.Forms.TextBox();
+            this.lblPersona = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,15 +86,6 @@
             this.lblID.Size = new System.Drawing.Size(21, 13);
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID:";
-            // 
-            // lblPersona
-            // 
-            this.lblPersona.AutoSize = true;
-            this.lblPersona.Location = new System.Drawing.Point(3, 54);
-            this.lblPersona.Name = "lblPersona";
-            this.lblPersona.Size = new System.Drawing.Size(49, 13);
-            this.lblPersona.TabIndex = 2;
-            this.lblPersona.Text = "Persona:";
             // 
             // chkHabilitado
             // 
@@ -201,6 +192,15 @@
             this.txtConfirmarClave.PasswordChar = '*';
             this.txtConfirmarClave.Size = new System.Drawing.Size(268, 20);
             this.txtConfirmarClave.TabIndex = 12;
+            // 
+            // lblPersona
+            // 
+            this.lblPersona.AutoSize = true;
+            this.lblPersona.Location = new System.Drawing.Point(3, 54);
+            this.lblPersona.Name = "lblPersona";
+            this.lblPersona.Size = new System.Drawing.Size(49, 13);
+            this.lblPersona.TabIndex = 2;
+            this.lblPersona.Text = "Persona:";
             // 
             // UsuarioEscritorio
             // 
