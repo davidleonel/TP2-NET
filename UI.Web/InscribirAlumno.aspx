@@ -4,7 +4,9 @@
     <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
     
     <div>
-      
+        <asp:Label ID="aluLabel" runat="server" Text="Inscripcion Alumno"></asp:Label>
+        <br />
+        <br />
          <asp:Panel ID="AlumnoInscipcionsgridPanel" runat="server">
            <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
            <asp:Label ID="aluInscLabel" runat="server" Text="Selecione Alumno a inscribir:"></asp:Label>
@@ -45,7 +47,8 @@
            <asp:Label ID="condicionLabel" runat="server" Text="Condicion:"></asp:Label>
            <asp:TextBox ID="condicionTextBox" runat="server" Width="209px"></asp:TextBox>
     </asp:Panel>
-
+        <br />
+        <br />
    
        
     <asp:Panel ID="formActionsPanel" runat="server">

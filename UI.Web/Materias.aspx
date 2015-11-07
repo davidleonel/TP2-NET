@@ -4,6 +4,9 @@
     <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
     
     <div>
+        <asp:Label ID="ABMLabel" runat="server" Text="ABM Materias"></asp:Label>
+        <br />
+        <br />
        <asp:Panel ID="MateriasgridPanel" runat="server">
         <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
         <asp:GridView ID="MateriasgridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Turquoise"
@@ -60,7 +63,8 @@
 
     </asp:Panel>
 
-   
+   <br />
+        <br />
        
     <asp:Panel ID="formActionsPanel" runat="server">
             <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click" >Aceptar</asp:LinkButton>

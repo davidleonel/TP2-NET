@@ -4,6 +4,9 @@
     <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
     
     <div>
+        <asp:Label ID="ABMLabel" runat="server" Text="ABM Cursos"></asp:Label>
+        <br />
+        <br />
        <asp:Panel ID="CursosgridPanel" runat="server">
             <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
         <asp:GridView ID="CursosgridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Turquoise"
@@ -59,7 +62,8 @@
    
 
     </asp:Panel>
-
+        <br />
+        <br />
    
        
     <asp:Panel ID="formActionsPanel" runat="server">

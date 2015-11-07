@@ -4,6 +4,9 @@
     <asp:Content ContentPlaceHolderID="bodyContentPlaceHolder" RunAt="server" >
     
     <div>
+        <asp:Label ID="docenLabel" runat="server" Text="Seleccione Curso"></asp:Label>
+        <br />
+        <br />
        <asp:Panel ID="InscripcionDocentegridPanel" runat="server">
             <asp:Label ID="incorrectoLabel" runat="server" Visible="false" Text="No tiene permisos para interactuar en esta página"></asp:Label>
         <asp:GridView ID="InscripcionDocentegridView" runat="server" AutoGenerateColumns="false" SelectedRowStyle-BackColor="Turquoise"
@@ -22,7 +25,8 @@
             </asp:DropDownList>
             <br />
     </asp:Panel>
-      
+      <br />
+        <br />
     <asp:Panel ID="formActionsPanel" runat="server">
             <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click" >Aceptar</asp:LinkButton>
             <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Cancelar</asp:LinkButton>

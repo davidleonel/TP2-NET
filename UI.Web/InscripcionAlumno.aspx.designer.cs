@@ -13,6 +13,15 @@ namespace UI.Web {
     public partial class InscripcionAlumno {
         
         /// <summary>
+        /// Control aluLabel.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label aluLabel;
+        
+        /// <summary>
         /// Control InscripcionAlumnogridPanel.
         /// </summary>
         /// <remarks>
