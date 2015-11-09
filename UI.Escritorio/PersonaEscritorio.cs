@@ -77,6 +77,7 @@ namespace UI.Escritorio
             this.txtID.Text = this.PerActual.Id.ToString();
             this.txtNombre.Text = this.PerActual.Nombre;
             this.txtApellido.Text = this.PerActual.Apellido;
+            this.txtFechaNac.Text = this.PerActual.FechaNacimiento.ToString();
             this.txtDireccion.Text = this.PerActual.Direccion;
             this.txtEmail.Text = this.PerActual.Email;
             this.txtTelefono.Text = this.PerActual.Telefono;
@@ -109,11 +110,11 @@ namespace UI.Escritorio
 
                 this.PerActual.Nombre = this.txtNombre.Text  ;
                 this.PerActual.Apellido = this.txtApellido.Text;
+                this.PerActual.FechaNacimiento = Convert.ToDateTime(this.txtFechaNac.Text);
                 this.PerActual.Direccion = this.txtDireccion.Text  ;
                 this.PerActual.Email = this.txtEmail.Text  ;
                 this.PerActual.Telefono = this.txtTelefono.Text  ;
                 this.PerActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
-                //this.PerActual.TipoPersona = this.cbTipoPersona.SelectedValue; Preguntaaaaaaaaaaaaaaaaaaaaaar! 
                 this.PerActual.IdPlan = Convert.ToInt32(this.cbPlanes.SelectedValue);
 
             }
@@ -122,11 +123,11 @@ namespace UI.Escritorio
                 this.PerActual.Id = Convert.ToInt32(this.txtID.Text);
                 this.PerActual.Nombre = this.txtNombre.Text;
                 this.PerActual.Apellido = this.txtApellido.Text;
+                this.PerActual.FechaNacimiento = Convert.ToDateTime(this.txtFechaNac.Text);
                 this.PerActual.Direccion = this.txtDireccion.Text;
                 this.PerActual.Email = this.txtEmail.Text;
                 this.PerActual.Telefono = this.txtTelefono.Text;
                 this.PerActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
-                //this.PerActual.TipoPersona = this.cbTipoPersona.SelectedValue; Preguntaaaaaaaaaaaaaaaaaaaaaar! 
                 this.PerActual.IdPlan = Convert.ToInt32(this.cbPlanes.SelectedValue);
 
             }

@@ -44,13 +44,13 @@
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblFechaNac = new System.Windows.Forms.Label();
-            this.txtFechaNac = new System.Windows.Forms.TextBox();
             this.lblApellido = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
+            this.txtFechaNac = new System.Windows.Forms.MaskedTextBox();
             this.tlpDatosPersona.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,13 +75,13 @@
             this.tlpDatosPersona.Controls.Add(this.lblDireccion, 0, 4);
             this.tlpDatosPersona.Controls.Add(this.txtDireccion, 1, 4);
             this.tlpDatosPersona.Controls.Add(this.lblFechaNac, 0, 3);
-            this.tlpDatosPersona.Controls.Add(this.txtFechaNac, 1, 3);
             this.tlpDatosPersona.Controls.Add(this.lblApellido, 0, 2);
             this.tlpDatosPersona.Controls.Add(this.txtApellido, 1, 2);
             this.tlpDatosPersona.Controls.Add(this.lblNombre, 0, 1);
             this.tlpDatosPersona.Controls.Add(this.txtNombre, 1, 1);
             this.tlpDatosPersona.Controls.Add(this.lblID, 0, 0);
             this.tlpDatosPersona.Controls.Add(this.txtID, 1, 0);
+            this.tlpDatosPersona.Controls.Add(this.txtFechaNac, 1, 3);
             this.tlpDatosPersona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpDatosPersona.Location = new System.Drawing.Point(0, 0);
             this.tlpDatosPersona.Name = "tlpDatosPersona";
@@ -228,13 +228,6 @@
             this.lblFechaNac.TabIndex = 4;
             this.lblFechaNac.Text = "Fecha de Nacimiento";
             // 
-            // txtFechaNac
-            // 
-            this.txtFechaNac.Location = new System.Drawing.Point(113, 102);
-            this.txtFechaNac.Name = "txtFechaNac";
-            this.txtFechaNac.Size = new System.Drawing.Size(100, 20);
-            this.txtFechaNac.TabIndex = 14;
-            // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
@@ -284,6 +277,14 @@
             this.txtID.Size = new System.Drawing.Size(100, 20);
             this.txtID.TabIndex = 21;
             // 
+            // txtFechaNac
+            // 
+            this.txtFechaNac.Location = new System.Drawing.Point(113, 102);
+            this.txtFechaNac.Mask = "00/00/0000";
+            this.txtFechaNac.Name = "txtFechaNac";
+            this.txtFechaNac.Size = new System.Drawing.Size(100, 20);
+            this.txtFechaNac.TabIndex = 22;
+            // 
             // PersonaEscritorio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,7 +316,6 @@
         private System.Windows.Forms.ComboBox cbPlanes;
         private System.Windows.Forms.ComboBox cbTipoPersona;
         private System.Windows.Forms.TextBox txtApellido;
-        private System.Windows.Forms.TextBox txtFechaNac;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtTelefono;
@@ -323,5 +323,6 @@
         private System.Windows.Forms.Button btnAceptar;
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.MaskedTextBox txtFechaNac;
     }
 }

@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnABMUsuario = new System.Windows.Forms.Button();
-            this.btnABMPlanes = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inscripcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docenteACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,12 +37,14 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnABMComisiones = new System.Windows.Forms.Button();
             this.btnABMCursos = new System.Windows.Forms.Button();
-            this.btnABMMaterias = new System.Windows.Forms.Button();
+            this.btnABMPlanes = new System.Windows.Forms.Button();
             this.btnABMEspecialidades = new System.Windows.Forms.Button();
             this.btnABMAlumno = new System.Windows.Forms.Button();
+            this.btnABMMaterias = new System.Windows.Forms.Button();
+            this.btnABMComisiones = new System.Windows.Forms.Button();
             this.btnABMProfesores = new System.Windows.Forms.Button();
+            this.btnABMUsuario = new System.Windows.Forms.Button();
             this.btnABMPersona = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -83,26 +83,6 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(509, 549);
             this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // btnABMUsuario
-            // 
-            this.btnABMUsuario.Location = new System.Drawing.Point(155, 107);
-            this.btnABMUsuario.Name = "btnABMUsuario";
-            this.btnABMUsuario.Size = new System.Drawing.Size(197, 46);
-            this.btnABMUsuario.TabIndex = 0;
-            this.btnABMUsuario.Text = "ABM Usuarios";
-            this.btnABMUsuario.UseVisualStyleBackColor = true;
-            this.btnABMUsuario.Click += new System.EventHandler(this.btnABMUsuario_Click);
-            // 
-            // btnABMPlanes
-            // 
-            this.btnABMPlanes.Location = new System.Drawing.Point(155, 315);
-            this.btnABMPlanes.Name = "btnABMPlanes";
-            this.btnABMPlanes.Size = new System.Drawing.Size(197, 46);
-            this.btnABMPlanes.TabIndex = 4;
-            this.btnABMPlanes.Text = "ABM Planes";
-            this.btnABMPlanes.UseVisualStyleBackColor = true;
-            this.btnABMPlanes.Click += new System.EventHandler(this.btnABMPlanes_Click);
             // 
             // menuStrip1
             // 
@@ -163,18 +143,9 @@
             this.reportesDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
             this.reportesDeToolStripMenuItem.Text = "Reportes de Planes";
             // 
-            // btnABMComisiones
-            // 
-            this.btnABMComisiones.Location = new System.Drawing.Point(155, 419);
-            this.btnABMComisiones.Name = "btnABMComisiones";
-            this.btnABMComisiones.Size = new System.Drawing.Size(197, 46);
-            this.btnABMComisiones.TabIndex = 5;
-            this.btnABMComisiones.Text = "ABM Comisiones";
-            this.btnABMComisiones.UseVisualStyleBackColor = true;
-            this.btnABMComisiones.Click += new System.EventHandler(this.btnABMComisiones_Click);
-            // 
             // btnABMCursos
             // 
+            this.btnABMCursos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnABMCursos.Location = new System.Drawing.Point(155, 471);
             this.btnABMCursos.Name = "btnABMCursos";
             this.btnABMCursos.Size = new System.Drawing.Size(197, 46);
@@ -183,18 +154,20 @@
             this.btnABMCursos.UseVisualStyleBackColor = true;
             this.btnABMCursos.Click += new System.EventHandler(this.btnABMCursos_Click);
             // 
-            // btnABMMaterias
+            // btnABMPlanes
             // 
-            this.btnABMMaterias.Location = new System.Drawing.Point(155, 367);
-            this.btnABMMaterias.Name = "btnABMMaterias";
-            this.btnABMMaterias.Size = new System.Drawing.Size(197, 46);
-            this.btnABMMaterias.TabIndex = 8;
-            this.btnABMMaterias.Text = "ABM Materias";
-            this.btnABMMaterias.UseVisualStyleBackColor = true;
-            this.btnABMMaterias.Click += new System.EventHandler(this.btnABMMaterias_Click);
+            this.btnABMPlanes.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnABMPlanes.Location = new System.Drawing.Point(155, 315);
+            this.btnABMPlanes.Name = "btnABMPlanes";
+            this.btnABMPlanes.Size = new System.Drawing.Size(197, 46);
+            this.btnABMPlanes.TabIndex = 4;
+            this.btnABMPlanes.Text = "ABM Planes";
+            this.btnABMPlanes.UseVisualStyleBackColor = true;
+            this.btnABMPlanes.Click += new System.EventHandler(this.btnABMPlanes_Click);
             // 
             // btnABMEspecialidades
             // 
+            this.btnABMEspecialidades.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnABMEspecialidades.Location = new System.Drawing.Point(155, 263);
             this.btnABMEspecialidades.Name = "btnABMEspecialidades";
             this.btnABMEspecialidades.Size = new System.Drawing.Size(197, 46);
@@ -205,6 +178,7 @@
             // 
             // btnABMAlumno
             // 
+            this.btnABMAlumno.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnABMAlumno.Location = new System.Drawing.Point(155, 211);
             this.btnABMAlumno.Name = "btnABMAlumno";
             this.btnABMAlumno.Size = new System.Drawing.Size(197, 46);
@@ -213,8 +187,31 @@
             this.btnABMAlumno.UseVisualStyleBackColor = true;
             this.btnABMAlumno.Click += new System.EventHandler(this.btnABMAlumno_Click);
             // 
+            // btnABMMaterias
+            // 
+            this.btnABMMaterias.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnABMMaterias.Location = new System.Drawing.Point(155, 367);
+            this.btnABMMaterias.Name = "btnABMMaterias";
+            this.btnABMMaterias.Size = new System.Drawing.Size(197, 46);
+            this.btnABMMaterias.TabIndex = 8;
+            this.btnABMMaterias.Text = "ABM Materias";
+            this.btnABMMaterias.UseVisualStyleBackColor = true;
+            this.btnABMMaterias.Click += new System.EventHandler(this.btnABMMaterias_Click);
+            // 
+            // btnABMComisiones
+            // 
+            this.btnABMComisiones.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnABMComisiones.Location = new System.Drawing.Point(155, 419);
+            this.btnABMComisiones.Name = "btnABMComisiones";
+            this.btnABMComisiones.Size = new System.Drawing.Size(197, 46);
+            this.btnABMComisiones.TabIndex = 5;
+            this.btnABMComisiones.Text = "ABM Comisiones";
+            this.btnABMComisiones.UseVisualStyleBackColor = true;
+            this.btnABMComisiones.Click += new System.EventHandler(this.btnABMComisiones_Click);
+            // 
             // btnABMProfesores
             // 
+            this.btnABMProfesores.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnABMProfesores.Location = new System.Drawing.Point(155, 159);
             this.btnABMProfesores.Name = "btnABMProfesores";
             this.btnABMProfesores.Size = new System.Drawing.Size(197, 46);
@@ -223,12 +220,21 @@
             this.btnABMProfesores.UseVisualStyleBackColor = true;
             this.btnABMProfesores.Click += new System.EventHandler(this.btnABMProfesores_Click);
             // 
+            // btnABMUsuario
+            // 
+            this.btnABMUsuario.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnABMUsuario.Location = new System.Drawing.Point(155, 107);
+            this.btnABMUsuario.Name = "btnABMUsuario";
+            this.btnABMUsuario.Size = new System.Drawing.Size(197, 46);
+            this.btnABMUsuario.TabIndex = 0;
+            this.btnABMUsuario.Text = "ABM Usuarios";
+            this.btnABMUsuario.UseVisualStyleBackColor = true;
+            this.btnABMUsuario.Click += new System.EventHandler(this.btnABMUsuario_Click);
+            // 
             // btnABMPersona
             // 
-            this.btnABMPersona.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnABMPersona.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnABMPersona.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnABMPersona.Location = new System.Drawing.Point(155, 55);
             this.btnABMPersona.Name = "btnABMPersona";
             this.btnABMPersona.Size = new System.Drawing.Size(197, 46);
