@@ -56,6 +56,49 @@ namespace Data.Database
             return docCursos;
         }
 
+        public List<DocenteCurso> GetAll(int idDoc)
+        {
+            List<DocenteCurso> docCursos = new List<DocenteCurso>();
+            try
+            {
+                this.OpenConnection();
+
+                SqlCommand cmdDocCur = new SqlCommand("select * from docentes_cursos where id_docente = @id", SqlConn);
+                cmdDocCur.Parameters.Add("@id", SqlDbType.Int).Value = idDoc;
+
+                SqlDataReader drDocCurso = cmdDocCur.ExecuteReader();
+
+                while (drDocCurso.Read())
+                {
+
+                    DocenteCurso docCurso = new DocenteCurso();
+
+                    docCurso.Id = (int)drDocCurso["id_dictado"];
+                    docCurso.IdCurso = (int)drDocCurso["id_curso"];
+                    docCurso.IdDocente = (int)drDocCurso["id_docente"];
+                    docCurso.Cargo = (int)drDocCurso["cargo"];
+
+
+                    docCursos.Add(docCurso);
+                }
+
+                drDocCurso.Close();
+
+            }
+            catch (Exception Ex)
+            {
+                Exception ExcepcionManejada =
+                new Exception("Error al recuperar lista de usuarios", Ex);
+                throw ExcepcionManejada;
+            }
+            finally
+            {
+                this.CloseConnection();
+            }
+
+            return docCursos;
+        }
+
         public DocenteCurso GetOne(int ID)
         {
             
@@ -64,7 +107,7 @@ namespace Data.Database
                 {
 
                     this.OpenConnection();
-                    SqlCommand cmdUsuarios = new SqlCommand("select * from docentes_curso where id_dictado = @id", SqlConn);
+                    SqlCommand cmdUsuarios = new SqlCommand("select * from docentes_cursos where id_dictado = @id", SqlConn);
                     cmdUsuarios.Parameters.Add("@id", SqlDbType.Int).Value = ID;
                     
                     SqlDataReader drDocCurso = cmdUsuarios.ExecuteReader();
@@ -98,6 +141,8 @@ namespace Data.Database
 
                 return docCurso;
             }
+
+  
 
         public void Delete(int ID)
         {

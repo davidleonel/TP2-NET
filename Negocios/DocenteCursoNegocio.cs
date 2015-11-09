@@ -38,11 +38,20 @@ namespace Negocios
             return listaDocCurso;
         }
 
+        public List<DocenteCurso> GetAll(int idDoc)
+        {
+            List<DocenteCurso> listaDocCurso = DocenteCursoDatos.GetAll(idDoc);
+            return listaDocCurso;
+        }
+
         public DocenteCurso GetOne(int id)
         {
             DocenteCurso dc = DocenteCursoDatos.GetOne(id);
             return dc;
         }
+
+
+        
 
         public void Save(DocenteCurso docCur)
         {

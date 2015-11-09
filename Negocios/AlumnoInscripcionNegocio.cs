@@ -38,6 +38,13 @@ namespace Negocios
             return listaDocCurso;
         }
 
+        public List<AlumnoInscripcion> GetAll(int idCurso)
+        {
+            List<AlumnoInscripcion> listaDocCurso = alumnoInscripcionDatos.GetAll(idCurso);
+            return listaDocCurso;
+        }
+
+
         public AlumnoInscripcion GetOne(int id)
         {
             AlumnoInscripcion dc = alumnoInscripcionDatos.GetOne(id);

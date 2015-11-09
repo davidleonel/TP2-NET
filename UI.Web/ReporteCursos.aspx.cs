@@ -6,10 +6,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocios;
 using Entidades;
+/*
 using CrystalDecisions.CrystalReports.Engine;
 using CrystalDecisions.Shared;
 
-
+*/
 
 namespace UI.Web
 {
@@ -82,7 +83,7 @@ namespace UI.Web
                         this.LoadGrid();
                     }
 
-                    CrystalReportSource.ReportDocument.SetDatabaseLogon("", "", "localhost", "TP2");
+                    //CrystalReportSource.ReportDocument.SetDatabaseLogon("", "", "localhost", "TP2");
                 }
             }
         }

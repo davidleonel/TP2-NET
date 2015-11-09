@@ -126,7 +126,7 @@ namespace UI.Web
         protected void RegistroNotas_Click(object sender, EventArgs e)
         {
 
-            //Page.Response.Redirect("~/RegistroNotas.aspx");
+            Page.Response.Redirect("~/RegistrarNota.aspx");
         }
 
         protected void ReporteCursos_Click(object sender, EventArgs e)
@@ -149,7 +149,7 @@ namespace UI.Web
 
         protected void RegistroNotasDocente_Click(object sender, EventArgs e)
         {
-            //Page.Response.Redirect("~/InscripcionNotasDocente.aspx");
+            Page.Response.Redirect("~/RegistrarNotaDocente.aspx");
         }
 
         protected void ReporteCursosDocente_Click(object sender, EventArgs e)

@@ -36,6 +36,8 @@ namespace Negocios
             return ListaCursos;
         }
 
+
+
         public Curso GetOne(int Id)
         {
             Curso Cur = CursoDatos.GetOne(Id);
