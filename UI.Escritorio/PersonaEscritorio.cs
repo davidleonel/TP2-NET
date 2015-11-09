@@ -67,7 +67,7 @@ namespace UI.Escritorio
 
         private void cargarCbPlanes()
         {
-            PersonaNegocio pn = new PersonaNegocio();
+            PlanNegocio pn = new PlanNegocio();
             cbPlanes.DataSource = pn.GetAll();
             cbPlanes.DisplayMember = "DescripcionPlan";
             cbPlanes.ValueMember = "Id";

@@ -244,7 +244,7 @@ namespace Data.Database
                 cmdSave.Parameters.Add("@direccion", SqlDbType.VarChar, 50).Value = Persona.Direccion;
                 cmdSave.Parameters.Add("@email", SqlDbType.VarChar, 50).Value = Persona.Email;
                 cmdSave.Parameters.Add("@telefono", SqlDbType.VarChar, 50).Value = Persona.Telefono;
-                cmdSave.Parameters.Add("@fecha_nac", SqlDbType.DateTime).Value = Persona.FechaNacimiento;
+                //cmdSave.Parameters.Add("@fecha_nac", SqlDbType.DateTime).Value = Persona.FechaNacimiento;
                 cmdSave.Parameters.Add("@legajo", SqlDbType.Int).Value = Persona.Legajo;
                 cmdSave.Parameters.Add("@tipo_persona", SqlDbType.Int).Value = tipo_persona;
                 cmdSave.Parameters.Add("@id_plan", SqlDbType.Int).Value = Persona.IdPlan;

@@ -39,9 +39,6 @@ namespace UI.Escritorio
         {
             this.Close();
         }
-
-        #endregion
-
         private void tsbEliminar_Click(object sender, EventArgs e)
         {
             if (dgvPersonas.SelectedRows.Count > 0)
@@ -57,5 +54,22 @@ namespace UI.Escritorio
             }
 
         }
+        private void tsbEditar_Click(object sender, EventArgs e)
+        {
+            if (dgvPersonas.SelectedRows.Count > 0)
+            {
+                int ID = ((Entidades.Persona)this.dgvPersonas.SelectedRows[0].DataBoundItem).Id;
+                PersonaEscritorio PerEsc = new PersonaEscritorio(ID, ApplicationForm.ModoForm.Modificacion);
+                PerEsc.ShowDialog();
+                this.Listar();
+            }
+            else
+            {
+                MessageBox.Show("Debe seleccionar una Persona si desea editar");
+            }
+
+        }
+        #endregion
+
     }
 }
