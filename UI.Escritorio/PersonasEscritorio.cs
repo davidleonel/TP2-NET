@@ -69,6 +69,13 @@ namespace UI.Escritorio
             }
 
         }
+
+        private void tsbNuevo_Click(object sender, EventArgs e)
+        {
+            PersonaEscritorio PerEsc = new PersonaEscritorio(ApplicationForm.ModoForm.Alta);
+            PerEsc.ShowDialog();
+            this.Listar();
+        }
         #endregion
 
     }
