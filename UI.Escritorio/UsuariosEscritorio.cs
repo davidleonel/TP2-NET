@@ -90,15 +90,19 @@ namespace UI.Escritorio
             {
                 UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
                 usrEsc.ShowDialog();
+                this.Listar();
             }
             else if (result == DialogResult.No)
             {
-                //PersonaEscritorio perEsc = PersonaEscritorio(ApplicationForm.ModoForm.Alta);
-                //perEsc.ShowDialog;
+                PersonaEscritorio perEsc = new PersonaEscritorio(ApplicationForm.ModoForm.Alta);
+                perEsc.ShowDialog();
+                UsuarioEscritorio usrEsc = new UsuarioEscritorio(ApplicationForm.ModoForm.Alta);
+                usrEsc.ShowDialog();
+                this.Listar();
             }
             else if (result == DialogResult.Cancel)
             {
-                this.Close();
+                this.Listar();
             }
            
             this.Listar();
