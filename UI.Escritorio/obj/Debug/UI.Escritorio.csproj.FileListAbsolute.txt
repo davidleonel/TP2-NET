@@ -345,16 +345,12 @@ C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escri
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ApplicationForm.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionesEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ComisionEscritorio.resources
-C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnoInscripcionEscritorio.resources
-C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteCursoEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnosEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.AlumnoEscritorio.resources
-C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.alumnosInscripcionesEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadEscritorio_.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.EspecialidadesEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.CursoEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MateriaEscritorio.resources
-C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocentesCursosEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MateriasEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Menu.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PlanEscritorio.resources
@@ -398,3 +394,5 @@ C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\bin\Debug\Data.Dat
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\bin\Debug\Entidades.pdb
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\bin\Debug\Negocios.pdb
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\bin\Debug\Data.Database.pdb
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PersonaEscritorio.resources
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PersonasEscritorio.resources
