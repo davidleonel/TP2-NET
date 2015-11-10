@@ -39,6 +39,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -158,7 +159,6 @@
     <Content Include="Content\Site.css" />
     <Content Include="RegistrarNotaDocente.aspx" />
     <Content Include="RegistrarNota.aspx" />
-    <Content Include="ReporteCursos.aspx" />
     <Content Include="estiloMasterPage.css" />
     <Content Include="InscripcionDocente.aspx" />
     <Content Include="InscripcionAlumno.aspx" />
@@ -178,6 +178,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="ReporteCursos.aspx" />
+    <Content Include="Reportes.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -218,6 +220,17 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Site.Mobile.Master" />
+    <Content Include="tp2_netDataSet.xsc">
+      <DependentUpon>tp2_netDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="tp2_netDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tp2_netDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="tp2_netDataSet.xss">
+      <DependentUpon>tp2_netDataSet.xsd</DependentUpon>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -299,13 +312,6 @@
     </Compile>
     <Compile Include="RegistrarNota.aspx.designer.cs">
       <DependentUpon>RegistrarNota.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ReporteCursos.aspx.cs">
-      <DependentUpon>ReporteCursos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ReporteCursos.aspx.designer.cs">
-      <DependentUpon>ReporteCursos.aspx</DependentUpon>
     </Compile>
     <Compile Include="InscripcionDocente.aspx.cs">
       <DependentUpon>InscripcionDocente.aspx</DependentUpon>
@@ -389,6 +395,20 @@
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReporteCursos.aspx.cs">
+      <DependentUpon>ReporteCursos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReporteCursos.aspx.designer.cs">
+      <DependentUpon>ReporteCursos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes.aspx.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reportes.aspx.designer.cs">
+      <DependentUpon>Reportes.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -410,6 +430,11 @@
     </Compile>
     <Compile Include="Materias.aspx.designer.cs">
       <DependentUpon>Materias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="tp2_netDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tp2_netDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
@@ -438,6 +463,9 @@
       <Project>{572fe3fe-88dd-4f14-ad30-b778667d8019}</Project>
       <Name>Negocios</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -166,5 +166,10 @@ namespace UI.Web
         {
             Page.Response.Redirect("~/InscripcionAlumno.aspx");
         }
+
+        protected void Reportes_Click(object sender, EventArgs e)
+        {
+            Page.Response.Redirect("~/Reportes.aspx");
+        }
     }
 }
