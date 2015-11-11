@@ -198,6 +198,10 @@ namespace UI.Web
                     {
                         this.LoadGrid();
                     }
+                    else 
+                    {
+                        this.CargaDropDownListPlanes();
+                    }
                 }
             }
 
@@ -244,7 +248,7 @@ namespace UI.Web
             this.PersonaPanel.Visible = true;
             this.ClearForm();
             this.EnableForm(true);
-            this.CargaDropDownListPlanes();
+
         }
 
         protected void editarLinkButton_Click(object sender, EventArgs e)
@@ -253,7 +257,6 @@ namespace UI.Web
             {
                 this.PersonaPanel.Visible = true;
                 this.FormMode = FormModes.Modificacion;
-                this.CargaDropDownListPlanes();
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(true);
 

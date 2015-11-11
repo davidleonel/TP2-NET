@@ -181,6 +181,10 @@ namespace UI.Web
                     {
                         this.LoadGrid();
                     }
+                    else
+                    {
+                        this.CargaDropDownListPlanes();
+                    }
                 }
             }
         }
@@ -231,7 +235,7 @@ namespace UI.Web
             this.ComisionPanel.Visible = true;
             this.ClearForm();
             this.EnableForm(true);
-            this.CargaDropDownListPlanes();
+        
 
         }
 
@@ -241,7 +245,6 @@ namespace UI.Web
             {
                 this.ComisionPanel.Visible = true;
                 this.FormMode = FormModes.Modificacion;
-                this.CargaDropDownListPlanes();
                 this.LoadForm(this.SelectedID);
                 this.EnableForm(true);
             }
