@@ -130,11 +130,23 @@
     <Compile Include="MateriasEscritorio.Designer.cs">
       <DependentUpon>MateriasEscritorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="Menu.cs">
+    <Compile Include="MenuAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="MenuAdmin.Designer.cs">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuAlum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAlum.Designer.cs">
+      <DependentUpon>MenuAlum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuDoc.Designer.cs">
+      <DependentUpon>MenuDoc.cs</DependentUpon>
     </Compile>
     <Compile Include="PersonaEscritorio.cs">
       <SubType>Form</SubType>
@@ -225,8 +237,14 @@
     <EmbeddedResource Include="MateriasEscritorio.resx">
       <DependentUpon>MateriasEscritorio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="MenuAdmin.resx">
+      <DependentUpon>MenuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAlum.resx">
+      <DependentUpon>MenuAlum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuDoc.resx">
+      <DependentUpon>MenuDoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonaEscritorio.resx">
       <DependentUpon>PersonaEscritorio.cs</DependentUpon>

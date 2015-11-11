@@ -1,6 +1,6 @@
 ﻿namespace UI.Escritorio
 {
-    partial class Menu
+    partial class MenuAdmin
     {
         /// <summary>
         /// Required designer variable.

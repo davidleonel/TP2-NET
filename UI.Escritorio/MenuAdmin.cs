@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UI.Escritorio
 {
-    public partial class Menu : Form
+    public partial class MenuAdmin : Form
     {
-        public Menu()
+        public MenuAdmin()
         {
             InitializeComponent();
         }
