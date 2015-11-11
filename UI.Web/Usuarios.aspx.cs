@@ -188,6 +188,7 @@ namespace UI.Web
                     this.Entity = new Usuario();
                     this.Entity.Id = this.SelectedID;
                     this.Entity.Estado = Entidad.Estados.Modificado;
+                    this.CargaDropDownList();
                     this.LoadEntity(this.Entity);
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();
@@ -196,6 +197,7 @@ namespace UI.Web
                 case FormModes.Alta:
                     this.formPersona.Visible = false;
                     this.Entity = new Usuario();
+                    this.CargaDropDownList();
                     this.LoadEntity(this.Entity);
                     this.SaveEntity(this.Entity);
                     this.LoadGrid();

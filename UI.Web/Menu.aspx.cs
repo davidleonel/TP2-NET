@@ -150,5 +150,12 @@ namespace UI.Web
         {
             Page.Response.Redirect("~/Reportes.aspx");
         }
+
+        protected void Salir_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Session.Abandon();
+            Page.Response.Redirect("~/Login.aspx");
+        }
     }
 }

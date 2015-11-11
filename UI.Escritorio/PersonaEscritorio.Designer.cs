@@ -284,6 +284,7 @@
             this.txtFechaNac.Name = "txtFechaNac";
             this.txtFechaNac.Size = new System.Drawing.Size(100, 20);
             this.txtFechaNac.TabIndex = 22;
+            this.txtFechaNac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PersonaEscritorio
             // 
