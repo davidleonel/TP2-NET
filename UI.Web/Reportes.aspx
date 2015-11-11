@@ -2,9 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="bodyContentPlaceHolder" runat="server">
    <asp:Panel ID="OpcionesReportes" runat="server">
-    <asp:HyperLink ID="rpCursos" runat="server" NavigateUrl="~/ReporteCursos2.aspx">Cursos</asp:HyperLink>
+    <asp:HyperLink ID="rpCursos" runat="server" NavigateUrl="~/ReporteCursos.aspx">Cursos</asp:HyperLink>
     <br />
     <asp:HyperLink ID="rpPlanes" runat="server" NavigateUrl="~/ReportePlanes.aspx">Planes</asp:HyperLink>
     <br />
    </asp:Panel>
+    <br />
+    <br />
+    <asp:Panel ID="formActionsPanel" runat="server">
+        <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Volver</asp:LinkButton>
+    </asp:Panel>
 </asp:Content>

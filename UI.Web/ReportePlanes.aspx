@@ -1,4 +1,4 @@
-﻿<%@ Page Title="ReporteCursos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReporteCursos.aspx.cs" Inherits="UI.Web.ReporteCursos" %>
+﻿<%@ Page Title="ReportePlanes" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ReportePlanes.aspx.cs" Inherits="UI.Web.ReportePlanes" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="bodyContentPlaceHolder" runat="server">
@@ -6,14 +6,15 @@
     
      <asp:Panel ID="OpcionesReportes" runat="server">
          
-            <rsweb:ReportViewer ID="CursosReportViewer" runat="server" Height="413px" Width="874px" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
-                <LocalReport ReportPath="InformeCursos.rdlc">
+            <rsweb:ReportViewer ID="PlanesReportViewer1" runat="server" Height="413px" Width="874px" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt">
+                <LocalReport ReportPath="InformePlanes.rdlc">
                     <DataSources>
-                        <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="InformeNuevo" />
+                        <rsweb:ReportDataSource DataSourceId="ObjectDataSource2" Name="InformePlanes" />
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetData" TypeName="UI.Web.TP2DataSetCursosTableAdapters.cursosTableAdapter"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ObjectDataSource2" runat="server" SelectMethod="GetData" TypeName="UI.Web.TP2DataSetPlanesTableAdapters.planesTableAdapter"></asp:ObjectDataSource>
+            
        <asp:ScriptManager ID="ScriptManager1" runat="server">
        </asp:ScriptManager>
    </asp:Panel>

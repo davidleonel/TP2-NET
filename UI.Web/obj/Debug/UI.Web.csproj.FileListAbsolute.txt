@@ -456,3 +456,5 @@ C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Web\obj\Debug\UI.Web.dll
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Web\obj\Debug\UI.Web.pdb
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Web\obj\Debug\RdlCompile.cache
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Web\obj\Debug\RdlCompile.compiled
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Web\obj\Debug\RdlCompile.cache
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Web\obj\Debug\RdlCompile.compiled

@@ -31,8 +31,6 @@
 
             <asp:LinkButton ID="InscripcionDocente" runat="server" OnClick="InscripcionDocente_Click">Inscripcion de Docentes</asp:LinkButton> <br />
             <asp:LinkButton ID="RegistroNotasDocente" runat="server" OnClick="RegistroNotasDocente_Click">Registro de Notas</asp:LinkButton> <br />
-            <asp:LinkButton ID="ReporteCursosDocente" runat="server" OnClick="ReporteCursosDocente_Click">Reporte de Cursos</asp:LinkButton> <br />
-            <asp:LinkButton ID="ReportePlanesDocente" runat="server" OnClick="ReportePlanesDocente_Click">Reporte de Planes</asp:LinkButton> <br />
 
         
         </asp:Panel>

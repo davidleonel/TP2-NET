@@ -10,7 +10,7 @@
 namespace UI.Web {
     
     
-    public partial class ReporteCursos {
+    public partial class ReportePlanes {
         
         /// <summary>
         /// Control OpcionesReportes.
@@ -22,22 +22,22 @@ namespace UI.Web {
         protected global::System.Web.UI.WebControls.Panel OpcionesReportes;
         
         /// <summary>
-        /// Control CursosReportViewer.
+        /// Control PlanesReportViewer1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::Microsoft.Reporting.WebForms.ReportViewer CursosReportViewer;
+        protected global::Microsoft.Reporting.WebForms.ReportViewer PlanesReportViewer1;
         
         /// <summary>
-        /// Control ObjectDataSource1.
+        /// Control ObjectDataSource2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource1;
+        protected global::System.Web.UI.WebControls.ObjectDataSource ObjectDataSource2;
         
         /// <summary>
         /// Control ScriptManager1.
