@@ -396,3 +396,4 @@ C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\bin\Debug\Negocios
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\bin\Debug\Data.Database.pdb
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PersonaEscritorio.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PersonasEscritorio.resources
+C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Login.resources

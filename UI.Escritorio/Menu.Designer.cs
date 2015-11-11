@@ -30,13 +30,6 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.inscripcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.docenteACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.alumnoACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registroDeNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportesDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnABMCursos = new System.Windows.Forms.Button();
             this.btnABMPlanes = new System.Windows.Forms.Button();
             this.btnABMEspecialidades = new System.Windows.Forms.Button();
@@ -46,6 +39,13 @@
             this.btnABMProfesores = new System.Windows.Forms.Button();
             this.btnABMUsuario = new System.Windows.Forms.Button();
             this.btnABMPersona = new System.Windows.Forms.Button();
+            this.docenteACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.alumnoACursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inscripcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registroDeNotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesDeCursoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -96,52 +96,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(509, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // inscripcionesToolStripMenuItem
-            // 
-            this.inscripcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.docenteACursoToolStripMenuItem,
-            this.alumnoACursoToolStripMenuItem});
-            this.inscripcionesToolStripMenuItem.Name = "inscripcionesToolStripMenuItem";
-            this.inscripcionesToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
-            this.inscripcionesToolStripMenuItem.Text = "Inscripciones";
-            // 
-            // docenteACursoToolStripMenuItem
-            // 
-            this.docenteACursoToolStripMenuItem.Name = "docenteACursoToolStripMenuItem";
-            this.docenteACursoToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            // 
-            // alumnoACursoToolStripMenuItem
-            // 
-            this.alumnoACursoToolStripMenuItem.Name = "alumnoACursoToolStripMenuItem";
-            this.alumnoACursoToolStripMenuItem.Size = new System.Drawing.Size(67, 22);
-            // 
-            // registroDeNotasToolStripMenuItem
-            // 
-            this.registroDeNotasToolStripMenuItem.Name = "registroDeNotasToolStripMenuItem";
-            this.registroDeNotasToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
-            this.registroDeNotasToolStripMenuItem.Text = "Registro de Notas";
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportesDeCursoToolStripMenuItem,
-            this.reportesDeToolStripMenuItem});
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.reportesToolStripMenuItem.Text = "Reportes";
-            // 
-            // reportesDeCursoToolStripMenuItem
-            // 
-            this.reportesDeCursoToolStripMenuItem.Name = "reportesDeCursoToolStripMenuItem";
-            this.reportesDeCursoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.reportesDeCursoToolStripMenuItem.Text = "Reportes de Curso";
-            // 
-            // reportesDeToolStripMenuItem
-            // 
-            this.reportesDeToolStripMenuItem.Name = "reportesDeToolStripMenuItem";
-            this.reportesDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
-            this.reportesDeToolStripMenuItem.Text = "Reportes de Planes";
             // 
             // btnABMCursos
             // 
@@ -243,6 +197,52 @@
             this.btnABMPersona.UseVisualStyleBackColor = false;
             this.btnABMPersona.Click += new System.EventHandler(this.btnABMPersona_Click);
             // 
+            // docenteACursoToolStripMenuItem
+            // 
+            this.docenteACursoToolStripMenuItem.Name = "docenteACursoToolStripMenuItem";
+            this.docenteACursoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            // 
+            // alumnoACursoToolStripMenuItem
+            // 
+            this.alumnoACursoToolStripMenuItem.Name = "alumnoACursoToolStripMenuItem";
+            this.alumnoACursoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            // 
+            // inscripcionesToolStripMenuItem
+            // 
+            this.inscripcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.docenteACursoToolStripMenuItem,
+            this.alumnoACursoToolStripMenuItem});
+            this.inscripcionesToolStripMenuItem.Name = "inscripcionesToolStripMenuItem";
+            this.inscripcionesToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
+            this.inscripcionesToolStripMenuItem.Text = "Inscripciones";
+            // 
+            // registroDeNotasToolStripMenuItem
+            // 
+            this.registroDeNotasToolStripMenuItem.Name = "registroDeNotasToolStripMenuItem";
+            this.registroDeNotasToolStripMenuItem.Size = new System.Drawing.Size(112, 20);
+            this.registroDeNotasToolStripMenuItem.Text = "Registro de Notas";
+            // 
+            // reportesDeCursoToolStripMenuItem
+            // 
+            this.reportesDeCursoToolStripMenuItem.Name = "reportesDeCursoToolStripMenuItem";
+            this.reportesDeCursoToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.reportesDeCursoToolStripMenuItem.Text = "Reportes de Curso";
+            // 
+            // reportesDeToolStripMenuItem
+            // 
+            this.reportesDeToolStripMenuItem.Name = "reportesDeToolStripMenuItem";
+            this.reportesDeToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.reportesDeToolStripMenuItem.Text = "Reportes de Planes";
+            // 
+            // reportesToolStripMenuItem
+            // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reportesDeCursoToolStripMenuItem,
+            this.reportesDeToolStripMenuItem});
+            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
+            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.reportesToolStripMenuItem.Text = "Reportes";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,14 +271,14 @@
         private System.Windows.Forms.Button btnABMComisiones;
         private System.Windows.Forms.Button btnABMCursos;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.Button btnABMMaterias;
+        private System.Windows.Forms.Button btnABMPersona;
         private System.Windows.Forms.ToolStripMenuItem inscripcionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem docenteACursoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem alumnoACursoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registroDeNotasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesDeCursoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesDeToolStripMenuItem;
-        private System.Windows.Forms.Button btnABMMaterias;
-        private System.Windows.Forms.ToolStripMenuItem docenteACursoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem alumnoACursoToolStripMenuItem;
-        private System.Windows.Forms.Button btnABMPersona;
     }
 }
