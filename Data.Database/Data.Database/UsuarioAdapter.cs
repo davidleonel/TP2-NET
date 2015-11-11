@@ -190,7 +190,6 @@ namespace Data.Database
             return usr;
         }
 
-
         public void Delete(int ID)
         {
             try

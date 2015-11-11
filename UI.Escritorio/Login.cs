@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Entidades;
+using Negocios;
 
 namespace UI.Escritorio
 {
@@ -15,6 +17,11 @@ namespace UI.Escritorio
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

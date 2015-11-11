@@ -34,7 +34,7 @@
             this.lblPass = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
             this.tlpLogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +48,7 @@
             this.tlpLogin.Controls.Add(this.lblPass, 0, 2);
             this.tlpLogin.Controls.Add(this.btnIngresar, 1, 3);
             this.tlpLogin.Controls.Add(this.txtUsuario, 1, 1);
-            this.tlpLogin.Controls.Add(this.textBox2, 1, 2);
+            this.tlpLogin.Controls.Add(this.txtPass, 1, 2);
             this.tlpLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpLogin.Location = new System.Drawing.Point(0, 0);
             this.tlpLogin.Name = "tlpLogin";
@@ -103,6 +103,7 @@
             this.btnIngresar.TabIndex = 3;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // txtUsuario
             // 
@@ -111,12 +112,12 @@
             this.txtUsuario.Size = new System.Drawing.Size(100, 20);
             this.txtUsuario.TabIndex = 4;
             // 
-            // textBox2
+            // txtPass
             // 
-            this.textBox2.Location = new System.Drawing.Point(145, 182);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtPass.Location = new System.Drawing.Point(145, 182);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(100, 20);
+            this.txtPass.TabIndex = 5;
             // 
             // Login
             // 
@@ -140,6 +141,6 @@
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.TextBox txtUsuario;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtPass;
     }
 }
