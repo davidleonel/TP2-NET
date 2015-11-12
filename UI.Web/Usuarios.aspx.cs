@@ -127,6 +127,9 @@ namespace UI.Web
         {
             this.habilitadoCheckBox.Checked = false;
             this.nombreUsuarioTextBox.Text = string.Empty;
+            this.claveTextBox.Text = string.Empty;
+            this.Text = string.Empty;
+            
         }
         public void CargaDropDownList()
         {
@@ -242,9 +245,10 @@ namespace UI.Web
             this.formPersona.Visible = false;
             this.FormMode = FormModes.Alta;
             this.formPanel.Visible = true;
-            this.ClearForm();
+            
             this.EnableForm(true);
             this.CargaDropDownList();
+            this.ClearForm();
 
         }
 
@@ -252,12 +256,7 @@ namespace UI.Web
         protected void noButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Personas.aspx");
-            this.formPersona.Visible = false;
-            this.FormMode = FormModes.Alta;
-            this.formPanel.Visible = true;
-            this.ClearForm();
-            this.EnableForm(true);
-            this.CargaDropDownList();
+           
 
         }
 

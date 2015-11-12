@@ -27,6 +27,7 @@
 
     <asp:Panel ID="formPersona" runat="server" Visible="false">
         <asp:Label ID="personaLabel" runat="server" Text="Ya cargó sus datos personales alguna vez en este sistema?"></asp:Label><br />
+        <asp:Label ID="lblLargo" runat="server" Text="Si responde NO se registrarán sus datos y deberá volver a resgistrarse como usuario"></asp:Label>
         <asp:Button ID="siButton" runat="server" Text="SI" OnClick="siButton_Click" /> 
         <asp:Button ID="noButton" runat="server" Text="NO" OnClick="noButton_Click"/>
     </asp:Panel>
@@ -69,7 +70,7 @@
 
         <asp:Panel ID="formActionsPanel" runat="server">
             <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click" >Aceptar</asp:LinkButton>
-            <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Cancelar</asp:LinkButton>
+            <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Volver a Menu</asp:LinkButton>
         </asp:Panel>
 
     </div>

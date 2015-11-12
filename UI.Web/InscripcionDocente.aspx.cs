@@ -166,6 +166,9 @@ namespace UI.Web
                     this.SaveEntity(this.NuevaInsc);
                     this.LoadGrid();
 
+                    this.lblMsj.Text = "Inscripto exitosamente.";
+                    this.lblMsj.Visible = true;
+
         }
 
         protected void cancelarLinkButton_Click(object sender, EventArgs e)

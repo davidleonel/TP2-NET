@@ -10,6 +10,6 @@
     <br />
     <br />
     <asp:Panel ID="formActionsPanel" runat="server">
-        <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Volver</asp:LinkButton>
+        <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Volver a Menu</asp:LinkButton>
     </asp:Panel>
 </asp:Content>

@@ -231,11 +231,23 @@ namespace UI.Web
         protected void aceptarLinkButton_Click(object sender, EventArgs e)
         {
 
-            this.AluInscActual = this.AluInscNeg.GetOne(SelectedIDAlumno);
-            this.AluInscActual.Nota = Convert.ToInt32(this.notaTextBox.Text);
+            if ((Convert.ToInt32(this.notaTextBox.Text))<0 || (Convert.ToInt32(this.notaTextBox.Text))>10)
+	        {
+                this.lblMsj.Text= "Nota Incorrecta, debe ser un nro entre 0 y 10.";
+		        this.lblMsj.Visible = true;
 
-            this.AluInscActual.Estado = Entidad.Estados.Modificado;
-            this.AluInscNeg.Save(AluInscActual);
+	        }
+            else
+	        {
+                this.AluInscActual = this.AluInscNeg.GetOne(SelectedIDAlumno);
+                this.AluInscActual.Nota = Convert.ToInt32(this.notaTextBox.Text);
+
+                this.AluInscActual.Estado = Entidad.Estados.Modificado;
+                this.AluInscNeg.Save(AluInscActual);
+                this.lblMsj.Text = "Nota registrada";
+                this.lblMsj.Visible = true;
+	        }
+            
 
 
         }

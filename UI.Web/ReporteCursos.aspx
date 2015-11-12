@@ -22,6 +22,6 @@
     <asp:Panel ID="formActionsPanel" runat="server">
         <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Volver</asp:LinkButton>
         <br />
-        <asp:LinkButton ID="cancelarLinkButton2" runat="server" OnClick="cancelarLinkButton2_Click" Visible="false">Volver</asp:LinkButton>
+        <asp:LinkButton ID="cancelarLinkButton2" runat="server" OnClick="cancelarLinkButton2_Click" Visible="false">Volver a Menu</asp:LinkButton>
     </asp:Panel>
 </asp:Content>

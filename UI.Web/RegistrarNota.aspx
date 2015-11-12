@@ -78,7 +78,11 @@
         
         <asp:Panel ID="formActionsPanel" runat="server">
             <asp:LinkButton ID="aceptarLinkButton" runat="server" OnClick="aceptarLinkButton_Click" >Aceptar</asp:LinkButton>
-            <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Cancelar</asp:LinkButton>
+            <asp:LinkButton ID="cancelarLinkButton" runat="server" OnClick="cancelarLinkButton_Click">Volver a Menu</asp:LinkButton>
+            <br />
+            <br />
+            <br />
+            <asp:Label ID="lblMsj" runat="server" Text="" Visible="False"></asp:Label>
         </asp:Panel>
 
     </div>

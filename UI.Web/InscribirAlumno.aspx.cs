@@ -203,6 +203,8 @@ namespace UI.Web
             this.AlumnoInscipcionActual = new AlumnoInscripcion();
             this.LoadEntity(this.AlumnoInscipcionActual, alumSelecccionado, curSeleccionado);
             this.SaveEntity(this.AlumnoInscipcionActual);
+            this.lblMsj.Text = "Alumno Inscripto.";
+            this.lblMsj.Visible = true;
             
         }
 

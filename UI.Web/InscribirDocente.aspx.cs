@@ -199,6 +199,8 @@ namespace UI.Web
             this.DocenteCursoActual = new DocenteCurso();
             this.LoadEntity(this.DocenteCursoActual, alumSelecccionado, curSeleccionado);
             this.SaveEntity(this.DocenteCursoActual);
+            this.lblMsj.Text = "Docente Inscripto.";
+            this.lblMsj.Visible = true;
             
         }
 

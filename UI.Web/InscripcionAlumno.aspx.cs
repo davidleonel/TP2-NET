@@ -167,6 +167,8 @@ namespace UI.Web
                     this.LoadEntity(this.NuevaInsc);
                     this.SaveEntity(this.NuevaInsc);
                     this.LoadGrid();
+                    this.lblMsj.Text = "Inscripto exitosamente.";
+                    this.lblMsj.Visible = true;
 
         }
 
