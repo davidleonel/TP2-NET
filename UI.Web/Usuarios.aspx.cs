@@ -251,7 +251,14 @@ namespace UI.Web
 
         protected void noButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("http://localhost:7057/Personas");
+            Response.Redirect("~/Personas.aspx");
+            this.formPersona.Visible = false;
+            this.FormMode = FormModes.Alta;
+            this.formPanel.Visible = true;
+            this.ClearForm();
+            this.EnableForm(true);
+            this.CargaDropDownList();
+
         }
 
         protected void cancelarLinkButton_Click(object sender, EventArgs e)
