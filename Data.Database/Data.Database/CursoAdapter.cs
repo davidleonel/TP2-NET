@@ -185,9 +185,9 @@ namespace Data.Database
                 SqlCommand cmdSave;
                 cmdSave = new SqlCommand(
                      "UPDATE cursos set id_materia= @id_materia, id_comision= @id_comision," +
-                    "anio_calendario=@anio_calendario, cupo=@cupo", SqlConn);
+                    "anio_calendario=@anio_calendario, cupo=@cupo WHERE id_curso=@id", SqlConn);
 
-
+                cmdSave.Parameters.Add("@id", SqlDbType.Int).Value = cur.Id;
                 cmdSave.Parameters.Add("@id_materia", SqlDbType.Int).Value = cur.IdMateria;
                 cmdSave.Parameters.Add("@id_comision", SqlDbType.Int).Value = cur.IdComision;
                 cmdSave.Parameters.Add("@anio_calendario", SqlDbType.Int).Value = cur.AnioCalendario;

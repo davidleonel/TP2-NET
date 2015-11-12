@@ -123,7 +123,7 @@ namespace UI.Web
         #region Metodos
         private void LoadGrid()
         {
-            this.DocenteInscipciongridView.DataSource = this.PerNeg.GetAll();
+            this.DocenteInscipciongridView.DataSource = this.PerNeg.GetAllDocentes();
             this.DocenteInscipciongridView.DataBind();
 
             this.CursoInscipciongridView.DataSource = this.Curneg.GetAll();
@@ -134,7 +134,7 @@ namespace UI.Web
         {
             DocInsc.IdDocente = alumSelecccionado.Id;
             DocInsc.IdCurso = curSeleccionado.Id;
-            DocInsc.Cargo = Convert.ToInt32(this.cargoTextBox.Text);
+            DocInsc.Cargo = Convert.ToInt32(this.CargoDropDownList.SelectedValue);
            
         }
 

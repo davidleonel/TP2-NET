@@ -128,15 +128,15 @@ namespace UI.Web
             this.CursoInscipciongridView.DataSource = this.Curneg.GetAll();
             this.CursoInscipciongridView.DataBind();
 
-            this.AlumnoInscipciongridView.DataSource = this.PerNeg.GetAll();
+            this.AlumnoInscipciongridView.DataSource = this.PerNeg.GetAllAlumnos();
             this.AlumnoInscipciongridView.DataBind();
         }
 
         private void LoadEntity(AlumnoInscripcion AluInsc, Persona alumSelecccionado, Curso curSeleccionado)
-        {/*
+        {
             AluInsc.IdAlumno = alumSelecccionado.Id;
             AluInsc.IdCurso = curSeleccionado.Id;
-            AluInsc.Condicion = this.condicionTextBox.Text;*/
+            AluInsc.Condicion = this.condicionTextBox.Text;
            
         }
 

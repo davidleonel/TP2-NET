@@ -47,8 +47,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -178,6 +181,28 @@
     <Compile Include="DocenteEscritorio.Designer.cs">
       <DependentUpon>DocenteEscritorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReporteCursos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReporteCursos.Designer.cs">
+      <DependentUpon>ReporteCursos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportePlanes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportePlanes.Designer.cs">
+      <DependentUpon>ReportePlanes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TP2DataSetCursos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TP2DataSetCursos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TP2DataSetPlanes.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TP2DataSetPlanes.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioEscritorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +253,8 @@
     <EmbeddedResource Include="CursoEscritorio.resx">
       <DependentUpon>CursoEscritorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="InformeCursos.rdlc" />
+    <EmbeddedResource Include="InformePlanes.rdlc" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +287,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DocenteEscritorio.resx">
       <DependentUpon>DocenteEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReporteCursos.resx">
+      <DependentUpon>ReporteCursos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportePlanes.resx">
+      <DependentUpon>ReportePlanes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UsuarioEscritorio.resx">
       <DependentUpon>UsuarioEscritorio.cs</DependentUpon>
@@ -302,6 +335,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="TP2DataSetCursos.xsc">
+      <DependentUpon>TP2DataSetCursos.xsd</DependentUpon>
+    </None>
+    <None Include="TP2DataSetCursos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TP2DataSetCursos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TP2DataSetCursos.xss">
+      <DependentUpon>TP2DataSetCursos.xsd</DependentUpon>
+    </None>
+    <None Include="TP2DataSetPlanes.xsc">
+      <DependentUpon>TP2DataSetPlanes.xsd</DependentUpon>
+    </None>
+    <None Include="TP2DataSetPlanes.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TP2DataSetPlanes.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TP2DataSetPlanes.xss">
+      <DependentUpon>TP2DataSetPlanes.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

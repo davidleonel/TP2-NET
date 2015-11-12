@@ -74,5 +74,18 @@ namespace UI.Escritorio
 
         }
 
+        private void reportesDeCursoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReporteCursos repCur = new ReporteCursos();
+            repCur.ShowDialog();
+
+        }
+
+        private void reportesDeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportePlanes repPla = new ReportePlanes();
+            repPla.ShowDialog();
+        }
+
     }
 }

@@ -375,7 +375,6 @@ C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escri
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.CursoEscritorio.resources
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MateriaEscritorio.resources
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MateriasEscritorio.resources
-C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Menu.resources
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PlanEscritorio.resources
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PlanesEscritorio.resources
 C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.DocenteEscritorio.resources
@@ -399,3 +398,13 @@ C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escri
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MenuAdmin.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MenuAlum.resources
 C:\Users\ara--_000\Desktop\GIT- NET-TP2\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MenuDoc.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.Login.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MenuAdmin.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MenuAlum.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.MenuDoc.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PersonaEscritorio.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.PersonasEscritorio.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ReporteCursos.resources
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\RdlCompile.cache
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\RdlCompile.compiled
+C:\Users\Computadora\Desktop\GITHUB NET\TP2-NET\UI.Escritorio\obj\Debug\UI.Escritorio.ReportePlanes.resources

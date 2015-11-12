@@ -111,7 +111,7 @@ namespace UI.Web
             Persona PersonaActual = this.PersonaActNeg.GetOne(UsuAct.IdPersona);
             NuevaInscripcion.IdDocente = PersonaActual.Id;
             NuevaInscripcion.IdCurso = this.SelectedID;
-            NuevaInscripcion.Cargo = this.CargoDropDownList.SelectedIndex;
+            NuevaInscripcion.Cargo = Convert.ToInt32(this.CargoDropDownList.SelectedValue);
             
         }
 

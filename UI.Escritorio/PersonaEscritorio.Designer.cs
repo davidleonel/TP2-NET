@@ -285,6 +285,7 @@
             this.txtFechaNac.Size = new System.Drawing.Size(100, 20);
             this.txtFechaNac.TabIndex = 22;
             this.txtFechaNac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtFechaNac.ValidatingType = typeof(System.DateTime);
             // 
             // PersonaEscritorio
             // 

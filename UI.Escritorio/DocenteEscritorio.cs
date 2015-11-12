@@ -56,7 +56,7 @@ namespace UI.Escritorio
             this.txtDireccion.Text = this.DocenteActual.Direccion.ToString();
             this.txtEmail.Text = this.DocenteActual.Email.ToString();
             this.txtTelefono.Text = this.DocenteActual.Telefono.ToString();
-            //this.mcFecNac.DateSelected = this.DocenteActual.FechaNacimiento.ToString();
+            this.FecNacMtxt.Text = this.DocenteActual.FechaNacimiento.ToString();
             this.txtLegajo.Text  = this.DocenteActual.Legajo.ToString();
             this.txtIdPlan.Text = this.DocenteActual.IdPlan.ToString();
             
@@ -90,7 +90,7 @@ namespace UI.Escritorio
                 this.DocenteActual.Direccion = this.txtDireccion.Text;
                 this.DocenteActual.Email = this.txtEmail.Text;
                 this.DocenteActual.Telefono = this.txtTelefono.Text;
-                //this.DocenteActual.FechaNacimiento = this.mcFecNac.DateSelected();
+                this.DocenteActual.FechaNacimiento = Convert.ToDateTime(this.FecNacMtxt.Text);
                 this.DocenteActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
                 this.DocenteActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
                 
@@ -104,7 +104,7 @@ namespace UI.Escritorio
                 this.DocenteActual.Direccion = this.txtDireccion.Text;
                 this.DocenteActual.Email = this.txtEmail.Text;
                 this.DocenteActual.Telefono = this.txtTelefono.Text;
-                //this.DocenteActual.FechaNacimiento = this.mcFecNac.DateSelected();
+                this.DocenteActual.FechaNacimiento = Convert.ToDateTime(this.FecNacMtxt.Text);
                 this.DocenteActual.Legajo = Convert.ToInt32(this.txtLegajo.Text);
                 this.DocenteActual.IdPlan = Convert.ToInt32(this.txtIdPlan.Text);
             }
